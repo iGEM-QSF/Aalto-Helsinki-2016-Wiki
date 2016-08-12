@@ -157,13 +157,31 @@ section h1 {
 	/*background: #cc6055;*/
 }
 
-.lakephoto {
+/*.lakephoto {
 	/*background: url('/2016/img/lake2.jpg') no-repeat;*/
-	/*background-size: 100%;*/
+	/*background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lake2.jpg') no-repeat;
+	background-size: 100%;
 	background-size: cover;
-	/*background-position: 0% 30%;*/
+	background-position: 0% 30%;
 	height: 110%;
 	width: 100%;
+}*/
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lake2.jpg) no-repeat;
+    background-size: cover; 
 }
 
 .sciencephoto {
