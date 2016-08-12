@@ -306,7 +306,7 @@ nav a.nextArrow {
 	transform: translateX(-50%) rotate(-45deg);
 }
 
-/* CSS Parallax 
+/* CSS Parallax  
 
 .parallax {
 	perspective: 1px;
@@ -329,8 +329,8 @@ nav a.nextArrow {
 
 .parallax__layer--back {
 	transform: translateZ(-1px) scale(2);
-}
-*/
+}*/
+
 
 /* Mobile style */
 
