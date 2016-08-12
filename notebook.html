@@ -32,15 +32,32 @@
     <body class="teambackground">
 
 	<section class="lakephoto parallax">
-	<nav class="nav-circlepop">
-		<span>
-		<a class="nextArrow" href="/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/humanpractises.html"> <span class="icon-wrap"> </span></a>
-		</span>
-	</nav>
 	
 		<text x=330 y=400 font-size=32 font-weight=600 fill="white">Notebook</text>
 	</svg>
 	</section>
+
+    <div>
+        <ul>
+        <li style="float:right"><a href="achievements.html">Achievements</a></li>    
+        <li style="float:right"><a href="notebook.html">Notebook</a></li>
+        <li style="float:right"><a href="collaboration.html">Collaboration</a></li>
+        <li style="float:right"><a href="humanpractices.html">Human Practices</a></li>
+        <li style="float:right"><a href="team.html">Team</a></li>
+        <li style="float:right"><a href="modelling.html">Modelling</a></li>
+        <li style="float:right"><a href="lab.html">Lab</a></li>
+        <li style="float:right"><a href="project.html">Project</a></li>
+        </ul> 
+    </div>
+    
+    <script> $(window).scroll(function() {
+    if ($(this).scrollTop() > 600){ // Set position from top to add class
+        $('ul').addClass("shrink");
+    } else {
+        $('ul').removeClass("shrink");
+    }
+    });
+    </script>
 	
 	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features">
 	<div class="block-wrapper-inner">

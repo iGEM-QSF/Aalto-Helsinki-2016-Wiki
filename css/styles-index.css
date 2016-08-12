@@ -167,6 +167,22 @@ section h1 {
 	width: 100%;
 }*/
 
+/* Emphasis Title KOKEILU
+-----------------------------------------------------------------*/
+
+.emphasis-title { margin: 0 0 10px; }
+
+.emphasis-title h1,
+.emphasis-title h2 {
+	font-size: 64px;
+	letter-spacing: -2px;
+}
+
+.emphasis-title h1 strong,
+.emphasis-title h2 strong { font-weight: 700; }
+
+
+
 video#bgvid { 
     position: fixed;
     top: 50%;
