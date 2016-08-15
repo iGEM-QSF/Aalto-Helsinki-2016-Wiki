@@ -148,14 +148,6 @@ section h1 {
 	font-weight: bold;
 }
 
-.teamphoto {
-	background: url('/2016/img/team3.jpg') no-repeat;
-	background-size: 100%;
-	background-position: 0% 0%;
-	height: 110%;
-	width: 100%;
-	/*background: #cc6055;*/
-}
 
 /*.lakephoto {
 	/*background: url('/2016/img/lake2.jpg') no-repeat;*/
@@ -337,7 +329,7 @@ ul {
     overflow: hidden;
     background-color: transparent;
 	position: fixed;
-    top: 0;
+	top: 0;
     width: 100%;
 }
 

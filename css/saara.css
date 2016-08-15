@@ -1,0 +1,14 @@
+.teamphoto {
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/team2_scaled.jpg') no-repeat;
+	background-size: 100%;
+	background-position: 0% 30%;
+	height: 110%;
+	width: 100%;
+	/*background: #cc6055;*/
+}
+
+.column-md-5 {
+	float: center;
+	padding: 14px 16px;
+	
+}
