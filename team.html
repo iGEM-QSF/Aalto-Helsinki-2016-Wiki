@@ -64,7 +64,7 @@
     
 	<div class="block-wrapper-inner" style="padding-top: 15px;">
     <div class="container">
-	<h1>Team Members</h1>
+	<h1 id="ONE">Team Members</h1>
 	<br></br>
 	<div class="row rowborder">
 			
@@ -178,7 +178,7 @@
     </div>
     </div>
 	
-	<div class="navbar navbar-default navbar-fixed-bottom black-bar" align="center">
+	<div class="navbar navbar-default navbar-fixed-bottom black-bar alapalkki" align="center">
 		
 		<a class="column-md-5" href="#"><b></b></a>
 		<a class="column-md-5" href="#"><b></b></a>
@@ -186,8 +186,35 @@
 	</div>
 	
 	<div class="container">
-	<h1>Advisors</h1>
+	<h1 id="TWO">Advisors</h1>
 	<br></br>
+
+	<script>
+    var h1s = document.getElementsByTagName("h1")
+    for (var i = 0; i < h1s.length; i++) {
+        var h1 = h1s[i];
+        $( "<a class=\"column-md-5\" href=\"#"+ h1.id +"\">" + h1.textContent + "</a><b></b>" ).appendTo( ".alapalkki" );
+        console.log(h1);
+    }
+    </script>
+
+    <script>
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+    </script>
 	
 	
     
