@@ -7,8 +7,12 @@
 	/*background: #cc6055;*/
 }
 
-.column-md-5 {
-	float: center;
-	padding: 14px 16px;
+
+ul.topnav li a.current {
+	color: #696969;
 	
 }
+
+
+
+

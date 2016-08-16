@@ -41,12 +41,12 @@
 
 	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features">
 	    <div class="navbar navbar-fixed-top">
-			<ul>
+			<ul class="topnav">
 				<li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
 				<li style="float:right"><a href="notebook.html"><b>Notebook</b></a></li>
 				<li style="float:right"><a href="collaboration.html"><b>Collaboration</b></a></li>
 				<li style="float:right"><a href="humanpractices.html"><b>Human Practices</b></a></li>
-				<li style="float:right"><a href="team.html"><b>Team</b></a></li>
+				<li style="float:right"><a class="current" href="team.html"><b>Team</b></a></li>
 				<li style="float:right"><a href="modelling.html"><b>Modelling</b></a></li>
 				<li style="float:right"><a href="lab.html"><b>Lab</b></a></li>
 				<li style="float:right"><a href="project.html"><b>Project</b></a></li>
@@ -178,10 +178,12 @@
     </div>
     </div>
 	
-	<div class="navbar navbar-default navbar-fixed-bottom black-bar alapalkki" align="center">
+	<div class="navbar navbar-fixed-bottom navbar-default">
 		
-		<a class="column-md-5" href="#"><b></b></a>
-		<a class="column-md-5" href="#"><b></b></a>
+		<ul class="botnav">
+		<li><a style="padding-left: 38%;" href="#"></a></li>
+		<li><a href="#"></a></li>
+		</ul>
 		
 	</div>
 	
@@ -193,7 +195,7 @@
     var h1s = document.getElementsByTagName("h1")
     for (var i = 0; i < h1s.length; i++) {
         var h1 = h1s[i];
-        $( "<a class=\"column-md-5\" href=\"#"+ h1.id +"\">" + h1.textContent + "</a><b></b>" ).appendTo( ".alapalkki" );
+        $( "<li><a href=\"#"+ h1.id +"\">" + h1.textContent + "</a></li>" ).appendTo( ".botnav" );
         console.log(h1);
     }
     </script>
