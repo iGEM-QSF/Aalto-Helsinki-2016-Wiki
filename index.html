@@ -62,7 +62,8 @@
         </ul> 
     </div>
     
-    <script> $(window).scroll(function() {
+    <script> 
+    $(window).scroll(function() {
     if ($(this).scrollTop() > 600){ // Set position from top to add class
         $('ul').addClass("shrink");
     } else {
@@ -70,63 +71,90 @@
     }
     });
     </script>
-<div class="fadeout">
-    <svg width="1500" height="250">
-        <rect x="250" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
+
+    <div class="fadeout1">
+    <svg width="1500" height="350">
+        <rect x="250" y="70" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout2">
      <svg width="1500" height="250">
         <rect x="800" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout3">
      <svg width="1500" height="250">
         <rect x="250" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout4">
      <svg width="1500" height="250">
         <rect x="800" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout5">
      <svg width="1500" height="250">
         <rect x="250" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout6">
      <svg width="1500" height="250">
         <rect x="800" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout7">
      <svg width="1500" height="250">
         <rect x="250" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
-<div class="fadeout">
+<div class="fadeout8">
      <svg width="1500" height="250">
         <rect x="800" y="0" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
     </svg>
 </div>
 
 <script>
-$(document).ready(function(){
-    $(window).scroll(function(){
-        $(".fadeout").each(function(i){
-            $(this).css("opacity", 1 - $(window).scrollTop() / ($(this).height() * 3 *i));
-            console.log(i);
-        });
-    });
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    var offset = $(".fadeout1").offset().top;
+    var offset2 = $(".fadeout2").offset().top;
+    var offset3 = $(".fadeout3").offset().top;
+    var offset4 = $(".fadeout4").offset().top;
+    var offset5 = $(".fadeout5").offset().top;
+    var offset6 = $(".fadeout6").offset().top;
+    var offset7 = $(".fadeout7").offset().top;
+    var offset8 = $(".fadeout8").offset().top;
+    //console.log($(".fadeout1").offset().top);
+    $('.fadeout1').css({
+        'opacity': ((0.1 * (-offset) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout2').css({
+        'opacity': ((0.3 * (-offset2) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout3').css({
+        'opacity': ((0.4 * (-offset3) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout4').css({
+        'opacity': ((0.5 * (-offset4) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout5').css({
+        'opacity': ((0.6 * (-offset5) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout6').css({
+        'opacity': ((0.7 * (-offset6) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout7').css({
+        'opacity': ((0.8 * (-offset7) + scrollTop) / (0.5 * height))
+    }); 
+    $('.fadeout8').css({
+        'opacity': ((0.8 * (-offset8) + scrollTop) / (0.5 * height))
+    }); 
 });
+
+
 </script>
-     <!--svg width="600" height="400">
-        <rect x="200" y="20" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
-    </svg-->
-     <!--svg width="600" height="400">
-        <rect x="200" y="20" rx="20" ry="20" width="400" height="200" style="fill:white;stroke:none;opacity:0.5"/>
-    </svg-->
+
 
 
 	
@@ -134,7 +162,7 @@ $(document).ready(function(){
 	<div class="block-wrapper-inner">
 	<div class="container">
 	
-	<!--div class="spacing">
+	<!-- div class="spacing">
 	<h2>What is iGEM?</h2>
 	<p class="lead spacing justified">
 	iGEM (International Genetically Engineered Machine) is an annual worldwide Synthetic Biology competition originated at MIT, Boston. 
