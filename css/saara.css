@@ -1,5 +1,5 @@
 .teamphoto {
-	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/team2_scaled.jpg') no-repeat;
+	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/team2_scaled.JPG') no-repeat;
 	background-size: 100%;
 	background-position: 0% 30%;
 	height: 110%;
@@ -12,7 +12,6 @@ ul.topnav li a.current {
 	color: #696969;
 	
 }
-
 
 
 
