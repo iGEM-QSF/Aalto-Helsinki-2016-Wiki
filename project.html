@@ -35,27 +35,29 @@
     <body class="teambackground">
 
     <section class="lakephoto parallax">
+	<h2>Project</h2>
     
-        <text x=330 y=400 font-size=32 font-weight=600 fill="white">Our Project</text>
     </svg>
     </section>
 
 
-    <div>
-     <ul class="topnav">
-        <li style="float:right"><a href="achievements.html">Achievements</a></li>    
-        <li style="float:right"><a href="notebook.html">Notebook</a></li>
-        <li style="float:right"><a href="collaboration.html">Collaboration</a></li>
-        <li style="float:right"><a href="humanpractices.html">Human Practices</a></li>
-        <li style="float:right"><a href="team.html">Team</a></li>
-        <li style="float:right"><a href="modelling.html">Modelling</a></li>
-        <li style="float:right"><a href="lab.html">Lab</a></li>
-        <li style="float:right"><a href="project.html">Project</a></li>
-        </ul> 
+    <div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features">
+	    <div class="navbar navbar-fixed-top">
+			 <ul class="topnav">
+				<li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
+				<li style="float:right"><a href="collaboration.html"><b>Collaboration</b></a></li>
+				<li style="float:right"><a href="humanpractices.html"><b>Human Practices</b></a></li>
+				<li style="float:right"><a href="team.html"><b>Team</b></a></li>
+				<li style="float:right"><a href="modelling.html"><b>Modelling</b></a></li>
+				<li style="float:right"><a href="lab.html"><b>Lab</b></a></li>
+				<li style="float:right"><a class="current" href="project.html"><b>Project</b></a></li>
+				<li style="float:left"><a href="index.html"><img src='file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/logo.png' style="margin-left:3px;"></img></a></li>
+			</ul> 
+		</div>
     </div>
     
     <script> $(window).scroll(function() {
-    if ($(this).scrollTop() > 600){ // Set position from top to add class
+    if ($(this).scrollTop() > 640){ // Set position from top to add class
         $('ul').addClass("shrink");
     } else {
         $('ul').removeClass("shrink");
@@ -63,17 +65,58 @@
     });
     </script>
     
-    <div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features">
-    <div class="block-wrapper-inner">
-    <div class="container">
-
-
-   
+    <div class="block-wrapper-inner" style="padding-top: 15px;">
+		<div class="container">
+			<h1 id="ONE">Overview</h1>
+			<br></br>
+			<p style="font-size:19px;" class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit arcu libero. Duis vitae cursus elit. Donec enim turpis, aliquam id neque at, faucibus porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et sollicitudin risus. Pellentesque risus magna, accumsan sit amet purus sed, ornare mattis diam. Morbi ac arcu metus. Praesent in massa lectus. Proin fringilla, erat a tempor imperdiet, nunc purus venenatis sem, vel finibus ex lacus a nisi. Morbi nibh augue, ultrices ut lacus id, laoreet aliquam mauris.</p>
+		<br></br>
+		</div>
+		
+		<div class="section" style="background-color:#001a33">
+		<p><i>Did you know?<br></br>Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents the largest prokaryotic organism.</i></p>
+		</div>
+		
+		<div class="container">
+			<h1 id="TWO">Detection</h1>
+			<br></br>
+			<h3>Background</h3>
+			<br></br>
+			<figure style="float: right; text-align:center; padding-left:20px;">
+			<img style="width:80%;" src='file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/ros.png'><br><figcaption>Figure 1. Effects of microcystin-LR in eukaryotic cells.</figcaption>
+			</figure>
+			<p style="font-size:19px;" class="justify">When studying toxicity effects of cyanobacterial toxin, microcystin-LR, to higher eukaryotic cells we found out that it causes oxidative stress in cells. This is due to inhibition of protein phosphatases 1 and 2 which then leads to excessive phosphorylation of target proteins. Excessive phosphorylation in turn increases formation of reactive oxygen species (ROS), causing oxidative stress response. This is presented in the figure 1. We found out that these toxicity effects are similar in lower eukaryotes such as yeast. Realizing this made us think how we could use MC-LR’s natural toxicity effects to sense the toxin concentrations. </p>
+			<br></br>
+			<h3>Stress Promoters</h3>
+			<br></br>
+			<p class="justify" style="font-size:19px">From various articles it came out that oxidative stress increases the activity certain transcription factors in Saccharomyces cerevisiae cells. Two main transcription factors, which activation is induced by oxidative stress are Skn7p and Yap1p. These transcription factors have specific binding sites in promoter areas of genes responsible from effects of oxidative stress. Skn7p binds to OSRE (oxidative stress response element) and Yap1p binds to YRE (Yap1p response element). Few of the best characterized promoter areas, where these transcription factors bind are for genes TSA1, CTT1 and CPP1. We choose to look into these more deeply and this led us into an idea of creating a sensor by fusing one of these promoter areas with yellow fluorescent protein (Venus) production and implementing this into S. cerevisiae.</p>
+			<br></br>
+			<p class="justify" style="font-size:19px">This kind of sensor would thus produce fluorescent signal when production of transcription factors Skn7p and Yap1p has been induced – meaning when the S. cerevisiae cells encounter stress. As microcystin is rather effective stress producing factor we can estimate that in lake waters that is the main thing that causes oxidative stress in yeast within a short time range. This leads to our hypothesis: fluorescent colour produced by engineered S. cerevisiae is proportional to microcystin concentration in measured water sample.</p>
+			<br></br>
+			<h3>Transporter</h3>
+			<br></br>
+			<p class="justify" style="font-size:19px">An important prerequisite for the stress promoters to work is that the toxin must be imported inside the cell. Microcystin-LR doesn’t pass the membrane without the help of specific transporter proteins. In human cells OATP transporter (organic anion transport peptide) is responsible for MC’s transport. Among Valerio et al. yeast strain VL3 has the most similar transporter from S. cerevisiae strain. We also did a blast to confirm this data and come to a conclusion that the human OATP transporter and QDR2 transporter form VL3 are really similar. Transporters form all common lab strains differ significantly from these.</p>
+			<br></br>
+			<p class="justify" style="font-size:19px">It has been confirmed that this QDR2 transporter from VL3 can transport microcystin inside the yeast cell (Valerio et al.). We reasoned that by replacing the original transporter of S. cerevisiae lab strain (W303a/SS238) with QDR2 transporter we could make this strain able to transport the toxin. The reason why we didn’t want to work with VL3 was that it’s used and optimized for wine production, not for lab work. We though planned to use it as a positive control in our experiments to see how the changing of transporter affects the toxicity effect.</p>
+			<br></br>
+		</div>
     
-    
-    </div>
-    </div>
-    </div>
+	
+		<div class="section">
+		<p><i>Did you know?<br></br>The oldest known fossils are cyanobacteria from Archaean rocks of western Australia, dated 3.5 billion years old.</i></p>
+		</div>
+		
+		<div class="container">	
+				
+		<h1 id="THREE">Degradation</h1>
+		<br></br>
+		<p class="justify" style="font-size:19px">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		<br></br>
+		</div>
+
+		
+			
+	</div>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -1,5 +1,5 @@
 .teamphoto {
-	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/team2_scaled.JPG') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/team2_scaled.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 30%;
 	height: 110%;
@@ -9,8 +9,96 @@
 
 
 ul.topnav li a.current {
-	color: #696969;
+	color: #000080;
 	
+}
+
+ul.topnav li a img {
+	position:absolute;
+	width:10%;
+}
+
+ ul.botnav li a.active { 
+   color: #F0C133;
+ }
+
+.section {
+	/*background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/trees.png') no-repeat;*/
+	/*background-size: 100%;*/
+	position: relative;
+    margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+    padding: 0;
+	height: 170px;
+    background-color: #5D5B5E;
+    overflow: hidden;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+}
+
+.algaephoto {
+	margin-bottom: 30px;
+	margin-right: 15px;
+	vertical-align: middle;
+	float: left;
+	width: 30%;
+	border: 5px;
+}
+
+.box-shadow {
+	  position: relative;
+	  float: right;
+}
+
+.box-shadow::after {
+    box-shadow: inset 0 0 10px 10px white;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	height: 90%;
+    width: 30%;
+}
+
+section h2 {
+	display: block;
+	margin-top: 250px;
+	font-size: 70px;
+	color: white;
+}
+
+p.justify {
+	text-align: justify;
+}
+
+.modelingphoto {
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/dna.jpg') no-repeat;
+	background-size: 100%;
+	background-position: 0% 0%;
+	height: 110%;
+	width: 100%;
+}
+
+.hpphoto {
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/jarvi.jpg') no-repeat;
+	background-size: 100%;
+	background-position: 0% 0%;
+	height: 110%;
+	width: 100%;
+}
+
+.collabphoto {
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/jarvi2.jpg') no-repeat;
+	background-size: 100%;
+	background-position: 0% 0%;
+	height: 110%;
+	width: 100%;
 }
 
 

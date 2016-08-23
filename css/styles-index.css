@@ -152,15 +152,15 @@ section h1 {
 }
 
 
-/*.lakephoto {
+.lakephoto {
 	/*background: url('/2016/img/lake2.jpg') no-repeat;*/
-	/*background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lake2.jpg') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lake2.jpg') no-repeat;
 	background-size: 100%;
 	background-size: cover;
 	background-position: 0% 30%;
 	height: 110%;
 	width: 100%;
-}*/
+}
 
 /* Emphasis Title KOKEILU
 -----------------------------------------------------------------*/
@@ -196,7 +196,7 @@ video#bgvid {
 }
 
 .sciencephoto {
-	background: url('/2016/img/colorful2.jpg') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -339,7 +339,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-	color: #23527c;
+	color: #000080;
 }
 
 .shrink{
@@ -372,10 +372,11 @@ ul.botnav li a {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
+	font-weight: bold;
 }
 
 ul.botnav li a:hover {
-	color: #23527c;
+	color: #F0C133;
 }
 
 
