@@ -36,7 +36,11 @@ ul.topnav li a img {
 	font-size: 20px;
 	text-align: center;
 	color: white;
-	padding-top: 40px;
+	padding-top: 23px;
+}
+
+.section p {
+	margin: 0;
 }
 
 .algaephoto {
@@ -86,7 +90,7 @@ p.justify {
 }
 
 .hpphoto {
-	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/jarvi.jpg') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lake.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -94,12 +98,55 @@ p.justify {
 }
 
 .collabphoto {
-	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/jarvi2.jpg') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/jarvi3.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
 	width: 100%;
 }
 
+.achievementsphoto {
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lake1.jpg') no-repeat;
+	background-size: 100%;
+	background-position: 0% 0%;
+	height: 110%;
+	width: 100%;
+}
 
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 47px;
 
+  /* Dimensions */
+  width: 100%;
+  height: 3px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: #F0C133;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #F0C133;
+}
+
+progress::-moz-progress-bar {
+  background-color: #F0C133;
+}
