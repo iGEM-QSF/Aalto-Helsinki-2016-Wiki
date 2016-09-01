@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<script src="js/jquery-3.1.0.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/kokeilu.css" rel="stylesheet">
+	
+	
+    <meta charset="utf-8">
+    <title>backgroundVideo - Simple Example</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body>
+
+	<div style="position: relative; overflow: hidden; z-index: 10; width: 1349px; height: 635px;" id="video-wrap" class="video-wrap">
+            <video style="position: absolute; z-index: 1; width: 1349px; height: 758.813px; transform: translate3d(0px, -62px, 0px);" preload="metadata" autoplay="" loop="" id="my-video">
+                <source src="file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/video/1080p.mp4" type="video/mp4">
+                <source src="file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/video/1080p.webm" type="video/webm">
+            </video>
+        </div>
+		
+    <script type="text/javascript" src="http://rawgit.com/linnett/backgroundVideo/master/backgroundVideo.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            $('#my-video').backgroundVideo({
+                pauseVideoOnViewLoss: false
+            });
+        });
+    </script>
+
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--script src="./Tinyone - HTML_files/jquery.min.js"></script>
+    <script src="./Tinyone - HTML_files/bootstrap.min.js"></script>
+    <script src="./Tinyone - HTML_files/offcanvas.js"></script>
+    <script src="./Tinyone - HTML_files/function.js"></script-->
+  
+
+</body></html>

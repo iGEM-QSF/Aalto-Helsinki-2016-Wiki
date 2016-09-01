@@ -6,8 +6,10 @@ a img {
 	width: 80%;
 }
 
-#svg {
-	margin-left: 6%;
+#svg{
+	padding-top: 10%;
+	margin-left: 25%;
+	position: inherit;
 }
 
 @font-face {
@@ -95,10 +97,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation arrows */
 
 section {
-	text-align: center;
-	position: relative;
+	/*text-align: center;*/
 	/*margin: 40px;*/
-	height: calc(100% - 80px);
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -108,7 +109,7 @@ section h1 {
 
 .lakephoto {
 	/*background: url('/2016/img/lake2.jpg') no-repeat;*/
-	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/snapshot.png') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/snapshot.png') no-repeat;
 	background-size: 100%;
 	background-size: cover;
 	background-position: 0% 30%;
@@ -117,11 +118,12 @@ section h1 {
 }
 
 video#bgvid { 
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
+    min-width: 110%;
     min-height: 100%;
+	background-size: cover;
     width: auto;
     height: auto;
     z-index: -100;
@@ -130,11 +132,11 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url(/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lake2.jpg) no-repeat;
-    background-size: cover; 
+    
 }
 
 .sciencephoto {
-	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
+	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -178,7 +180,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-	color: #A5410B;
+	color: #000080;
 }
 
 .shrink{
@@ -215,7 +217,7 @@ ul.botnav li a {
 }
 
 ul.botnav li a:hover {
-	color: #A5410B;
+	color: #F0C133;
 }
 
 /* CSS Parallax  
