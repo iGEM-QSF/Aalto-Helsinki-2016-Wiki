@@ -10,6 +10,8 @@ a img {
 	padding-top: 10%;
 	margin-left: 25%;
 	position: inherit;
+	margin: auto;
+	display: block;
 }
 
 @font-face {
@@ -180,7 +182,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-	color: #000080;
+	color: #A5410B;
 }
 
 .shrink{
@@ -217,7 +219,7 @@ ul.botnav li a {
 }
 
 ul.botnav li a:hover {
-	color: #F0C133;
+	color: #A5410B;
 }
 
 /* CSS Parallax  
