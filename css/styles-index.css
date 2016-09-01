@@ -108,7 +108,7 @@ section h1 {
 
 .lakephoto {
 	/*background: url('/2016/img/lake2.jpg') no-repeat;*/
-	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/snapshot.png') no-repeat;
+	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/snapshot.png') no-repeat;
 	background-size: 100%;
 	background-size: cover;
 	background-position: 0% 30%;
@@ -134,7 +134,7 @@ video#bgvid {
 }
 
 .sciencephoto {
-	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
+	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -178,7 +178,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-	color: #000080;
+	color: #A5410B;
 }
 
 .shrink{
@@ -215,7 +215,7 @@ ul.botnav li a {
 }
 
 ul.botnav li a:hover {
-	color: #F0C133;
+	color: #A5410B;
 }
 
 /* CSS Parallax  
