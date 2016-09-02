@@ -17,6 +17,24 @@
 	width: 100%;
 }
 
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#svg1{
+	padding-top: 7%;
+	margin-left: 35%;
+	position: inherit;
+	margin: auto;
+	display: block;
+}
+
+
 
 
 ul.topnav li a.current {
@@ -25,19 +43,27 @@ ul.topnav li a.current {
 }
 
 ul.topnav li a img {
-	position:absolute;
-	width:10%;
+	position:relative;
+	width:15%;
 }
 
  ul.botnav li a.active { 
    color: #F0C133;
  }
 
- svg a.index:hover{
-	 fill: #000080;
-	 text-decoration: underline;
+ 
+ .index:hover{
+	 opacity: 0.6;
 	 
  }
+ @font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .section {
 	/*background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/trees.png') no-repeat;*/
