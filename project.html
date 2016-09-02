@@ -34,16 +34,17 @@
 
     <body class="teambackground">
 
-    <section class="lakephoto parallax">
-	<h2 class="title">Project</h2>
-    
-    </svg>
+
+<div style="height:100%">
+    <section class="lakephoto parallax" style="text-align:center"> 
+<h2 class="title">PROJECT</h2>
     </section>
+</div>
 
 
-    <div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features">
+    <div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features" style="position: absolute; width:100%; background:white;" >
 	    <div class="navbar navbar-fixed-top">
-			 <ul class="topnav">
+			 <ul class="topnav" style="font-family: robotolight;">
 				<li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
 				<li style="float:right"><a href="collaboration.html"><b>Collaboration</b></a></li>
 				<li style="float:right"><a href="humanpractices.html"><b>Human Practices</b></a></li>
@@ -54,7 +55,7 @@
 				<li style="float:left"><a href="index.html"><img src='img/logo.png' style="margin-left:3px;"></img></a></li>
 			</ul> 
 		</div>
-    </div>
+
     
     <script> $(window).scroll(function() {
     if ($(this).scrollTop() > 640){ // Set position from top to add class
@@ -117,6 +118,12 @@
 		
 			
 	</div>
+
+	<script>
+	$(window).scroll(function(){
+		$(".title").css("opacity", 1 - $(window).scrollTop() / 500);
+	});
+	</script>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -10,6 +10,18 @@
 
 }
 
+.lakephoto {
+    /*background: url('/2016/img/jarvi.jpg.jpg') no-repeat;*/
+    background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/jarvi.jpg') no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position: 0% 30%;
+    height: 110%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+}
+
 
 ul.topnav li a.current {
 	color: #A5410B;
@@ -85,11 +97,14 @@ p.justify {
 }
 
 .modelingphoto {
-	background: url('img/dna.jpg') no-repeat;
+	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/dna.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
 	width: 100%;
+    position: fixed;
+    z-index: 0;
+
 }
 
 .hpphoto {
@@ -98,6 +113,8 @@ p.justify {
 	background-position: 0% 0%;
 	height: 110%;
 	width: 100%;
+    position: fixed;
+    z-index: 0;
 }
 
 .collabphoto {
@@ -106,6 +123,8 @@ p.justify {
 	background-position: 0% 0%;
 	height: 110%;
 	width: 100%;
+    position: fixed;
+    z-index: 0;
 }
 
 .achievementsphoto {
@@ -114,6 +133,8 @@ p.justify {
 	background-position: 0% 0%;
 	height: 110%;
 	width: 100%;
+    position: fixed;
+    z-index: 0;
 }
 
 progress {
@@ -349,6 +370,3 @@ progress::-moz-progress-bar {
         }
 }
 
-#svgteam {
-
-}

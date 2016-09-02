@@ -138,11 +138,13 @@ video#bgvid {
 }
 
 .sciencephoto {
-	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
+	background: url('/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lab.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
 	width: 100%;
+	position: fixed;
+    z-index: 0;
 }
 
 .handshakephoto {
