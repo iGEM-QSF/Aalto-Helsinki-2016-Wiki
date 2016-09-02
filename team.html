@@ -34,12 +34,13 @@
 
     <body class="teambackground">
 
-
-    <section class="teamphoto parallax">  
-    	<h2 class="title">Team</h2>
+<div style="height:100%">
+    <section class="teamphoto parallax" style="text-align:center"> 
+<h2 class="title">ABOUT US</h2>
     </section>
+</div>
 
-	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features">
+	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features" style="position: absolute; width:100%; background:white;" >
 	    <div class="navbar navbar-fixed-top">
 			<ul class="topnav">
 				<li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
@@ -262,20 +263,33 @@
 		</div>
 	</div>
 
-	<script>
+
+    
+
+	<!--script>
 	$(document).ready( function() {
 	    var parallax = document.querySelector(".parallax");
 		var speed = 0.75;
 
 		function parallaxanimation() {
-			var elBackgroundPos = "0%" + (window.pageYOffset * speed) + "px";
+			var elBackgroundPos = "0%" + (window.pageYOffset * speed - 0.2 * window.innerHeight) + "px";
 			parallax.style.backgroundPosition = elBackgroundPos;
 		}
 		
+		parallaxanimation();
+
 		window.onscroll = parallaxanimation;
 		
 	});
-	</script>
+	</script-->
+
+		<script>
+
+$(window).scroll(function(){
+	$(".title").css("opacity", 1 - $(window).scrollTop() / 500);
+});
+
+</script>
 	
 	<script>
 	$(document).ready(function () {
@@ -338,6 +352,8 @@
 	});	
 	
     </script>
+
+
 	
 	
     

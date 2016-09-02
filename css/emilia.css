@@ -5,6 +5,9 @@
 	height: 110%;
 	width: 100%;
 	/*background: #cc6055;*/
+    position: fixed;
+    z-index: 0;
+
 }
 
 
@@ -156,6 +159,7 @@ progress::-moz-progress-bar {
 	font-size: 120px; 
 	letter-spacing: 2px;
 	text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+
 }
 
 
@@ -343,4 +347,8 @@ progress::-moz-progress-bar {
             left: -14px;
             right: auto;
         }
+}
+
+#svgteam {
+
 }
