@@ -64,10 +64,22 @@
 	
 	
 	<div class="block-wrapper-inner" style="padding-top: 15px;">
-		<div class="container">
-			<h1 id="ONE">Enzyme Kinetics</h1>
+		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+		</br>
+			<h1 id="ONE">Introduction</h1>
 			<br></br>
-			<p class="box-shadow" style="font-size:19px"><img class="algaephoto" src='img/sinileva.jpg'></img><br>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
+			<p style="font-size:19px;" class="justify">As part of our project, we are designing a novel detection mechanism for the cyanobacterial toxin microcystin in live yeast (Saccharomyces cerevisiae) cells. The essential idea is to couple the yeast’s natural response to the toxin to the production of a yellow ﬂuorescent protein, Venus. In our concept for the detection mechanism, a sample of water, either contaminated with microcystin or not, is dropped on a culture of live yeast cells.
+
+Microcystin then functions as follows: the genetically modiﬁed yeast take the toxin in through a transporter, QDR2, after which the toxin inhibits the function of protein phosphatases in the cell. This leads to an abundance of chemical reactions that produce an accumulation of Reactive Oxygen Species (ROS). The cell naturally ﬁghts against this accumulation of harmful oxygen species through a mechanism known as Oxidative Cell Response, or OSR.
+
+Our detection mechanism is based on the idea of taking this ready mechanism, OSR, and modifying it to produce a visible response. In the interests of this, we have taken three naturally occurring promoters from genes involved in the yeast’s oxidative cell response: CTT1, CPP1 and TSA1.
+
+These promoters are structured as follows. CTT1 has a single binding site for a transcription factor known as YAP1, and an unknown number of other binding sites for the factor MSA2. Meanwhile, the other two promoters have binding sites for YAP1 and a paralog of MSA2 known as SKN7. CCP1 has one binding site for YAP1 and two for SKN7 while TSA1 has two binding sites for YAP1 and three for SKN7.
+
+In our constructs, these promoters are linked to standard genes expressing yellow ﬂuorescence, YFP. The hope is that we can roughly estimate the microcystin content of the sample from the ﬂuorescent activity of the live yeast cells.
+
+To study our detection mechanism mathematically, we are creating a model of the transcription factor YAP1 (and later, SKN7) and its activation in the cells, hoping to (1) validate our model by replicating experimental results for each construct, (2) determine theoretical detection tresholds and measurement accuracy and (3) provide suggestions for optimal promoter design for future iterations of the project.
+</p>
 			<br></br>
 
 		</div>
@@ -77,13 +89,60 @@
 		<h2 style="float:left; margin-left:165px; margin-top: 10px;"><i>Did you know...</i></h2><br><br/><p style="float:left; margin-left:165px; margin-right:150px;"><i>People can be exposed to cyanotoxins by inhaling aerosols from water activities such as boating or jet-skiing.</i></p>
 		</div>
 		
-		<div class="container">	
+		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 				
-		<h1 id="TWO">Ipsum lorem</h1>
+		<h1 id="TWO">Regulation of the Transcription Factor YAP1</h1>
 		<br></br>
-		<p style="font-size:19px">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-		<br></br>
+		<p style="font-size:19px;" class="justify">YAP1P is upregulated by spatial accumulation into the nucleus. This occurs by inhibiting the transportation of YAP1 to outside the nucleus while still allowing its transportation inside. 
+
+More speciﬁcally, Yap1p contains two kinds of localization signals, a DNA-binding/nuclear localization signal (NLS) sequence in the N-terminus and a nuclear export signal (NES) contained in its C-terminus. Under normal conditions NES activity is higher compared to NLS activity and thus, Yap1p is exported out of the nucleus via the transporter Crm1p which recognizes the NES sequence. Under oxidative stress the NES is covered with the help of the proteins Gpx3p/Orp1p and Ybp1p, which prevents Yap1p from leaving the nucleus, causing the protein to accumulate.
+
+Orp1p is a protein inside the yeast cell which can recognize intracellular H2O2 and transfer this information to Yap1p. Yap1p forms an intracellular disulifde bond which covers the NES and thus, prevents Yap1p from leaving the nucleus. Thioredoxin (Trx) is responsible for reducing Yap1p and Opr1 (sensor and transcription factor) [2]. Since TRX2 is one of the target genes of Yap1p, Yap1p is autoregulated [2]. Prx enzymes might also play a role in the autoregulation of Yap1p.
+</p>
+		
+
 		</div>	
+
+		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+		<br></br>
+		<h1 id="TWO">Models of our Detection Mechanism</h1>
+		<br></br>
+		<p style="font-size:19px;" class="justify">Our detection Mechanism consists of using transcription factors which are regulated during the oxidative stress response in order to express a Yellow Fluorescent Protein (YFP), the activity of which can be measured with a fluorometer.</p>
+		<br></br>
+		<h2>Simpliﬁed Molecular Model</h2>
+	</br>
+		<h3>Reactions for the molecular model of YAP1P regulation</h3>
+		</br>
+		<p style="font-size:19px;" class="justify">For the binding of molecules we will use the symbol ”:”. 
+<ul>
+<li>CR : T1 ⇒ NR. This reaction represents the transport of the Transcription Factor YAP1P from the cytoplasm into the nucleus. We chose to represent the same transcription factor as two diﬀerent species N-YAP1P and C-YAP1P depending whether it is located in the nucleus or the cytoplasm since they exhibit diﬀerent behaviour with respect to our detection mechanism. We are primarily interested in the YAP1P located in the nucleus since protein transcription of YFP occurs in the nucleus (?).</li>
+<li>NR : T2 ⇒ CR. As a regulatory mechanism for the YAP1P in the nucleus, the transporter (Crm1) exports the transcription factor outside of the nucleus. </li>
+<li>CO : T1 ⇒ NO. The YAP1P transcription factor can freely move from the cytoplasm into the nucleus through Pse1p transporter. This phase is not inhibited by oxidative stress.</li>
+<li>CR : GPX3 ⇒ CO. The YAP1P transcription factor binds to the protein GPX3 after it senses a bigger ROS quantity and gets oxidized.</li>
+<li>CO ⇒ CR. This reaction represents the transcription factor getting reduced back once the ROS quantity decreases with the help of TRX.</li>
+</ul>
+</p>
+<br></br>
+<h2>Mathematical Model</h2>
+</br>
+<h3>Diﬀerential Equations of the Mathematical Model</h3>
+</br>
+<p style="font-size:19px;" class="justify">In order to model our detection mechanism as accurately as possible, we tried describing the rates of change of the different substrates which we described above. </p>
+	<p style="font-size:19px;" class="justify">
+	<ul>
+<li>D1: d(CR) dt = +k5[NR]−k4[CR] + k2[CO]−k1[CR] </li>
+<li>D2: d(CO) dt = +k1[CR]−k2[CO]−k3[CO] </li>
+<li>D3: d(NO) dt = +k3[CO]−k6[NO] </li>
+<li>D4: d(NR) dt = +k6[NO] + k4[CR]−k5[NR] </li>
+
+</ul>
+</p>
+
+<p style="font-size:19px;" class="justify">
+Since one of our assumptions is that the inﬂow and outﬂow of yap1p transcription factors in reduced form is found on a steady−state, our rate constants k4 and k5 have the same magnitude, simplifying our equations.</p>
+		
+		</div>	
+	</br>
 	
 	
 	

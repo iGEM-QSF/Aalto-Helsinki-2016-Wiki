@@ -126,9 +126,11 @@ video#bgvid {
     min-width: 110%;
     min-height: 100%;
 	background-size: cover;
+
     width: auto;
     height: auto;
     z-index: -100;
+
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
