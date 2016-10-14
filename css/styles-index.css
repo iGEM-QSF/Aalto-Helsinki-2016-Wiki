@@ -1,3 +1,21 @@
+/*Changes to the top menu*/
+#top_menu_14 {
+position:absolute;
+}
+
+#content {
+width:auto;
+margin-left:0px;
+}
+
+#sideMenu {
+display:none;
+}
+
+#top_title {
+display:none;
+}
+        
 html, body, section, .container {
 	height: 100%;
 }
@@ -16,21 +34,18 @@ a img {
 
 @font-face {
     font-family: 'rosariobold';
-    src: url('rosario-bold-webfont.woff2') format('woff2'),
-         url('rosario-bold-webfont.woff') format('woff');
+    src: url('rosario-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'bebas_neuebold';
-    src: url('bebasneue_bold-webfont.woff2') format('woff2'),
-         url('bebasneue_bold-webfont.woff') format('woff');
+    src: url('bebasneue_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 span h1 {
 	padding-top: 10%;
 }
@@ -72,7 +87,6 @@ h1 span {
 
 body {
    height: 100%;
-   /*background: url('/2016/img/final_cropped_background.png') no-repeat;*/
    background-color: white;
    background-size: cover;
   -webkit-font-smoothing: antialiased; /* font smoothing */
@@ -110,9 +124,8 @@ section h1 {
 }
 
 .lakephoto {
-	/*background: url('/2016/img/lake2.jpg') no-repeat;*/
 	background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/snapshot.png') no-repeat;
-	background-size: 100%;
+    background-size: 100%;
 	background-size: cover;
 	background-position: 0% 30%;
 	height: 110%;
@@ -151,7 +164,6 @@ video#bgvid {
 
 .handshakephoto {
 	background: url('/2016/img/handshake3.jpg') no-repeat;
-	/*background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/2016/img/handshake.jpg') no-repeat;*/
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -165,7 +177,7 @@ section nav a {
 }
 
 ul.topnav {
-	list-style-type: none;
+	list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -282,4 +294,5 @@ ul.botnav li a:hover {
 	.handshakephoto {
 		background-position: 0% 25%;
 	}
+
 }
