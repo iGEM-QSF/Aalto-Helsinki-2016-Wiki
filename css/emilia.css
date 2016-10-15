@@ -48,13 +48,16 @@ ul.topnav li a img {
 	margin-right: 0;
 	margin-top: 0;
     padding: 0;
-	height: 170px;
-    background-color:  #d4d4d4;
+	height: 130px;
+    background-color:  #b1834f;
     overflow: hidden;
 	font-size: 20px;
 	text-align: center;
 	color: white;
 	padding-top: 23px;
+	-webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.24);
+box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.24);
 }
 
 .section p {

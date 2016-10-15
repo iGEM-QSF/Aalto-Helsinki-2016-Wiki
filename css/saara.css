@@ -57,6 +57,15 @@ ul.topnav li a img {
 	 
  }
  @font-face {
+    font-family: 'im_fell_french_canon_proIt';
+    src: url('fefcit27c-webfont.woff2') format('woff2'),
+         url('fefcit27c-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'robotoregular';
     src: url('roboto-regular-webfont.woff2') format('woff2'),
          url('roboto-regular-webfont.woff') format('woff');
