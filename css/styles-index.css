@@ -202,16 +202,20 @@ ul.topnav li a:hover {
 }
 
 .shrink{
-	/*background-color: #FFFFFF;*/
-	background: url('../img/wiki05a.jpg') no-repeat;
-	background-size: cover;
-	background-size: 100%;
-    width: 100%;
-    position: fixed;
+	background-color: #FFFFFF;
 }
 
 ul.shrink li a{
-	color: white;
+	color: black;
+}
+
+.shrink_botnav{
+	background-color: #FFFFFF;
+	
+}
+
+ul.shrink_botnav li a{
+	color: black;
 }
 
 ul.botnav {

@@ -68,8 +68,6 @@
         <div class="block-wrapper-inner" style="padding-top: 15px;">
             <div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
             </br>
-				<h1 id="ONE">Collaboration</h1>
-				<br></br>
                 <h1 id="TWO">CollabSeeker</h1>
 				<p style="font-size:19px" class="justify"><br>From the very beginning when we started making our first efforts to collaborate with other teams we realized that there was very little information available publicly. Aalto-Helsinki 2015 iGEM team had already come up with and created a rough version of a search engine idea for collaboration which would allow teams of the year to find out about one another and their projects. We took up the work and built the CollabSeeker. While keeping a similar visual design we re-implemented the engine in Java and Spring frameworks, modified the HTML templates and added quite a few functionalities. 
                 Using this tool one can easily find out what iGEM teams of the year are busy with. It contains detailed description of projects that teams have submitted on their wiki pages. Search results also give links to teams’ Facebook and Twitter accounts. In addition, each team already has an account created by us and can update them according to their collaboration needs.
@@ -108,6 +106,66 @@
             </br>
                 <p style="font-size:19px" class="justify">We are forever grateful to Kaarina Sivonen’s group and especially David Fewer, who helped us and answered our questions and Matti “Maza” Wahlsten, who very kindly performed all the enzyme activity tests, which enabled us to verify that our idea and execution actually work. They saved us a lot of time and effort and were ready to help and answer our questions regarding cyanobacteria and microcystin whenever needed.</p>
             </br></br>
+		</div>
+	
+	        <div class="section" style="background-color: #E18327">
+					<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
+			</div>
+			</br></br>
+	
+	<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+                <h1 id="FIVE">InterLab study</h1>
+				</br>
+				<h3>Background</h3>
+				</br>
+                <p style="font-size:19px" class="justify">In order to compare results of similar experiments from different sources iGEM has proposed Interlab studies. It’s a set of experiments that teams can volunteer to do in order to deal with relative results issue. The aim is to improve the tools available to both the iGEM community and the synthetic biology community as a whole.  This year’s goal was to let different teams measure fluorescence level of GFP protein.  With minor difficulties we managed to complete the experiments and submit our results.</p>
+				</br></br>
+				<h3>Overview</h3>
+				</br>
+                <p style="font-size:19px" class="justify">Work done in different labs can be hard to compare sometimes due to different measurement techniques or reporting methods. In order to address this issue iGEM has come up with Interlab studies which can be carried out by different teams around the world. Results of these studies are eventually combined to give understanding of relative issues arising during the process. 
+				</p>
+				</br>
+				<p style="font-size:19px" class="justify">One of the big challenges in synthetic biology is that measurements of fluorescence usually cannot be compared because they are reported in different units or because different groups process data in different ways.Often one works around this by doing some sort of “relative expression” comparison; however, being unable to directly compare measurements makes it harder to debug engineered biological constructs, harder to effectively share constructs between labs, and harder even to just interpret your experimental controls.
+				</p>
+				</br>
+				<p style="font-size:19px" class="justify">This year iGEM had two protocols for measuring GFP fluorescence that would result in common, comparable units for teams to test out.
+				</p>
+				<br></br>
+				<h3>Results</h3>
+				</br>
+				<h4>Cell competency test</h4>
+				</br>
+				<p style="font-size:19px" class="justify">Before using your competent cells in an experiment, we had to use the Competent Cell Test Kit provided by iGEM to test the efficiency of our competent cells.The kit included five vials of purified DNA from BBa_J04450 (provide link for this) in plasmid backbone pSB1C3. Each vial contained DNA at a different concentration: 50pg/&#181;l, 20pg/&#181;l, 10pg/&#181;l, 5pg/&#181;l, 0.5pg/&#181;l. Transformations had to be performed  with each of these to determine how efficient our competent cells were.</p>
+				</br>
+				<p style="font-size:19px" class="justify">We used TOP10 <i>Escherichia coli</i> competent cells and SOC medium from Gibson assembly kit that we ordered separately from New England Biolabs. On the first try we got around 10 colonies overall and clearly failed. Then we tried it again with one difference in the procedure - we added plasmids into the cells during the transformation, not the other way around which was written in the iGEM protocol. Unfortunately, it didn’t work the second time either and we got similar results. Not giving up, we tried it the third time and this time additionally we used pJR18 plasmid for positive control with three concentrations - 500 pg/&#181;l, 50 pg/&#181;l and 5 pg/&#181;l and included the colony results in the Excel sheet [4]. Also for the antibiotic we used ampicillin instead of chloramphenicol and this time it finally worked. Although after counting the colonies it was revealed that transformation efficiency was quite low - 1.8E7 cfu/&#181;L on average and weighted 1,6E7 cfu/&#181;L [4] it was good enough to proceed with the transformations and start the actual experiments.</p>
+				</br>
+				<h4>Calibration protocols</h4>
+				</br>
+				<p style="font-size:19px" class="justify"><i>1. OD600 Reference point</i></p>
+				</br>
+				<p style="font-size:19px" class="justify">We accidentally put the LUDOX solution into -20 storage room so we had to order a new one, but after it arrived we put it into wells with water according to the protocol [2] and measured it with a plate reader. After entering the numbers gotten from plate reader into the excel sheet we got the final values - corrected Abs600, reference OD600 and correction factor [5].</p>
+				</br>
+				<p style="font-size:19px" class="justify"><i>2. Protocol FITC fluorescence standard curve</i></p>
+				</br>
+				<p style="font-size:19px" class="justify">By following all the advice and procedures mentioned in the Calibration Protocol [2] we prepared 1xPBS, 2xFITC, incubated 2xFITC and prepared the 1xFITC solutions. Then having the solution, we did the serial dilutions according to the protocol and measured the fluorescence with a plate reader. After entering the numbers into the excel sheet we were able to calculate the standard curve of fluorescence for FITC concentration.</p>
+				</br>
+				<h4>Cell measurement protocol</h4>
+				</br>
+				<p style="font-size:19px" class="justify">Finally, after finishing all the calibrations we did the transformations of five plasmids (three devices, positive and negative control). We succeeded only on our third time. The plasmids we received in the measurement kit were dried out so we had to resuspend them in 100&#181;Ls of diH2O. Almost everything was done according to the protocol. Few differences were that after resuspending dried up DNA we were supposed to add 5&#181;L it but we added 10&#181;L. Then for the transformation of device 1 we did the heat shock for 70 seconds instead of 60. Also, we had to keep plates with colonies in the fridge for about three weeks due to some reasons. Therefore, we decided to do the restreaking of all colonies. Later these new colonies were used for cell cultures.</p>
+				</br>
+				<p style="font-size:19px" class="justify">After growing of cell cultures was done we measured their OD600 and imported into normalization tab in the Excel sheet. Later, after diluting the cultures to a target OD600 of 0.02 and completing other necessary procedures we measure the hourly recording with a plate reader and imported again into the Excel sheet. Results and graphs have been calculated and sent to the iGEM headquarters.</p>
+				</p>
+				</br>
+				<h3>Protocols</h3>
+				</br>
+				<p style="font-size:19px" class="justify"><a href="http://parts.igem.org/Help:Competent_Cell_Test_Kit">[1] Competent Cell Test Kit </a><br>
+				<a href="http://2016.igem.org/wiki/images/c/c5/InterLab_iGEM2016_Plate_Reader_Protocol_Updated_July.pdf">[2] Plate Reader Protocol </a><br>
+				<a href="http://parts.igem.org/Help:Protocols/Transformation">[3] Transformation Protocol</a><br>
+				<a href="http://parts.igem.org/Help:InterLab_Measurement_Kit">[3.5] InterLab Measurement Kit </a><br>
+				</p>
+				<br></br>
+
+				
 		</div>
     </div>
 
