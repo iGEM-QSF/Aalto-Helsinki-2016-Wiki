@@ -15,7 +15,7 @@
 
 .lakephoto {
     /*background: url('/2016/img/jarvi.jpg.jpg') no-repeat;*/
-    background: url('../img/wiki05.jpg') no-repeat;
+    background: url('../img/wiki18.jpg') no-repeat;
     background-size: 100%;
     background-size: cover;
     background-position: 0% 30%;
@@ -103,7 +103,7 @@ p.justify {
 }
 
 .modelingphoto {
-	background: url('../img/wiki18.jpg') no-repeat;
+	background: url('../img/wiki05.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -124,7 +124,7 @@ p.justify {
 }
 
 .collabphoto {
-	background: url('../img/community.jpg') no-repeat;
+	background: url('../img/wiki14.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;

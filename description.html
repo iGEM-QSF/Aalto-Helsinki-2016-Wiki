@@ -35,7 +35,7 @@
 
 
 <div style="height:100%">
-    <section class="lakephoto parallax" style="text-align:center; background-image: url('img/wiki05.jpg')"> 
+    <section class="lakephoto parallax" style="text-align:center;"> 
 <h2 class="title">PROJECT</h2>
     </section>
 </div>
@@ -67,7 +67,7 @@
     });
     </script>
     
-    <div class="block-wrapper-inner" style="padding-top: 15px;">
+    <div class="block-wrapper-inner" style="padding-top: 15px; position: relative">
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 		</br>
 			<h1 id="ONE">Overview</h1>
@@ -76,7 +76,7 @@
 		<br></br>
 		</div>
 		
-		<div class="section" style="font-family: robotolight;">
+		<div class="section" style="font-family: robotolight; background-color: #799aa1">
 		<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
 		</div>
 		
@@ -88,7 +88,7 @@
 			</br>
 			
 			
-			<p style="font-size:19px;" class="justify">When studying the toxicity of the cyanobacterial toxin microcystin-LR in higher eukaryotic cells, we found out that it causes oxidative stress in them. This is due to inhibition of protein phosphatases 1 and 2A (PP1 and PP2A) which then leads to hyperphosphorylation of target proteins. This excessive phosphorylation in turn increases the formation of reactive oxygen species (ROS), resulting in a oxidative stress response. This is presented in the figure 1. [1] Reactive oxygen species have many effects in the cell. For example, catalase production is significantly increased in the presence of ROS. Catalase is an enzyme found in nearly all living organisms that catalyses the decomposition hydrogen peroxide. It is one of the most important enzymes in protecting the cell from reactive oxygen species meaning that its production is activated when there is oxidative stress. We found out that similar toxicity effects can be observed in some lower eukaryotes, such as the yeast Saccharomyces cerevisiae. [2,3] Realizing this made us think of how we could use MC-LR's natural toxicity effects to sense the toxin concentrations.
+			<p style="font-size:19px;" class="justify">When studying the toxicity of the cyanobacterial toxin microcystin-LR in higher eukaryotic cells, we found out that it causes oxidative stress in them. This is due to inhibition of protein phosphatases 1 and 2A (PP1 and PP2A) which then leads to hyperphosphorylation of target proteins. This excessive phosphorylation in turn increases the formation of reactive oxygen species (ROS), resulting in a oxidative stress response. This is presented in the figure 1. <sup>[1]</sup> Reactive oxygen species have many effects in the cell. For example, catalase production is significantly increased in the presence of ROS. Catalase is an enzyme found in nearly all living organisms that catalyses the decomposition hydrogen peroxide. It is one of the most important enzymes in protecting the cell from reactive oxygen species meaning that its production is activated when there is oxidative stress. We found out that similar toxicity effects can be observed in some lower eukaryotes, such as the yeast Saccharomyces cerevisiae. <sup>[2,3]</sup> Realizing this made us think of how we could use MC-LR's natural toxicity effects to sense the toxin concentrations.
 			</p>
 			<figure style="float: right; text-align:center;">
 			<img style="width:80%; height; 80%" src='img/detection1.png'><br><figcaption>Figure 1. Effects of microcystin-LR in eukaryotic cells.</figcaption>
@@ -103,7 +103,7 @@
 			</br>
 			<h3>Transporter</h3>
 			</br>
-			<p class="justify" style="font-size:19px">An important prerequisite for the function of the stress promoters is that the toxin must be imported into the cell. Microcystin-LR doesn’t pass the cell membrane without the help of specific transporter proteins. In human liver cells, the membrane bound OATP transporter (organic anion transport peptide) was identified to imports MCs into the cell. OATPs belong to the superfamily of solute carriers and mediate the uptake of endogenous compounds such as hormones or bile salts but also a variety of xenobiotics. [7] In yeast, the QDR2 transporter has a similar function. [8] It has a broad substrate specificity and can transport many mono- and divalent cations as well as a variety or drugs. [9].  According to Valerio et al., the QDR2 transporter from the yeast strain VL3 is the most similar to human OATP out of all  S. cerevisiae strains. [2] We also did a BLAST search to confirm this data and come to the conclusion that QDR2 transporter from VL3 corresponded best to the human OATP transporter out of all yeast transporters. Transporters from all other common S. cerevisiae strains differ significantly from these.</p>
+			<p class="justify" style="font-size:19px">An important prerequisite for the function of the stress promoters is that the toxin must be imported into the cell. Microcystin-LR doesn’t pass the cell membrane without the help of specific transporter proteins. In human liver cells, the membrane bound OATP transporter (organic anion transport peptide) was identified to imports MCs into the cell. OATPs belong to the superfamily of solute carriers and mediate the uptake of endogenous compounds such as hormones or bile salts but also a variety of xenobiotics. [7] In yeast, the QDR2 transporter has a similar function. [8] It has a broad substrate specificity and can transport many mono- and divalent cations as well as a variety or drugs. [9].  According to Valerio et al., the QDR2 transporter from the yeast strain VL3 is the most similar to human OATP out of all  S. cerevisiae strains. <sup>[2]</sup> We also did a BLAST search to confirm this data and come to the conclusion that QDR2 transporter from VL3 corresponded best to the human OATP transporter out of all yeast transporters. Transporters from all other common S. cerevisiae strains differ significantly from these.</p>
 			</br>
 			<p class="justify" style="font-size:19px">It has been confirmed that the QDR2 transporter from VL3 can import microcystin [2]. We reasoned that by replacing the original QDR2 transporter of a S. cerevisiae lab strain (W303a/SS238) with the VL3 variant of the QDR2 transporter we could enable toxin import in a new strain. The reason for not wanting to work with VL3 was that it’s used and optimized for wine production, not for extensive gene engineering. Another reason for not choosing to engineer VL3 was that we would have had to do auxotrophic mutations for it first as such kind of this strain was not available. However, we planned to use VL3 as a positive control in our experiments to compare how changing the transporter of a lab strain effects observed toxicity effects. This way, we hope to see whether toxicity behaviour corresponding to VL3 can be observed.
 			</p>
@@ -117,7 +117,7 @@
 		</div>
     
 	
-		<div class="section" style="font-family: robotolight">
+		<div class="section" style="font-family: robotolight; background-color: #799aa1">
 		<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
 		</div>
 		
