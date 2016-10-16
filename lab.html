@@ -102,7 +102,63 @@
 		</br>
 			<h1 id="FOUR">Results</h1>
 			<br></br>
-			<p style="font-size:19px;" class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit arcu libero. Duis vitae cursus elit. Donec enim turpis, aliquam id neque at, faucibus porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et sollicitudin risus. Pellentesque risus magna, accumsan sit amet purus sed, ornare mattis diam. Morbi ac arcu metus. Praesent in massa lectus. Proin fringilla, erat a tempor imperdiet, nunc purus venenatis sem, vel finibus ex lacus a nisi. Morbi nibh augue, ultrices ut lacus id, laoreet aliquam mauris.</p>
+			<h2>Detection</h2>
+			<br></br>
+			<h2>Degradation</h2>
+			<br></br>
+			<p style="font-size:19px;" class="justify">These are the results for the degradation part of our project from the lab.			
+			<br></br>
+			For convenience, we have coded our four different MlrA constructs as follows:<br></br> 
+			MlrAE - MlrA produced in E. coli</br>
+			MlrAY - MlrA without mating factor alpha produced in S. cerevisiae</br>
+			MlrAYa - MlrA with mating factor alpha having only one propeptide sequence produced in S. cerevisiae</br>
+			MlrAY3a - MlrA with mating factor alpha having three propeptide sequences produced in S. cerevisiae<br></br>
+
+			<b>Plasmid amplification</b><br></br>
+
+			After we had planned our constructs for the degradation, we decided to use the services of GeneArt, since IDT was unable to produce the gBlocks we would have needed. This also meant that we wouldn’t need to spend time cloning the constructs into our plasmids, as GeneArt had a subcloning service we could use. For the cloning, we had to send them the plasmid backbones, so we amplified plasmids pET28a (for E.coli) and pRS415-GAL (for S. cerevisiae) with PCR and sent them to GeneArt. We received the cloned E. coli construct before the yeast ones, and decided to start working on it as it was our positive control, while we were waiting for the yeast constructs to arrive. With the positive control we were able to test some of our experiment setups before starting the actual work with the yeast versions.
+			<br></br>
+			<b>Initial expression and purification of MlrAE</b>
+			<br></br>
+			After transforming the plasmid we received from GeneArt into E. coli, our first goal when expressing MlrAE was to get a right sized protein produced and then purify it with its His-tag using Ni-NTA spin columns.
+			<br></br>
+			The expression was successful. The western blot (figure 1) shows that there is a band about 28 kDa in size, which corresponds to MlrA produced in E. coli in previous studies (Dziga et al., 2012). The calculated mass of MlrA is about 37 kDa, but when produced in E. coli, the actual size is only 28 kDa, presumably because of some protease activity specific to E. coli (Dziga et al., 2012). The enzyme is present in the soluble cytosol fractions (S2.1 and S2.2) and also in the cell debris fraction (P2). Localization in the cell debris would mean that the enzyme is either in the plasma membrane or as insoluble inclusion bodies in cytosol. It seems that there is leaky expression since there is a band also in the before induction sample (BI).
+			<br></br>
+			FIGURE 1!!!!
+			<br></br>
+			After successful production of MlrA in E. coli we wanted to purify it using the His-tag. We used commercial Ni-NTA spin columns designed for His-tagged protein purification (HisPur Ni-NTA Spin Columns from Thermo Fisher Scientific) to purify the supernatant fraction after cell lysis. 
+			<br></br>
+			However, from the western blot (figure 2), we could see that there was no binding of the enzyme to the column as all of it came out in the flow through fractions and nothing in elution. Failure of Ni-NTA spin column purification had also been reported previously (Dziga et al., 2012).
+			<br></br>
+			FIGURE 2!!!!
+			<br></br>
+			Even though we didn’t manage to purify the enzyme, we wanted to test if the MlrAE had activity.
+			<br></br>
+			<b>Initial enzyme activity assay of MlrAE</b>
+			<br></br>
+			For the first enzyme activity assay, our goal was to test our experimental setup and see if our positive control, MlrAE, had activity as it should, based on previous research (Dziga et al., 2012). In our assay, we prepared reaction mixtures of the enzyme and microcystin extract, and took samples at several timepoints. Our very first attempt was unsuccessful due to technical problems, but after optimizing the protocol with Matti Wahlsten, we repeated the experiment and got positive results. In this experiment we used the flow through fractions from the first purification attempt.
+			<br></br>
+			This time our experimental setup worked and our enzyme samples appeared to have activity (figure 3). There is clearly less microcystin in the enzyme samples than in the negative control, and the amount of microcystin diminishes as time goes by in the enzyme samples. These measurements were done mainly to verify that the setup had worked and that the enzyme had activity, so only a few samples were analysed to save time and resources.
+			In all of the enzyme activity graphs, the measurement points have been connected just to visualize the degradation of the enzyme, they are not trend lines and further conclusions based on those should not be made.
+			<br></br>
+			The sample analysis with LC-MS was done by Matti Wahlsten.
+			<br></br>
+			FIGURE 3!!!!!!!
+			<br></br>
+			This experiment showed that we have a positive control for the activity measurements of our yeast constructs once we would start experimenting with them. Our next goal was to measure the activity of a more purified enzyme, so that we could at some point quantify the amount of protein we would produce.
+			<br></br>
+			<b>Optimizing MlrAE purification</b>
+			<br></br>
+			After unsuccessful purification using standard conditions for spin column purification, we decided to try two different conditions: one where the column equilibration buffer did not contain imidazole and the other with denaturing conditions. These both were suggested in the spin columns’ troubleshooting guide for when the protein doesn’t bind to the column. In a previous study scientists had tried to purify the MlrA with His-tag in denaturing conditions but without success (Dziga et al., 2012). However, since our enzyme was detectable with the anti-His antibody in the western blot, there was a chance that with one of these conditions the binding would also work.
+			<br></br>
+			After western blots (figures 4 and 5), we saw that the enzyme did not bind to the column in either condition and again came out in the flow through fractions.
+			<br></br>
+			FIGURE 4 AND 5!!!!!!!
+			<br></br>
+
+			</p>
+			
+			
 		</div>
 		</br>
 		<div class="section" style="background-color: #8a4b29">
