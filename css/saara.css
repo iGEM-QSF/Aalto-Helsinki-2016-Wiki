@@ -74,8 +74,9 @@ ul.topnav li a img {
 
 }
 
-.img{
-	float: left;
+:target {
+  background: #ccc;
+  border: solid 1px #aaa;
 }
 
 .section {
