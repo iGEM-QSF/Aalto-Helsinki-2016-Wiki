@@ -68,50 +68,34 @@
 		</br>
 			<h1 id="ONE">Introduction</h1>
 			<br></br>
-			<p style="font-size:19px;" class="justify">As part of our project, we are designing a novel detection mechanism for the cyanobacterial toxin microcystin in live yeast (Saccharomyces cerevisiae) cells. The essential idea is to couple the yeast’s natural response to the toxin to the production of a yellow ﬂuorescent protein, Venus. In our concept for the detection mechanism, a sample of water, either contaminated with microcystin or not, is dropped on a culture of live yeast cells.
-
-Microcystin then functions as follows: the genetically modiﬁed yeast take the toxin in through a transporter, QDR2, after which the toxin inhibits the function of protein phosphatases in the cell. This leads to an abundance of chemical reactions that produce an accumulation of Reactive Oxygen Species (ROS). The cell naturally ﬁghts against this accumulation of harmful oxygen species through a mechanism known as Oxidative Cell Response, or OSR.
-
-Our detection mechanism is based on the idea of taking this ready mechanism, OSR, and modifying it to produce a visible response. In the interests of this, we have taken three naturally occurring promoters from genes involved in the yeast’s oxidative cell response: CTT1, CPP1 and TSA1.
-
-These promoters are structured as follows. CTT1 has a single binding site for a transcription factor known as YAP1, and an unknown number of other binding sites for the factor MSA2. Meanwhile, the other two promoters have binding sites for YAP1 and a paralog of MSA2 known as SKN7. CCP1 has one binding site for YAP1 and two for SKN7 while TSA1 has two binding sites for YAP1 and three for SKN7.
-
-In our constructs, these promoters are linked to standard genes expressing yellow ﬂuorescence, YFP. The hope is that we can roughly estimate the microcystin content of the sample from the ﬂuorescent activity of the live yeast cells.
-
-To study our detection mechanism mathematically, we are creating a model of the transcription factor YAP1 (and later, SKN7) and its activation in the cells, hoping to (1) validate our model by replicating experimental results for each construct, (2) determine theoretical detection tresholds and measurement accuracy and (3) provide suggestions for optimal promoter design for future iterations of the project.
-</p>
-			<br></br>
-
+			<p style="font-size:19px;" class="justify">As part of our project, we are designing a novel detection mechanism for the cyanobacterial toxin microcystin in live yeast (Saccharomyces cerevisiae) cells. The essential idea is to couple the yeast’s natural response to the toxin to the production of a yellow ﬂuorescent protein, Venus. In our concept for the detection mechanism, a sample of water, either contaminated with microcystin or not, is dropped on a culture of live yeast cells.<br></br>Microcystin then functions as follows: the genetically modiﬁed yeast take the toxin in through a transporter, QDR2, after which the toxin inhibits the function of protein phosphatases in the cell. This leads to an abundance of chemical reactions that produce an accumulation of Reactive Oxygen Species (ROS). The cell naturally ﬁghts against this accumulation of harmful oxygen species through a mechanism known as Oxidative Cell Response, or OSR.<br></br>Our detection mechanism is based on the idea of taking this ready mechanism, OSR, and modifying it to produce a visible response. In the interests of this, we have taken three naturally occurring promoters from genes involved in the yeast’s oxidative cell response: CTT1, CPP1 and TSA1.<br></br>These promoters are structured as follows. CTT1 has a single binding site for a transcription factor known as YAP1, and an unknown number of other binding sites for the factor MSA2. Meanwhile, the other two promoters have binding sites for YAP1 and a paralog of MSA2 known as SKN7. CCP1 has one binding site for YAP1 and two for SKN7 while TSA1 has two binding sites for YAP1 and three for SKN7.<br></br>In our constructs, these promoters are linked to standard genes expressing yellow ﬂuorescence, YFP. The hope is that we can roughly estimate the microcystin content of the sample from the ﬂuorescent activity of the live yeast cells.<br></br>To study our detection mechanism mathematically, we are creating a model of the transcription factor YAP1 (and later, SKN7) and its activation in the cells, hoping to (1) validate our model by replicating experimental results for each construct, (2) determine theoretical detection tresholds and measurement accuracy and (3) provide suggestions for optimal promoter design for future iterations of the project.</p>
 		</div>
-    
-	
+		<br></br>
+
 		<div class="section">
 				<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
 		</div>
+		<br></br>
 		
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 				
-		<h1 id="TWO">Regulation of the Transcription Factor YAP1</h1>
+		<h3>Regulation of the Transcription Factor YAP1</h3>
 		<br></br>
-		<p style="font-size:19px;" class="justify">YAP1P is upregulated by spatial accumulation into the nucleus. This occurs by inhibiting the transportation of YAP1 to outside the nucleus while still allowing its transportation inside. 
-
-More speciﬁcally, Yap1p contains two kinds of localization signals, a DNA-binding/nuclear localization signal (NLS) sequence in the N-terminus and a nuclear export signal (NES) contained in its C-terminus. Under normal conditions NES activity is higher compared to NLS activity and thus, Yap1p is exported out of the nucleus via the transporter Crm1p which recognizes the NES sequence. Under oxidative stress the NES is covered with the help of the proteins Gpx3p/Orp1p and Ybp1p, which prevents Yap1p from leaving the nucleus, causing the protein to accumulate.
-
-Orp1p is a protein inside the yeast cell which can recognize intracellular H2O2 and transfer this information to Yap1p. Yap1p forms an intracellular disulifde bond which covers the NES and thus, prevents Yap1p from leaving the nucleus. Thioredoxin (Trx) is responsible for reducing Yap1p and Opr1 (sensor and transcription factor) [2]. Since TRX2 is one of the target genes of Yap1p, Yap1p is autoregulated [2]. Prx enzymes might also play a role in the autoregulation of Yap1p.
-</p>
-		
-
-		</div>	
-
+		<p style="font-size:19px;" class="justify">YAP1P is upregulated by spatial accumulation into the nucleus. This occurs by inhibiting the transportation of YAP1 to outside the nucleus while still allowing its transportation inside. <br></br>More speciﬁcally, Yap1p contains two kinds of localization signals, a DNA-binding/nuclear localization signal (NLS) sequence in the N-terminus and a nuclear export signal (NES) contained in its C-terminus. Under normal conditions NES activity is higher compared to NLS activity and thus, Yap1p is exported out of the nucleus via the transporter Crm1p which recognizes the NES sequence. Under oxidative stress the NES is covered with the help of the proteins Gpx3p/Orp1p and Ybp1p, which prevents Yap1p from leaving the nucleus, causing the protein to accumulate.<br></br>Orp1p is a protein inside the yeast cell which can recognize intracellular H2O2 and transfer this information to Yap1p. Yap1p forms an intracellular disulifde bond which covers the NES and thus, prevents Yap1p from leaving the nucleus. Thioredoxin (Trx) is responsible for reducing Yap1p and Opr1 (sensor and transcription factor) [2]. Since TRX2 is one of the target genes of Yap1p, Yap1p is autoregulated [2]. Prx enzymes might also play a role in the autoregulation of Yap1p.</p>
+		</div>
+		</br>
+		<div class="section">
+				<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
+		</div>
+	</br>
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
-		<br></br>
 		<h1 id="TWO">Models of our Detection Mechanism</h1>
 		<br></br>
 		<p style="font-size:19px;" class="justify">Our detection Mechanism consists of using transcription factors which are regulated during the oxidative stress response in order to express a Yellow Fluorescent Protein (YFP), the activity of which can be measured with a fluorometer.</p>
 		<br></br>
-		<h2>Simpliﬁed Molecular Model</h2>
+		<h3>Simpliﬁed Molecular Model</h3>
 	</br>
-		<h3>Reactions for the molecular model of YAP1P regulation</h3>
+		<h4>Reactions for the molecular model of YAP1P regulation</h4>
 		</br>
 		<p style="font-size:19px;" class="justify">For the binding of molecules we will use the symbol ”:”. 
 <ul>
@@ -123,9 +107,9 @@ Orp1p is a protein inside the yeast cell which can recognize intracellular H2O2 
 </ul>
 </p>
 <br></br>
-<h2>Mathematical Model</h2>
+<h3>Mathematical Model</h3>
 </br>
-<h3>Diﬀerential Equations of the Mathematical Model</h3>
+<h4>Diﬀerential Equations of the Mathematical Model</h4>
 </br>
 <p style="font-size:19px;" class="justify">In order to model our detection mechanism as accurately as possible, we tried describing the rates of change of the different substrates which we described above. </p>
 	<p style="font-size:19px;" class="justify">
