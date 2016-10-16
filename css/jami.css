@@ -5,3 +5,33 @@
     position: fixed;
     z-index: 0;
 }
+
+#features {
+    top: 100%;
+}
+
+#globalWrapper {
+    font-size: 100%;
+    position: static;
+}
+
+#content {
+    padding: 0px;
+    position: static;
+}
+
+#top_menu_under {
+    display: none;
+}
+
+#HQ_page p {
+    font-family: inherit;
+}
+
+#HQ_page h1, h2, h3, h4, h5 {
+    font-family: inherit;
+}
+
+ul.topnav {
+    margin-top: 5px;
+}

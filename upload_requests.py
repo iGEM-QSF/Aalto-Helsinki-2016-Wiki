@@ -17,6 +17,8 @@ FILE_BASE_URL = IGEM_BASE+"/File:T--"+TEAM_NAME+"--"
 TEMPLATE_BASE_URL = IGEM_BASE+"/wiki/index.php?title=Template:"+TEAM_NAME+"--"
 UPLOAD_URL = IGEM_BASE+"/Special:Upload"
 AUTO_PAGES = ["index","Business","Research","Team","Journal","Modeling","Cooperation","Outreach"]
+REQUIRED_PAGES = ["Attributions", "Collaborations", "Description", "Proof", "Demonstrate", "Software"]
+
 #-----------------------#
 
 # Wrangler class - parser object which parses HTML
@@ -47,21 +49,25 @@ class Wrangler(HTMLParser):
 #		tag.extract() # Remove the tag
 #    return "\n".join(template_refs)+soup.prettify().encode("utf8")
 
+def upload_required(session):
+    for required_page in REQUIRED_PAGES:
+        upload(required_page, required_page.lower()+".html", session)
+
 def infer_file_type_from_path(path):
     file_ext = path[path.rfind(".")+1:]
     if (file_ext in {"woff", "ttf", "otf", "eot"}):
         return "FONT"
-    else if (file_ext in {"png", "gif", "jpg", "jpeg", "tif", "tiff", "svg"}):
+    elif (file_ext in {"png", "gif", "jpg", "jpeg", "tif", "tiff", "svg"}):
         return "IMAGE"
-    else if (file_ext in {"pdf", "txt", "docx"}):
+    elif (file_ext in {"pdf", "txt", "docx"}):
         return "DOCUMENT"
-    else if (file_ext in {"mp3", "mp4", "webm", "mov", "swf", "ogg"}):
+    elif (file_ext in {"mp3", "mp4", "webm", "mov", "swf", "ogg"}):
         return "MOVIE"
-    else if (file_ext in {"ppt", "pptx"}):
+    elif (file_ext in {"ppt", "pptx"}):
         return "SLIDESHOW"
-    else if (file_ext in {"xls", "xlsx", "csv"}):
+    elif (file_ext in {"xls", "xlsx", "csv"}):
         return "TABLE"
-    else if (file_ext == "zip"):
+    elif (file_ext == "zip"):
         return "ARCHIVE"
     else:
         return "UNKNOWN"
@@ -70,7 +76,7 @@ def session_passer(session):
     def match_handler(match):
         url = match.group(1)
         url = relative_from_absolute_path(url)
-        if (url[0:3] == ../):
+        if (url[0:3] == "../"):
             url = url[3:]
         else:
             url = url.lstrip("/")
@@ -78,32 +84,42 @@ def session_passer(session):
         file_type = infer_file_type_from_path(url)
         if (file_type == "IMAGE"):
             url = image_upload(url, session)
-        else if (file_type == "FONT"):
+        elif (file_type == "FONT"):
             url = font_upload(url, session)
-        return "url('" + url + "')"
+        try:
+            return "url('" + url + "')"
+        except:
+            return "url('" + match.group(1) + "')"
+    return match_handler
 
 def replace_urls_in_css(css, session):
     p = re.compile("url\('(\S*)'\)")
-    p.sub(session_passer(session), css)
- 
-def replace_property_of_tags_with_function_return_value_in_html(property, tag, function, html, parameters = None):
+    return p.sub(session_passer(session), css)
+
+def replace_property_of_tags_with_function_return_value_in_html(property, tag, function, html, parameters = None, dict = None):
     soup = BeautifulSoup(html, "html5lib")
     for tag in soup.find_all(tag):
         if tag.has_attr(property):
             property_value = tag[property]
+            if (dict):
+                if (property_value in dict.keys()):
+                    tag[property] = dict[property_value]
+                    continue
             if (parameters == None): return_val = function(property_value)
             else: return_val = function(property_value, parameters)
             tag[property] = return_val
+            if (dict):
+                dict[property_value] = return_val
     return soup.prettify()
 
-def replace_img_tags(html, session):
-    return replace_property_of_tags_with_function_return_value_in_html('src', 'img', image_upload, html, session)
+def replace_img_tags(html, session, dict = None):
+    return replace_property_of_tags_with_function_return_value_in_html('src', 'img', image_upload, html, session, dict)
 	
-def replace_script_tags(html, session):
-    return replace_property_of_tags_with_function_return_value_in_html('src', 'script', js_upload, html, session)
+def replace_script_tags(html, session, dict = None):
+    return replace_property_of_tags_with_function_return_value_in_html('src', 'script', js_upload, html, session, dict)
 	
-def replace_link_tags(html, session):
-    return replace_property_of_tags_with_function_return_value_in_html('href', 'link', css_upload, html, session)
+def replace_link_tags(html, session, dict = None):
+    return replace_property_of_tags_with_function_return_value_in_html('href', 'link', css_upload, html, session, dict)
 
 def get_image_tags(file, session):
     soup = BeautifulSoup(open(file), "html5lib")
@@ -171,8 +187,8 @@ def send_file_to_server( image_file, data, session, url = UPLOAD_URL ):
 def get_link_to_file(response):
     try:
         soup = BeautifulSoup(response.text, "html5lib")
-        print(soup.find(class_="fullImageLink").a.get("href"))
-        return soup.find(class_="fullImageLink").a.get("href")
+        print(soup.find(class_="fullMedia").a.get("href"))
+        return soup.find(class_="fullMedia").a.get("href")
     except:
         print("Error parsing response to find image link, ", sys.exc_info()[0])
         return None
@@ -236,7 +252,14 @@ def read_file(filepath):
     
 def css_upload(filepath, session):
     print("Starting css upload...")
-    return template_upload_return_url_with_parameters(filepath, "&action=raw&ctype=text/css", session)
+    file_data = read_file(filepath)
+    if (file_data == None): return None
+    
+    filename = get_filename_from_path(filepath)
+    
+    file_data = replace_urls_in_css(file_data, session)
+    
+    return template_upload(filename, file_data, session)+"&action=raw&ctype=text/css"
 	
 def font_upload(file, session):
     data = get_edit_parameters(UPLOAD_URL, session)
@@ -250,6 +273,7 @@ def font_upload(file, session):
     
     link = get_link_to_file(response)
     if (link == None): return 4
+    
     return link
     
 def image_upload(file, session):
@@ -297,14 +321,14 @@ def send_html_to_server(url, html_data, parameters, session):
         print("Error:", sys.exc_info()[0])
         return None
 
-def upload(page, file, session, headerfooter = False):
+def upload(page, file, session, dict = None, headerfooter = False):
     #---- read requested file ----#
     try:
         #file_data = get_image_tags(file, session)
-        file_data = BeautifulSoup(open(file), "html5lib").prettify()
-        file_data = replace_img_tags(file_data, session)
-        file_data = replace_link_tags(file_data, session)
-        file_data = replace_script_tags(file_data, session)
+        file_data = BeautifulSoup(open(file, encoding = "utf8"), "html5lib").prettify()
+        file_data = replace_img_tags(file_data, session, dict)
+        file_data = replace_link_tags(file_data, session, dict)
+        file_data = replace_script_tags(file_data, session, dict)
         #soup = BeautifulSoup(open(file), "html5lib")
         #file_data = soup.prettify().encode("utf8")
         #print(file_data)
