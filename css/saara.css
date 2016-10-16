@@ -74,6 +74,10 @@ ul.topnav li a img {
 
 }
 
+.img{
+	float: left;
+}
+
 .section {
 	/*background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/trees.png') no-repeat;*/
 	/*background-size: 100%;*/
