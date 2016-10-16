@@ -203,7 +203,7 @@ ul.shrink_botnav li a{
 }
 
 ul.botnav {
-	list-style-type: none;
+	list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
