@@ -110,13 +110,13 @@
 			<br></br>
 			For convenience, we have coded our four different MlrA constructs as follows:<br></br> 
 			MlrAE - MlrA produced in E. coli</br>
-			MlrAY - MlrA without mating factor alpha produced in S. cerevisiae</br>
-			MlrAYa - MlrA with mating factor alpha having only one propeptide sequence produced in S. cerevisiae</br>
-			MlrAY3a - MlrA with mating factor alpha having three propeptide sequences produced in S. cerevisiae<br></br>
+			MlrAY - MlrA without mating factor alpha produced in <i><i>S. cerevisiae</i></i></br>
+			MlrAYa - MlrA with mating factor alpha having only one propeptide sequence produced in <i><i>S. cerevisiae</i></i></br>
+			MlrAY3a - MlrA with mating factor alpha having three propeptide sequences produced in <i><i>S. cerevisiae</i></i><br></br>
 
 			<b>Plasmid amplification</b><br></br>
 
-			After we had planned our constructs for the degradation, we decided to use the services of GeneArt, since IDT was unable to produce the gBlocks we would have needed. This also meant that we wouldn’t need to spend time cloning the constructs into our plasmids, as GeneArt had a subcloning service we could use. For the cloning, we had to send them the plasmid backbones, so we amplified plasmids pET28a (for E.coli) and pRS415-GAL (for S. cerevisiae) with PCR and sent them to GeneArt. We received the cloned E. coli construct before the yeast ones, and decided to start working on it as it was our positive control, while we were waiting for the yeast constructs to arrive. With the positive control we were able to test some of our experiment setups before starting the actual work with the yeast versions.
+			After we had planned our constructs for the degradation, we decided to use the services of GeneArt, since IDT was unable to produce the gBlocks we would have needed. This also meant that we wouldn’t need to spend time cloning the constructs into our plasmids, as GeneArt had a subcloning service we could use. For the cloning, we had to send them the plasmid backbones, so we amplified plasmids pET28a (for <i><i>E.coli</i></i>) and pRS415-GAL (for <i><i>S. cerevisiae</i></i>) with PCR and sent them to GeneArt. We received the cloned E. coli construct before the yeast ones, and decided to start working on it as it was our positive control, while we were waiting for the yeast constructs to arrive. With the positive control we were able to test some of our experiment setups before starting the actual work with the yeast versions.
 			<br></br>
 			<b>Initial expression and purification of MlrAE</b>
 			<br></br>
@@ -155,8 +155,95 @@
 			<br></br>
 			FIGURE 4 AND 5!!!!!!!
 			<br></br>
-
-			</p>
+			As we had planned to purify the enzyme using the His-tag, we did not want to give up on it just yet. The same study mentioned above (Dziga et al., 2012), where they had tried to purify MlrA, showed that ion exchange chromatography had worked to some extent in purifying the enzyme. But before resorting to that technique, we wanted to try purifying with fast protein liquid chromatography (FPLC).
+			<br></br>
+			<b>MlrAE purification with FPLC</b>
+			<br></br>
+			As we did not have great success with the spin columns, we wanted to test purification with FPLC, which could provide better results. It seemed possible that the binding affinity of the MlrA His-tag to the Ni-NTA column was low, and purifying a larger quantity of the enzyme with FPLC would potentially allow us to see if at least some portion of the protein could be purified. The FPLC was done from the supernatant fraction after cell lysis. 30 ml of supernatant was purified using two stacked HisTrap FF Crude 5 ml columns.
+			<br></br>
+			FIGURE 6a and 6b!
+			<br></br>
+			The UV reading in the FPLC chromatogram (Figure 6a, blue line) showed that there is a lot of proteins in the flow through fractions, as there should be (1.A.1-1.C.1). Proteins eluted out of the column after addition of elution buffer reside in fractions 1.D.1-1.B.4. It seems likely that many other proteins than the actual his-tagged enzyme bind to the column, as the UV reading spikes up right as the concentration of the elution buffer (Buffer B, green line); this would be explained by e.g. proteins containing multiple histidines, but no actual his-tag. A small hill (Figure 6b) in the eluted fractions might correspond to our protein. A very slow concentration gradient in the beginning of the elution might help resolve this peak. To confirm assumptions based on the chromatogram, and to see where our enzyme came out, western blots (figures 7 and 8) were done from these fractions.
+			<br></br>
+			FIGURE 7!!
+			<br></br>
+			Figure 8!
+			<br></br>
+			It seems that most of our enzyme came out again in the flow through fractions, but now there is also something in the elution fractions. There is also some other proteins eluted, as expected based on the chromatogram, but there are clearly bands of about 28 kDa in the elution fractions, C3 fraction having the biggest amount. This would correspond to the very small, almost non-existent peak in the figure 6b.
+			<br></br>
+			This result confirms that with optimization of the purification conditions, the enzyme could likely be purified with this method. We were excited to find out if this purified enzyme had enzymatic activity!
+			<br></br>
+			<b>Enzyme activity assay of MlrAE, MlrAY, MlrAYa and MlrAY3a</b>
+			<br></br>
+			We did the final enzyme activity assay for MlrAE with the FPLC purified enzyme. It was done in conjunction with some MlrAs produced in yeast, which will be detailed later. We chose to use the 1.C.3 fraction which seemed to contain the biggest amount of MlrA based on figure 8.
+			<br></br>
+			The results (figure 9) showed that the purified MlrAE has activity, and it can be plotted nicely in the graph.
+			<br></br>
+			FIGURE 9
+			<br></br>
+			This meant that the positive control worked and provided a parallel for the yeast MlrAs.
+			<br></br>
+			<b>Optimising yeast growth conditions</b>
+			<br></br>
+			After our yeast MlrA constructs arrived from GeneArt, we transformed them to <i><i>S. cerevisiae</i></i> strain SS328-leu. After this, we had to find out the best way to grow the yeast cells, in order to be able to induce protein production. We tested different growth conditions with different sugars, and different refreshing times. The goal was to have an optimal amount of cells for induction after refreshment.
+			<br></br>
+			We concluded that the best way to grow our yeast cells for protein production was to first grow a pre-culture overnight in 2% glucose, then expand it to the final culture volume and grow it on 0.5% glucose for 6 hours, and then induce the protein production by adding galactose to a final amount of 2%.
+			<br></br>
+			<b>Initial production of MlrAY, MlrAYa and MlrAY3a</b>
+			<br></br>
+			After finding the working expression conditions, the next step was to express all the yeast MlrA constructs to see where different constructs of the enzyme are roughly localised and to test the enzymes’ activities. 
+			<br></br>
+			All constructs were expressed in similar conditions, but there were differences in the yields of different constructs, with MlrAYa having the highest yield and MlrAY3a having the lowest. We lysed the cells and centrifuged the lysates, after which we ran SDS-PAGE and did western blotting (figure 10).
+			<br></br>
+			FIGURE 10
+			<br></br>
+			Based on our results the MlrAY (about 28 kDa) seems to localize mostly in the insoluble fraction (P2), but some of it seems to be also soluble (S2). Our hypothesis had been that the plain MlrAY would be soluble in the cytosol, but based on these results it is mostly insoluble, either as inclusion bodies or in the plasma membrane.
+			The MlrAYa seems to have the molecular mass of about 38 kDa which could correspond to the calculated size of the enzyme. This could hypothetically mean that the mating factor alpha has been cleaved off but it has protected the enzyme from being cleaved to 27 kDa. Our hypothesis was that this construct would localise in the plasma membrane and based on the blot, it seems that this might be correct.
+			The MlrAY3a is hardly detected, there is only faint bands of between 50 and 75 kDa bands. This could correspond to the enzyme with the mating factor alpha having the three propeptide parts since the calculated mass of that is about 62 kDa. Still, it is weird that they haven’t been cleaved off, which might have been the situation on the MlrAYa construct. Our hypothesis was that the construct would be secreted, so that it would be detected from the S1 fraction. However, this was not the case, which wasn’t very surprising since assuming that MlrA truly is a membrane protein, secretion would be unlikely.
+			<br></br>
+			To get more clues about the enzymes localization in the insoluble fraction, enzyme activity assays were performed.
+			<br></br>
+			<b>Enzyme activity assay of MlrAE, MlrAY, MlrAYa and MlrAY3a</b>
+			<br></br>
+			As our different enzyme yeast constructs all localised in the cell debris fraction, we wanted to find out if the enzymes were active (which would mean that they would probably be in the plasma membranes) or inactive (probably in the inclusion bodies). Although it seemed that there could be some MlrAY in the soluble fraction (figure 11), we did this experiment only with the insoluble fraction. This experiment would also show if our enzyme activity measurement setup works for the yeast constructs. We had the FPLC purified MlrAE as our positive control as discussed earlier, and as the negative control we had the same control as before, MC in PBS with 0.1% BSA.
+			The samples were once again analysed with LC-MS by Matti Wahlsten.
+			<br></br>
+			The results (figure 11) came back looking quite interesting. All of the yeast constructs showed that the amount of MC would stay at a similar level for the whole duration of the experiment. There had been some problems when taking the 0h samples, which could explain the differences in 0h values as they should have been about the same in theory. 
+			<br></br>
+			FIGURE 11
+			<br></br>
+			Our conclusions were that either there was very little microcystin in the yeast MlrA reactions to begin with, and that the enzymes are inactive, which would explain why the amount of microcystin doesn’t diminish. The other possibility is that the enzymes are, in fact, very active and that they degrade all the toxin they can before the first timepoint (1h), after which there isn’t any more toxin to degrade. 
+			<br></br>
+			Eager to find out which one was the case, we wanted to repeat the enzyme activity measurements.
+			<br></br>
+			<b>Localization MlrAY and MlrAYa</b>
+			<br></br>
+			The inconclusive results from the enzyme activity assay prompted us to do the final MlrA experiments in order to find out if the enzymes have activity and also to pinpoint where exactly the enzymes localize in the yeast cells. We decided to do these experiments only with MlrAY and MlrAYa, as MlrAY3a had resulted in such low yield and unexpected size, suggesting there might be some problems with it. 
+			<br></br>
+			The results (figure 12) show that the enzymes are again localised in the insoluble fraction P2, and this time there isn’t anything in the soluble fraction from MlrAY. After refolding, only MlrAY is detected (S3 and P3). This might be because we had problems with the dialysis as the dialysis bags might have leaked on both times we tried to do it.
+			<br></br>
+			FIGURE 12
+			<br></br>
+			The results point to the conclusion that the enzymes are localized in the plasma membrane, at least for MlrAY. For MlrAYa, it is still too inconclusive to say what would be the final conclusion.
+			<br></br>
+			<b>Final enzyme activity assay of MlrAY and MlrAYa</b>
+			<br></br>
+			To verify our hypothesis, which was that the enzymes were localised in the plasma membrane and have high activity instead of being inactive in the form of inclusion bodies, we did the final activity measurements. Our assumption was that if the enzymes have activity, they most probably are localized in the plasma membrane in an active form.
+			To ensure the reliability of our measurements and minimize the effect of chance, the final activity measurements were done with triplicates of each reaction, using three different dilutions of the enzymes, and with more timepoints at the beginning of the experiment. This time we also had a second negative control, which was lysed <i><i>S. cerevisiae</i></i> SS328-leu without the MlrA construct plasmids, in addition to the normal negative control. All of this resulted in 144 samples altogether, which we then filtered and gave to Matti Wahlsten for LC-MS analysis. Once again we were very grateful for Matti’s help.
+			<br></br>
+			The results (figure 13 and 14) showed that our enzymes are active. There are some anomalies in the 30 min samples; this could be because we had to take so many samples, and by the time we finished sampling 0 min samples, it was almost time to start collecting 15 min samples, and after we were done with those, it was time for 30 min samples. Other than that the results seem to be as expected: the negative control has the highest amount of MC-LR and the amount stayed roughly the same during the whole experiment. For both constructs, the 1:10 dilution had the highest level of degradation, while the 1:1000 had the least activity. It also seems that MlrAY was more effective at degradation than MlrAYa.
+			<br></br>
+			FIGURE 13
+			<br></br>
+			FIGURE 14
+			<br></br>
+			Also, these results suggest that in the previous enzyme activity assays, there was in fact microcystin initially, but it had been degraded so quickly by the enzyme that the timepoints we had chosen could not reflect this. 
+			Along with the localization experiment, these results point towards the fact that the enzymes are active membrane proteins.
+			<br></br>
+			<b>References</b>
+			1. Dziga, D., Wladyka, B., Zielińska, G., Meriluoto, J., Wasylewski, M., 2012. Heterologous expression and characterisation of microcystinase (2012) Toxicon, 59 (5), pp. 578-586
+			<br></br>
+		</p>
 			
 			
 		</div>
