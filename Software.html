@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aalto-Helsinki</title>
+    
+    <script src="js/jquery-1.6.2.min.js"></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles-index.css" rel="stylesheet">
+    <!--<link href="css/saara.css" rel="stylesheet">
+    <link href="css/jami.css" rel="stylesheet">
+    <link href="css/emilia.css" rel="stylesheet">-->
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body class="teambackground">
+<div style="height:100%">
+    <section class="collabphoto parallax" style="text-align:center">
+    
+        <h2 class="title">SOFTWARE</h2>
+    </section>
+    </div>
+	
+	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features" style="position: absolute; width:100%; background:white;" >
+			<div class="navbar navbar-fixed-top">
+				<ul class="topnav" style="font-family: robotolight;">
+                <li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
+                <li style="float:right"><a class="current" href="community.html"><b>Community</b></a></li>
+                <li style="float:right"><a href="humanpractices.html"><b>Human Practices</b></a></li>
+                <li style="float:right"><a href="people.html"><b>People</b></a></li>
+                <li style="float:right"><a href="model.html"><b>Modelling</b></a></li>
+                <li style="float:right"><a href="lab.html"><b>Laboratory</b></a></li>
+                <li style="float:right"><a  href="description.html"><b>Project</b></a></li>
+                <li style="float:left; font-family: bebas_neuebold;"><b><a href="index.html" style="margin-left: 10px; font-size:22px; position:absolute;">AALTO-HELSINKI 2016</a></b>
+                </ul> 
+			</div>
+    
+    <script> $(window).scroll(function() {
+    if ($(this).scrollTop() > 640){ // Set position from top to add class
+        $('ul').addClass("shrink");
+    } else {
+        $('ul').removeClass("shrink");
+    }
+    });
+    </script>
+    
+    
+        <div class="block-wrapper-inner" style="padding-top: 15px;">
+            <div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+                <br></br>
+                
+            </br>
+            <h2>The CollabSeeker</h2>
+        </br>
+				<p style="font-size:19px" class="justify">CollabSeeker is a collaboration search tool for the iGEM community, available at <a href=”collab.aaltohelsinki.com”>collab.aaltohelsinki.com</a>. It is intended to help iGEM teams easily find the contact details and project information of other teams for collaboration purposes.</p><p style="font-size:19px" class="justify">The original version of the CollabSeeker was made by the last year’s Aalto-Helsinki team. It was based on the idea of teams writing their project and contact information into the system, with CollabSeeker essentially functioning as a communication platform. Other similar platforms are available, such as the <a href=”http://almaaslab.nt.ntnu.no/igem_matchmaker/index.php”>iGEM Matchmaker</a> and the <a href=”http://www.igemmatch.org/”>iGEM Match</a> website of the UC Davis team.</p><p style="font-size:19px" class="justify">None of the available platforms have been very popular, however. The main problem is that these sorts of platforms only produce value once a large user base already exists, but a large user base can only form once the platform produces enough value to attract new potential users. In order to fix this problem, we knew we had to come up with a way to produce value and attract users without having an existing user base to back us up.</p><p style="font-size:19px" class="justify">Enter CollabSeeker 2.0! This time around, we would not require teams to fill in their information for us. Instead, we would mine igem.org, facebook and twitter for the project descriptions, facebook and twitter pages of all the iGEM teams around the globe. Of course it would be pure insanity to try to do this manually, so we created a suite of small, automated software tools for the purpose.</p><p style="font-size:19px" class="justify">We hope that the whole iGEM community will embrace the CollabSeeker, and that in the years to come it will become a mundane part of the project that everyone will use in a similar manner as Aalto-Helsinki’s BioBrick and Team Seekers.</p>
+                <br></br>
+                <p style="font-size:19px" class="justify"><b>How to use the CollabSeeker</b></p><p style="font-size:19px" class="justify">The CollabSeeker search engine can be used without logging in. However, every team has a team page which can be edited only by the team in question, and this requires login. The iGEM teams are able to log in using Facebook, Twitter or login credentials provided by the Aalto-Helsinki team.</p>
+                <br></br>
+                <figure style="text-align: center;">
+                    <img style="width:50%; height; 50%" src="img/collab1.png"><br></br><figcaption style="text-align:center;">The teams are able to edit their own pages by logging in with Facebook, Twitter or login details provided by Aalto-Helsinki. The CollabSeeker can also be used without logging in.</figcaption>
+                </figure>
+				<br></br>
+                <p style="font-size:19px" class="justify">The team descriptions and links to Facebook and Twitter accounts have been automatically uploaded on every team’s team page. The teams are able to modify their project descriptions, specify their collaboration desires and add contact information. </p>
+                <br></br>
+                <figure style="text-align: center;">
+                    <img style="width:50%; height; 50%" src="img/collab2.png"><br></br><figcaption style="text-align:left">Every team has a team page, which can be edited by the team in question. All the team descriptions are already found on the team pages, so it’s only for the team to specify their collaboration details and add collaboration categories, so that the team will be easily found by other teams. We highly recommend the teams to add contact information to their team profile e.g. email (Facebook and Twitter accounts are already linked), to make the contacting process easier. </figcaption>
+                </figure>
+                <br></br>
+                <p style="font-size:19px" class="justify">To easily find collaboration partners we added the opportunity to add collaboration categories to the team pages. All the collaboration categories can be found on the front page of the CollabSeeker. </p><p style="font-size:19px" class="justify">Searching for teams based on their team names and team description is possible by using the search bar. The user has also the option to browse through all the teams available on CollabSeeker. </p>
+                <br></br>
+                <figure style="text-align: center;">
+                    <img style="width:50%; height; 50%" src="img/collab3.png"><br></br><figcaption style="text-align:center">The search bar can be used to search for teams based on their team name or team description. </figcaption>
+                </figure>
+                <br></br>
+                <p style="font-size:19px" class="justify"><b>How we did it</b></p><p style="font-size:19px" class="justify">In order to implement more advanced functionality in the CollabSeeker, we rewrote the engine entirely in Java using the Spring MVC framework and the Thymeleaf templating engine. In the process, the old html templates had to be heavily modified as well, so even though we preserved the looks of last year’s version, under the hood everything has changed.</p><p style="font-size:19px" class="justify">The search engine is implemented using the popular Apache Lucene search framework, which was chosen due to it’s support of boolean search operators. In addition, we implemented both Facebook and Twitter login using Spring Social. However, our implementation of Facebook login requires the manage_pages permission, which we repeatedly requested from Facebook without luck, and therefore the feature had to be scrapped at the last minute. Twitter login is fully functional.</p><p style="font-size:19px" class="justify">As mentioned, the basic architecture of CollabSeeker is based around the Model-View-Controller or MVC design pattern.</p><p style="font-size:19px" class="justify">The CollabSeeker database is based around a single repository storing the information for each team. Under the hood, the database is implemented with PostgreSQL, but the Spring Framework provides an abstracted interface requiring no proficiency with SQL.</p><p style="font-size:19px" class="justify">In order to link the team repository to searchable project details, all project information is stored within ASCII-encoded text files that are indexed by the Apache Lucene indexer. Each file is named after the team that it contains the project details of. When the user searches for terms, say “cyanobacteria” and “microcystin”, the Apache search engine uses the index to find a corresponding file and returns its name. The name is then linked to a team in the team repository using the findByName() method, and a view containing a listing of the applicable teams is constructed and shown to the user.</p><p style="font-size:19px" class="justify">The Facebook and Twitter login features are based on the Spring Social and Spring Security plugins. Spring Security essentially takes care of all the needed authentication, while Spring Social is used only to connect a facebook or twitter profile to the correct team, after which Spring Security takes over the login process. The normal login using Aalto-Helsinki -provided credentials runs entirely through Spring Security. The passwords we provide are cryptographically secure random strings produced by the SecureRandom Java class. It is nonetheless suggested that users change their passwords once they have logged in with credentials we have provided.</p><p style="font-size:19px" class="justify">The front-end is based on the Thymeleaf templating engine. Additionally, we use Javascript to produce certain functions such as “show more..” -links for long project descriptions.</p><p style="font-size:19px" class="justify">As stated, we have created a suite of tools in the Ruby programming language for automatically finding iGEM teams’ contact details on Facebook and Twitter as well as their project information on the iGEM website. (more on these later??)</p><p style="font-size:19px" class="justify">The source code for the CollabSeeker is available under the MIT license (?) <a href=”https://github.com/iGEM-QSF/NewCollabSeeker”>on Github</a>.</p>
+                </div>
+                <br></br>
+	           
+            <div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+            </br>
+                <h2>WikiFire+</h2>
+                </br>
+                <p style="font-size:19px" class="justify">The WikiFire+ is a new, Python-based tool for automatic fast uploading of iGEM wikis to the servers. It is based on the Aalto-Helsinki 2014 team’s Quickifier, but is again vastly improved in terms of functionality and implementation.
+                </p>
+            </br>
+            <p style="font-size:19px" class="justify">The current version of WikiFire+ not only automatically sends html files to the iGEM servers using the Python requests library, it also automatically checks for any css or javascript files these html files link to, automatically sending these to the servers as templates. It also automatically sends any images contained in the html to the servers, and fixes the links contained in the html to point to the correct pages. Essentially it allows iGEM wikis to be developed completely locally with a hassle-free, quick upload.</p>
+        </br>
+            <p style="font-size:19px" class="justify">The WikiFire+ is implemented in python using particularly the requests library for sending data to the web, and the BeautifulSoup html parser for automatic sending of image, css and javascript files. The tool is available <a href=”https://github.com/iGEM-QSF/Aalto-Helsinki-2016-Wiki”>on GitHub</a> under the MIT license.</p>
+        </br>
+
+
+            </div>
+    </div>
+
+        <script>
+    $(window).scroll(function(){
+        $(".title").css("opacity", 1 - $(window).scrollTop() / 500);
+    });
+    </script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--script src="./Tinyone - HTML_files/jquery.min.js"></script>
+    <script src="./Tinyone - HTML_files/bootstrap.min.js"></script>
+    <script src="./Tinyone - HTML_files/offcanvas.js"></script>
+    <script src="./Tinyone - HTML_files/function.js"></script-->
+  
+
+</body></html>
