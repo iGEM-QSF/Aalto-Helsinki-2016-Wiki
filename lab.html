@@ -65,9 +65,9 @@
 	<div class="block-wrapper-inner" style="padding-top: 15px;">
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 		</br>
-			<h1 id="ONE">Introduction</h1>
+			<h1 id="ONE">Overview</h1>
 			<br></br>
-			<p style="font-size:19px;" class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit arcu libero. Duis vitae cursus elit. Donec enim turpis, aliquam id neque at, faucibus porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et sollicitudin risus. Pellentesque risus magna, accumsan sit amet purus sed, ornare mattis diam. Morbi ac arcu metus. Praesent in massa lectus. Proin fringilla, erat a tempor imperdiet, nunc purus venenatis sem, vel finibus ex lacus a nisi. Morbi nibh augue, ultrices ut lacus id, laoreet aliquam mauris.</p>
+			<p style="font-size:19px;" class="justify">Our team has worked hard in the lab to provide a good proof of concept for our detection and degradation ideas. On this page, you can find a detailed explanation of the assays we have used in our work and a link to all the protocols we have used. In addition, all of our results are presented here in detail. To see only the main results and discussion, please see the achievements section of our page. For even more details you can check out our lab book, where everything is written precisely. Information about safety in the lab is also provided in this page.</p>
 		</div>
 		<br></br>
 		<div class="sectionjee" style="background-color: #8a4b29">
@@ -78,18 +78,98 @@
 		</br>
 			<h1 id="TWO">Assays</h1>
 			<br></br>
-			<p style="font-size:19px;" class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit arcu libero. Duis vitae cursus elit. Donec enim turpis, aliquam id neque at, faucibus porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et sollicitudin risus. Pellentesque risus magna, accumsan sit amet purus sed, ornare mattis diam. Morbi ac arcu metus. Praesent in massa lectus. Proin fringilla, erat a tempor imperdiet, nunc purus venenatis sem, vel finibus ex lacus a nisi. Morbi nibh augue, ultrices ut lacus id, laoreet aliquam mauris.</p>
-		</div>
-		</br>
-		<div class="sectionjee" style="background-color: #8a4b29">
-			<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
-		</div>
-		</br>
-		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
-		</br>
-			<h1 id="THREE">Background</h1>
+			<h2>Fluorecence assays</h2>
 			<br></br>
-			<p style="font-size:19px;" class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit arcu libero. Duis vitae cursus elit. Donec enim turpis, aliquam id neque at, faucibus porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et sollicitudin risus. Pellentesque risus magna, accumsan sit amet purus sed, ornare mattis diam. Morbi ac arcu metus. Praesent in massa lectus. Proin fringilla, erat a tempor imperdiet, nunc purus venenatis sem, vel finibus ex lacus a nisi. Morbi nibh augue, ultrices ut lacus id, laoreet aliquam mauris.</p>
+			<p style="font-size:19px;" class="justify">The principle of our sensor is that a gene coding for yellow fluorescent protein is coupled to different promoters sensitive to oxidative stress. Thus, in the case of oxidative stress, they start to produce fluorescent protein. We hope that this fluorescent signal will be proportional to the quantity of the inducer - in this case, microcystin or another factor that produces oxidative stress.
+			<br></br>
+			As microcystin needs a specific transporter to enter yeast cells, and when we started our experiments we didn’t have this transporter and the stress promoters in the same strain, we had to use something else to induce the promoters. As microcystin exposure results in increased levels of reactive oxygen species in yeast cells, we decided to use one such reactive oxygen species - hydrogen peroxide - to directly induce the promoters. 
+			<br></br>
+			For measuring fluorescence, we decided to use a microplate reader (Cytation3, BioTek) in order to be able to easily monitor the development of the fluorescence. In our microplate reader experiments, liquid cultures of yeast cells containing the stress promoter plasmids were induced with different concentrations of hydrogen peroxide on a 96-well plate. The plate is sealed with an optically clear cover, and incubated in the microplate reader at +30 °C with vertical shaking. Yeast has a tendency to clump when grown in microtiter plates, but vigorous vertical shaking is suitable for limiting this. OD600 and fluorescence values can then be measured throughout the growth of the cultures at defined intervals to observe the development of fluorescence and obtain an expression profile for the newly  constructed stress promoters.
+			<br></br>
+			As the excitation and emission wavelengths of Venus were too close together for measuring with our microplate reader (515 nm/excitation and 528 nm/emission), the excitation wavelength was decreased to 502 nm, although this likely reduced the fluorescence signals to some extent. As no secondary peaks could be measured, this seemed to be the best option. 
+			<br></br>
+			From the plate reader results, multiple different curves could be drawn. Plots of OD600 and fluorescence as functions of time are straightforward to draw, but as hydrogen peroxide slows the cell growth significantly, comparisons of fluorescence values at any given time point would not be informative in telling about the amount of fluorescence produced by the cells. A more representative graph would thus be one where fluorescence is presented as the function of cell density (OD600); this way, fluorescence signals given by cell populations of equal density can be compared.  All the sample values can then be compared to an uninduced control and to a positive control (Venus under GDP1 promoter). As our sensor is based on detecting differences between fluorescence in induced and uninduced conditions, we can use Venus under GPD promoter dually also as a negative control; with this negative control, we see whether H2O2 concentration differences have unintended background effects to fluorescence, and differentiate these from the effect of actual induction. 
+			<br></br>
+			As a second method for measuring fluorescence, we used a flow cytometer (FACSaria III, BDBiosciences). In flow cytometry, the fluorescence can be measured from individual cells in a cell suspension. The fluorescent signal of thousands of cells can be rapidly measured to produce information on the mean or median fluorescence values and distribution of fluorescence. This means that the development of the fluorescence as a function of time can’t be assessed as easily, as samples of each measured time point have to be prepared separately. However,  more precise values are obtained, with less bias from background. To analyze fluorescence, induction is performed by adding hydrogen peroxide to a cell culture to the desired concentration, and incubating the cell cultures at +30 °C with shaking (220-250rpm). A sample of cells can then be collected from the cell culture, and diluted to a an appropriate cell density in PBS for analysis with the flow cytometer.
+			<br></br>
+			For the concentrations used to induce fluorescence in our fluorescence assays, we used microcystin concentrations of 0, 1, 10 and 100 μg/L, as these concentrations cover the normal possible range of microcystin in lakes; 1 μg/L is the safety limit, and without the formation of scum, maximal concentrations of 20 μg/L (Chorus and Bartram, 1999) are possible. For hydrogen peroxide concentrations, because a clear relationship can’t be drawn between hydrogen peroxide concentrations corresponding to the oxidative stress of a certain microcystin concentration, we decided to determine a suitable concentration range experimentally. This way, we started out by testing a broad range which we narrowed down to conditions suitable for testing YFP expression based on our observations.
+			<br></br>
+			</p>
+			<h2>Catalase assays</h2>
+			<br></br>
+			<p style="font-size:19px;" class="justify">Microcystin cannot be imported into yeast cells without a specific transporter. A major part of our project was to transfer a microcystin importing transporter from <i>S. cerevisiae</i> strain VL3 into SS328-leu, the strain we used in our experiments. As SS328-leu has a transporter corresponding to the MC-importing one of VL3, we decided to replace this transporter with the VL3 variant. 
+			<br></br>
+			In strain VL3, differences in microcystin concentration have a characteristic effect  on the catalase activity of the cell (Figure 1). We reasoned that this should be the case also in our lab strain after the insertion of a microcystin transporter. As non-modified lab strains (e.g. SS328-leu) don’t import the toxin naturally, the toxin shouldn’t have much effect on their catalase activity levels. However, if the VL3 QDR2 transporter is produced in the cell, the toxin uptake increases, resulting in increased catalase production. Based on this reasoning, we planned to verify the functionality of the new transporter with a catalase activity assay. 
+			<br></br></p>
+			<figure style="text-align:center">
+                    <img style="width:40%" src="img/lab11.png"/><figcaption style="text-align: center">Figure 1. Different MC-LR concentration affect the catalase activity in VL3 cells (Valério et al., 2014).
+			</figcaption>
+             </figure>
+
+			<br></br>
+			<p style="font-size:19px;" class="justify">Our plan was to use a simple visual catalase assay for this functionality verification (Iwase et al., 2013). In preparation for this assay, yeast cells are incubated with microcystin. After the incubation, to perform the catalase assay on the cells, hydrogen peroxide and the detergent Triton X-100 are added. As catalase breaks down hydrogen peroxide to water and oxygen, bubbles are formed in the samples; Triton X functions as a surfactant, enhancing the formation and stability of a foam layer. The quantity of formed foam is relative to catalase activity in the cells, so by comparing the thicknesses of the foam layers, catalase activities can be compared. 
+			</p>
+			<ul style="font-size:19px;" class="justify">We have three hypotheses for the results of our assay.<br></br>
+				<li>VL3 and SS328-leu with the QDR2 from VL3, having the MC-transporter for microcystin would have highest catalase activities in the presence of microcystin. 
+				</li>
+				<li>Foam layer in SS328-leu shouldn’t change with varying toxin concentrations.</li>
+				<li>Increasing catalase concentrations would increase the foam layer thicknesses in VL3 and SS328-leu with the QDR2 from VL3. The increase would stop sometime before 1000 μg/l.
+				</li>
+			</ul>
+			<br></br>
+			<p style="font-size:19px;" class="justify">For our catalase tests, we used microcystin concentrations of 0, 1, 10, 100 and 1000 μg/L (0-1 μM MC). We chose this range because it corresponded to the concentrations in our reference article -  0, 1, and 1000 μg/L (Valério et al., 2014), but added two more concentrations to the test range (10 and 100 μg/L) to gain more information on the behavior of catalase activity.
+			</p>
+			<br></br>
+			</p>
+			<h2>Enzyme activity</h2>
+			<br></br>
+			<p style="font-size:19px;" class="justify">For the second part of our project, our goal was to produce the microcystin-degrading enzyme microcystinase (MlrA). To see whether the produced enzyme degrades microcystin, we had to test its activity. We were fortunate to have talked to Kaarina Sivonen’s Cyanobacteria research group from the University of Helsinki, who were kind enough to help us with this.
+			<br></br>
+			We measured enzyme activity by preparing enzyme-microcystin reactions, incubating them and taking samples at different time points. The samples were then analysed by Matti Wahlsten from Kaarina Sivonen’s group with liquid chromatography - mass spectrometry (LC-MS), and as a result we got the relative amount of microcystin-LR (and -RR, but our focus is on -LR), from which we could plot graphs showing the degradation.
+			<br></br>
+			The reactions contained the enzyme to be tested for activity, either diluted or undiluted. There was also 0.1% BSA, which functions as a blocking agent, so that the enzyme does not stick to the walls of the tube. The microcystin concentration used in our activity reactions is 1 μg/L, which corresponds to WHO’s safety limit (WHO, 2003), also used in previous experiments (Dziga, 2012; Edwards, 2008) when measuring microcystinase activity. We used a microcystin extract which was prepared from freeze-dried <i>Anabaena sp.</i> strain 90 cyanobacteria, according to protocol provided to us by Matti Wahlsten. The concentration of microcystin-LR in the extract can only be estimated; in our case it should have been approximately one promille of the freeze dried cyanobacteria’s weight. Also, microcystins have high affinity to plastic. This meant that we had to do our reactions in glassware, and, more importantly, take the time point samples with pasteur pipettes made of glass, since our lab did not have small enough glass pipettes to measure volumes such as 100 μl. This meant that our enzyme activity measurements wouldn’t be exact, and there would be a bigger error margin.
+			<br></br>
+			The enzyme reactions were incubated at +37 °C and the time point samples were taken at certain times. The 0h samples were taken right after the microcystin extract was added to the reaction, before starting the incubation, to ensure that there was no degradation of the initial amount of microcystin in the sample. After the samples of 100 μl were taken, 100 μl of methanol was added to inactivate the enzyme. This is why taking the samples with pasteur pipettes is not ideal: the amount of sample is not exact whereas the amount of methanol is. This potentially leads to slight errors in microcystin concentrations in the samples, as some might have more than 100 μl of the reaction and some less, but all are inactivated with the same amount of methanol.
+			<br></br>
+			The samples were then analysed with LC-MS, which first separates different components of the sample with liquid chromatography and then analyses the the relative abundance of these components with mass spectrometry. In our case, the results should show that the peak corresponding to microcystin-LR in the chromatograph grows smaller when different time points are being compared. Also, the peak corresponding to the degradation product of microcystin-LR should grow bigger as time passes. Example results can be seen from Figures 2a and 2b.
+			<br></br></p>
+			<figure style="text-align:center">
+                    <img style="width:65%" src="img/lab13.png"/><figcaption style="text-align: center">Figures 2a and 2b: Example of degradation of microcystin-LR. In 2a (2h sample) the relative amount of MC-LR is 6379, while in 2b (8h sample) the relative amount of MC-LR is 5584.This means that the amount of microcystin has grown smaller, i.e. the enzyme has degraded it and is active.
+			</figcaption>
+			</figure>
+			<br></br>
+			<p style="font-size:19px;" class="justify">From the chromatography graphs, the relative abundance of microcystin in each sample is obtained, and it can be then plotted against time. This should give a graph where the amount of microcystin diminishes as time increases. As an example, see Figure 3, which we obtained for MlrA we produced in <i>E. coli</i>.
+			<br></br></p>
+			<figure style="text-align:center">
+                    <img style="width:40%" src="img/lab14.png"/><figcaption style="text-align: center">Figure 3: An example of enzyme activity graph showing the activity of FPLC purified MlrAE.
+			</figcaption>
+			</figure>
+			<br></br>
+			<h2>Localization workflow</h2>
+			<br></br>
+			<p style="font-size:19px;" class="justify">In addition to verifying the activity of the produced MlrAs, we aimed to determine where in the cells the enzymes are localized and see if our hypotheses are correct. Our work flow for this is presented in Figure 4.
+			<br></br></p>
+			<figure style="text-align:center">
+                    <img style="width:60%" src="img/lab12.png"/><figcaption style="text-align: center">Figure 4: Workflow of localisation
+			</figcaption>
+             </figure>
+			<br></br>
+			<p style="font-size:19px;" class="justify">Our hypothesis for MlrAY3a construct is that it should be secreted. If the enzyme is secreted, it should be localized outside of the cell, in the growth medium. To test for this, after the expression has ended and the cell culture is centrifuged down, the supernatant, i.e. the growth medium, is collected and a sample is taken. The media can be first concentrated in order to get high enough concentrations of the protein for successful detection with e.g. antibodies in western blotting.
+			<br></br>
+			Our hypothesis for MlrAY is that it should be soluble in the cytosol. To verify this the following procedure should be performed. After collecting the cells from the growth culture, they are lysed and centrifuged. All soluble proteins, as well as inner membranes, should be in the supernatant fraction (or the soluble fraction in the graph). To verify that the protein is actually soluble and not in the inner membranes, the inner membranes should be purified (microsome preparation in the graph). It is done by using specific lysis buffer and ultracentrifugation of the supernatant fraction after lysis. The inner membranes should end up in the pellet fraction, whereas the soluble proteins reside in the supernatant. More detailed instructions are found in protocols. In addition, this way one can determine if the enzyme (or other protein) localizes to the inner membranes.
+			<br></br>
+			If the proteins are produced too rapidly, it might be that they don’t fold properly and form insoluble inclusion bodies. These inclusion bodies end up in the pellet fraction after cell lysis and centrifugation. To separate these from the rest of the insoluble fraction, which is the cell debris comprising of the cell wall and plasma membrane, refolding of the proteins must be performed. The pellet fraction (insoluble fraction in the graph) is resuspended first in solubilization buffer containing a high concentration of urea. This denatures the proteins, making them soluble. After this, the insoluble fraction is centrifuged, and the denatured protein is left in the supernatant fraction. Next, the samples are dialyzed in order to change the denaturing buffer into refolding buffer containing glycerol and EDTA. After this procedure, the proteins should be refolded to their proper structure.
+			<br></br>
+			Our hypothesis for MlrAYa is that it would localise to the plasma membrane. If that is the case, it can also be verified by the refolding experiment; if the enzyme (or other protein) is present in the pellet after refolding, it is most likely embedded in the plasma membrane.
+			<br></br>
+			From each stage of the localization workflow, samples must be taken to be analyzed with western blotting to verify the location of the enzyme.
+			<br></br></p>
+			<h2>Protocols</h2>
+			<br></br>
+			<p style="font-size:19px;" class="justify">For precise descriptions about assays and molecular biology methods, please find our protocols. We have included here all the protocols we have used in our lab work. 
+			<br></br>
+			Link to protocols: xxxx
+			<br></br></p>
 		</div>
 		</br>
 		<div class="sectionjee" style="background-color: #8a4b29">
@@ -98,7 +178,7 @@
 		<br></br>
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 		</br>
-			<h1 id="FOUR">Results</h1>
+			<h1 id="THREE">Results</h1>
 			<br></br>
 			<h2>Detection</h2>
 			<br></br>
@@ -108,7 +188,7 @@
 			<p style="font-size:19px;" class="justify">Our plan was to express Venus YFP under known promoters for comparison with our designed stress promoter. To this end, we chose the constitutive GPD1 promoter and the galactose-inducible GAL1 promoter. We used restriction enzyme cloning to insert Venus into pRS415-GPD and pRS415-GAL plasmid backbones. Cloning results were verified with colony PCR, diagnostic restriction digest and sequencing. As a result, colonies containing correct inserts were obtained.</p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Transformation of Venus into W303α and preliminary fluorescence measurements</b></p>
-			<p style="font-size:19px;" class="justify">Plasmids from verified colonies were purified and transformed into S. cerevisiae strain W303α to test the color intensity of produced fluorescent protein in yeast host. We had hoped that fluorescence could be seen by bare eye, but no color could be seen. The intensity was lower than expected, possibly due to the YFP being expressed at low levels for one reason or another, and thus required the use of a fluorometer to see changes in fluorescence.</p><p style="font-size:19px;" class="justify">To this end, we used a microplate reader, and found suitable settings to measure the fluorescence. We grew our yeast on a microtiter plate to continuously measure the development of fluorescence. Induction with galactose was done right in the beginning and timing was started from that point. The difference in fluorescence to a no-plasmid control was clear, for both the constitutive GPD1 promoter and galactose-induced GAL1 promote, as can be seen from figure 1. </p>
+			<p style="font-size:19px;" class="justify">Plasmids from verified colonies were purified and transformed into <i>S. cerevisiae</i> strain W303α to test the color intensity of produced fluorescent protein in yeast host. We had hoped that fluorescence could be seen by bare eye, but no color could be seen. The intensity was lower than expected, possibly due to the YFP being expressed at low levels for one reason or another, and thus required the use of a fluorometer to see changes in fluorescence.</p><p style="font-size:19px;" class="justify">To this end, we used a microplate reader, and found suitable settings to measure the fluorescence. We grew our yeast on a microtiter plate to continuously measure the development of fluorescence. Induction with galactose was done right in the beginning and timing was started from that point. The difference in fluorescence to a no-plasmid control was clear, for both the constitutive GPD1 promoter and galactose-induced GAL1 promote, as can be seen from figure 1. </p>
 			<br></br>
 			<figure style="text-align: center">
                     <img style="width:50%; height: 50%;" src="img/results1.png"><figcaption style="text-align: center">Figure 1. Fluorescence of Venus YFP under GPD1 and GAL1 promoters in W303α. RFU is blanked value of fluorescence. 
@@ -124,7 +204,7 @@
 			<p style="font-size:19px;" class="justify">After failing to properly linearize our plasmid for Gibson assembly, we decided to try our second cloning option: yeast recombination. We used the efficient homologous recombination capability characteristic to yeast to assemble our designed stress promoter plasmids. This was done by cotransforming plasmid backbone linearized with restriction enzymes and the linear stress promoter insert that we had received from IDT. We isolated the DNA from yeast and transformed it into E. coli to amplify, purify and verify the correctly assembled plasmid. Sequencing ultimately confirmed that we had plasmids with the correct sequences for our TSA1 and CTT1 promoter constructs; for the CCP1 construct, our plasmid contained a single base mutation, but as it was in the designed promoter area upstream of the transcription factor binding sites, we decided to use it all the same.</p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Transformation into SS328-leu:</b></p>
-			<p style="font-size:19px;" class="justify">Because we found out of a mutation in a key oxidative stress gene in W303α (Veal et al., 2003) which affects the genes and transcription factors our detection principle is based on, we decided it would be better to work with a different S. cerevisiae strain. We decided on strain SS328-leu, and successfully transformed both the stress promoter plasmids and the Venus control plasmids into the new strain.</p>
+			<p style="font-size:19px;" class="justify">Because we found out of a mutation in a key oxidative stress gene in W303α (Veal et al., 2003) which affects the genes and transcription factors our detection principle is based on, we decided it would be better to work with a different <i>S. cerevisiae</i> strain. We decided on strain SS328-leu, and successfully transformed both the stress promoter plasmids and the Venus control plasmids into the new strain.</p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Microplate reader fluorescence assays in SS328-leu, H2O2 induction:</b></p>
 			<p style="font-size:19px;" class="justify">To obtain information about the expression profile of our stress promoters, we measured fluorescence and cell density of cultures supplemented with various concentrations of inducing hydrogen peroxide while growing the cultures in a microplate readers. We used yeast expressing YFP under GPD1 promoter as a control to assess hydrogen peroxide effect on growth and fluorescence in a system that isn’t induced by it (Figure 2).</p>
@@ -212,7 +292,7 @@
 			<p style="font-size:19px;" class="justify">Before integrating our transporter constructs to the yeast genome, we had to assemble the constructs and amplify them in a plasmid. We ligated our ordered transporter insert gBlocks to a PCR-linearized pUG6 plasmid backbone using Gibson Assembly. Assembly products were amplified in E. coli, and verified with colony PCR and sequencing. We obtained colonies containing the correct insert from all our constructs except the transporter fused with mCherry, and the transporter with a N-terminal strep-tag - eventual sequencing results of mCherry construct proved that there had been a frameshift mutation in the sequenced colony, while in the construct with N-terminal strep tag, a wrong gBlock was used in the cloning. We decided not to try to obtain correct clones any more in order to save time to focus on our other experiments, and discontinued work on these constructs.</p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Transformation into W303α and verification of successful genome integration</b></p>
-			<p style="font-size:19px;" class="justify">Our plan was to insert the transporter constructs into S. cerevisiae genome (strain W303α) by replacing the corresponding transporter in W303α. Thus, we would make our lab yeast capable of importing microcystin. The correct integration to genome was verified by part colony PCR: we checked the integration site for correctly integrated new transporter, using primers targeting the old transporter as a negative control. This verification proved that the genome integration had been successful in all our constructs.</p>
+			<p style="font-size:19px;" class="justify">Our plan was to insert the transporter constructs into <i>S. cerevisiae</i> genome (strain W303α) by replacing the corresponding transporter in W303α. Thus, we would make our lab yeast capable of importing microcystin. The correct integration to genome was verified by part colony PCR: we checked the integration site for correctly integrated new transporter, using primers targeting the old transporter as a negative control. This verification proved that the genome integration had been successful in all our constructs.</p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Transformation into SS328-leu and verification of successful genome integration</b></p>
 			<p style="font-size:19px;" class="justify">We found out about a mutation in  stress response related genes in W303α which might interfere the proper function of our sensor. Because of this, we decided to transform everything into a new yeast strain (SS328-leu). Genome integration was again verified with two-part colony PCR as before.</p>
@@ -247,7 +327,7 @@
 			<p style="font-size:19px;" class="justify">From these result,s we can see that microcystin doesn’t affect foam layer thickness in SS328-leu as we hypothesised. This is explained by the lack of the transporter and thus incapability to import toxin into cell. In VL3, the foam thicknesses behaved  as expected between the different toxin concentrations, based on our reference article (Valério et al., 2014). Nevertheless, the variation between many of our samples is approximately same magnitude as the previously calculated error marginal estimate (10%). This indicated that the results are not very reliable, especially when not repeated multiple times; multiple repeats in the same conditions would also give a better estimate of the true error.</p><p style="font-size:19px;" class="justify">SS328-leu + QDR2 doesn’t seem to react to the different toxin concentrations the same way as VL3, as expected, but by comparing its behaviour to the same strain without the replaced transporter we can see that catalase activities are significantly higher in SS328-leu with VL3 QDR2 transporter. This phenotype change seems to indicate functionality of the integrated transporter. As SS328-leu catalase activities don’t seem follow the same trend as VL3, we would need more replicates of the test to see if the phenotype change truly translates to transporter functionality. </p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Transformation of stress promoters into SS328-leu containing microcystin transporter</b></p>
-			<p style="font-size:19px;" class="justify">Although we hadn’t obtained final verification on the functionality of the integrated transporters, we wanted to attempt microcystin induction of our stress promoters. To be able to induce the production of YFP using microcystin, we transformed our promoter plasmids to S. cerevisiae strain SS328-leu already containing the VL3 MC-transporter (QDR2) in its genome. The transformation was successful. </p>
+			<p style="font-size:19px;" class="justify">Although we hadn’t obtained final verification on the functionality of the integrated transporters, we wanted to attempt microcystin induction of our stress promoters. To be able to induce the production of YFP using microcystin, we transformed our promoter plasmids to <i>S. cerevisiae</i> strain SS328-leu already containing the VL3 MC-transporter (QDR2) in its genome. The transformation was successful. </p>
 			<br></br>
 			<p style="font-size:19px;" class="justify"><b>Fluorescence measurement with flow cytometry, microcystin induction:</b></p>
 			<p style="font-size:19px;" class="justify">Fluorescence was measured after incubating cell cultures for 2 hours with different concentrations of microcystin. For each promoter, cultures without the VL3 MC-transporter were used as negative controls. The obtained fluorescence values are presented in figure 15.</p>
@@ -259,7 +339,7 @@
              </figure>
              <br></br>
 			
-			<p style="font-size:19px;" class="justify">It is clear from figure 12 that none of the promoters was induced by the microcystin. In addition, it’s notable that the GPD1 promoter doesn’t show similar positive bias in higher concentrations as with hydrogen peroxide; this would make sense, as microcystin doesn’t negatively impact S. cerevisiae growth (Valério et al., 2014). A likely explanation for the failure of microcystin induction is that the microcystin transporter isn’t functional in the genome of SS328-leu. As we haven’t obtained confirmation for either the correct expression and localization of the transporter, or functionality, this seems a likely. </p>
+			<p style="font-size:19px;" class="justify">It is clear from figure 12 that none of the promoters was induced by the microcystin. In addition, it’s notable that the GPD1 promoter doesn’t show similar positive bias in higher concentrations as with hydrogen peroxide; this would make sense, as microcystin doesn’t negatively impact <i>S. cerevisiae</i> growth (Valério et al., 2014). A likely explanation for the failure of microcystin induction is that the microcystin transporter isn’t functional in the genome of SS328-leu. As we haven’t obtained confirmation for either the correct expression and localization of the transporter, or functionality, this seems a likely. </p>
 			<br></br>
 
 			<h2>Degradation</h2>
@@ -422,8 +502,12 @@
 			Along with the localization experiment, these results point towards the fact that the enzymes are active membrane proteins.</p>
 			<br></br>
 		</p>
-			
-			
+		<h2>Lab book</h2>
+			<br></br>
+			<p style="font-size:19px;" class="justify">In our lab book, you can find out everything we have done in the lab. The lab book is divided into four different subfolders according to different parts of our work. These subfolders are Microcystinase (MlrA), Promoter, Transporter and BioBricks. All the folders are ordered so that the newest experiments come first. 
+			<br></br>
+			Link to lab book: xxxxxx
+			<br></br></p>
 		</div>
 		</br>
 		<div class="sectionjee" style="background-color: #8a4b29">
@@ -432,10 +516,18 @@
 		</br>
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 		</br>
-			<h1 id="FIVE">Safety</h1>
+			<h1 id="FOUR">Safety</h1>
 			<br></br>
-			<p style="font-size:19px;" class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit arcu libero. Duis vitae cursus elit. Donec enim turpis, aliquam id neque at, faucibus porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et sollicitudin risus. Pellentesque risus magna, accumsan sit amet purus sed, ornare mattis diam. Morbi ac arcu metus. Praesent in massa lectus. Proin fringilla, erat a tempor imperdiet, nunc purus venenatis sem, vel finibus ex lacus a nisi. Morbi nibh augue, ultrices ut lacus id, laoreet aliquam mauris.</p>
-		</div>
+			<p style="font-size:19px;" class="justify">Safety is essential when working in a laboratory. This section describes the safety practices related to our laboratory work. For information on the broader safety and ethical questions related to our project, see our <a href="humanpractices.html" style="color:#8a4b29">human practices</a> page.
+			<br></br>
+			Our work mainly involved safety level 1 practices; all organisms that we used belong to biosafety level 1. We worked with <i>Escherichia coli</i> strains TOP10 and BL21(DE3), and <i>Saccharomyces cerevisiae</i> strains W303α, VL3, and SS328-leu. The genes we used in our constructs include a gene for yellow fluorescent protein, three promoter regions for oxidative stress inducible genes, gene coding for a specific membrane transporter and gene coding for microcystinase enzyme. The fluorescent protein is derived from the jellyfish <i>Aequorea victoria</i>, promoter regions and transporter are from <i>S. cerevisiae</i>, and microcystinase is derived from <i>Sphingomonas sp.</i> ACM-3962. None of these organisms are pathogenic so our genetically modified organisms also belong to safety level 1.
+			<br></br>
+			We have received safety training when starting work in the lab. All of our lab team had also previous experience with laboratory work; we had learned principles of safe laboratory practices through laboratory courses and work experience. Our safety training has included topics such as disposal of GMO waste, chemical work, emergency prevention and what to do in case of emergency.
+			<br></br>
+			As our project dealt with the detection and degradation of microcystin, we received additional training for its safe handling from experts working with this compound on a regular basis in the cyanobacteria research group of the University of Helsinki. The microcystin we handled is a cell extract from freeze-dried <i>Anabaena</i> strain 90, a biosafety level 1 organism according to DSMZ, and the concentrations of microcystin we worked with are very low. According to the University of Helsinki’s Biosafety Officer, such concentrations can even be poured down the drain without first neutralizing them. Samples with higher concentrations of microcystin were only necessary for the enzyme activity analyses, which were run by the cyanobacteria research group in the facilities of University of Helsinki. Thus, the disposal of samples with higher concentrations of microcystin was also handled there.
+			</p>
+			<br></br>
+			</div>
 		
 		</br>
 		<div class="sectionjee" style="background-color: #8a4b29">
@@ -445,13 +537,21 @@
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 			<h2>References</h2>
 				<br></br>
-				<p style="font-size:19px;" class="justify">Dziga, D., Wladyka, B., Zielińska, G., Meriluoto, J., Wasylewski, M., 2012. Heterologous expression and characterisation of microcystinase (2012) Toxicon, 59 (5), pp. 578-586.
+				<p style="font-size:19px;" class="justify">Chorus I, Bartram J, eds., 1999. Toxic Cyanobacteria in Water: A Guide to Their Public Health Consequences, Monitoring, and Management. London: E & FN Spon.
+				<br></br>
+				Dziga, D., Wladyka, B., Zielińska, G., Meriluoto, J., Wasylewski, M., 2012. Heterologous expression and characterisation of microcystinase (2012) Toxicon, 59 (5), pp. 578-586.
+				<br></br>
+				Edwards C, Graham D, Fowler N, Lawton LA., 2008. Biodegradation of microcystins and nodularin in freshwaters. Chemosphere, 73(8), pp. 1315-1321.
 				<br></br>
 				Gasch, A.P., Spellman. P.T., Kao, C.M., Carmel-Harel, O., Eisen, M.B., Storz, G., Botstein, D., Brown, P.O., 2000. Genomic expression programs in the response of yeast cells to environmental changes. Mol Biol Cell., 11, pp. 4241–4257.
+				<br></br>
+				Iwase T, Tajima A, Sugimoto S, Okuda KI, Hironaka I, Kamata Y, Takada K, Mizunoe Y., 2013. A simple assay for measuring catalase activity: a visual approach. Sci. Rep. 3, pp. 3081.
 				<br></br>
 				Valério, E., Vilares, A., Campos, A., Pereira, P. and Vasconcelos, V., 2014. Effects of microcystin-LR on Saccharomyces cerevisiae growth, oxidative stress and apoptosis. Toxicon, 90, pp.191-198.
 				<br></br>
 				Veal, E.A., Ross, S.J., Malakasi, P., Peacock, E. and Morgan, B.A., 2003. Ybp1 is required for the hydrogen peroxide-induced oxidation of the Yap1 transcription factor. Journal of Biological Chemistry, 278(33), pp.30896-30904.
+				<br></br>
+				WHO, 2003. Cyanobacterial toxins: Microcystin-LR in drinking-water. Background document for preparation of WHO Guidelines for drinking-water quality. Geneva, World Health Organization (WHO/SDE/WSH/03.04/57).
 				<br></br>
 				</p>
 		</div>
