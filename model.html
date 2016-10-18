@@ -68,7 +68,20 @@
 		</br>
 			<h1 id="ONE">Introduction</h1>
 			<br></br>
-			<p style="font-size:19px;" class="justify">As part of our project, we are designing a novel detection mechanism for the cyanobacterial toxin microcystin in live yeast (Saccharomyces cerevisiae) cells. The essential idea is to couple the yeast’s natural response to the toxin to the production of a yellow ﬂuorescent protein, Venus. In our concept for the detection mechanism, a sample of water, either contaminated with microcystin or not, is dropped on a culture of live yeast cells.<br></br>Microcystin then functions as follows: the genetically modiﬁed yeast take the toxin in through a transporter, QDR2, after which the toxin inhibits the function of protein phosphatases in the cell. This leads to an abundance of chemical reactions that produce an accumulation of Reactive Oxygen Species (ROS). The cell naturally ﬁghts against this accumulation of harmful oxygen species through a mechanism known as Oxidative Cell Response, or OSR.<br></br>Our detection mechanism is based on the idea of taking this ready mechanism, OSR, and modifying it to produce a visible response. In the interests of this, we have taken three naturally occurring promoters from genes involved in the yeast’s oxidative cell response: CTT1, CPP1 and TSA1.<br></br>These promoters are structured as follows. CTT1 has a single binding site for a transcription factor known as YAP1, and an unknown number of other binding sites for the factor MSA2. Meanwhile, the other two promoters have binding sites for YAP1 and a paralog of MSA2 known as SKN7. CCP1 has one binding site for YAP1 and two for SKN7 while TSA1 has two binding sites for YAP1 and three for SKN7.<br></br>In our constructs, these promoters are linked to standard genes expressing yellow ﬂuorescence, YFP. The hope is that we can roughly estimate the microcystin content of the sample from the ﬂuorescent activity of the live yeast cells.<br></br>To study our detection mechanism mathematically, we are creating a model of the transcription factor YAP1 (and later, SKN7) and its activation in the cells, hoping to (1) validate our model by replicating experimental results for each construct, (2) determine theoretical detection tresholds and measurement accuracy and (3) provide suggestions for optimal promoter design for future iterations of the project.</p>
+			<p style="font-size:19px;" class="justify">As part of our project, we are designing a novel detection mechanism for the cyanobacterial toxin microcystin using live <i>Saccharomyces cerevisiae</i> yeast cells. The essential principle is to couple the yeast’s natural response to the toxin to the production of a yellow ﬂuorescent protein, Venus. 
+			<br></br>
+			In our concept for the detection mechanism, a sample of water, either contaminated with microcystin or not, is supplemented to a culture of live yeast cells. The detection mechanism then functions as follows: the genetically modiﬁed yeast take the toxin in through a specific transporter (QDR2 from <i>S. cerevisiae</i> strain VL3), after which the toxin inhibits the function of protein phosphatases in the cell. This leads to an abundance of chemical reactions that produces an accumulation of Reactive Oxygen Species (ROS) (Valério et al. 2014). The cell naturally ﬁghts against this accumulation of harmful oxygen species through a mechanism known as Oxidative Stress Response, or OSR.
+			<br></br>
+			Our detection mechanism is based on modifying natural OSR to produce a visible response. To this end, we have chosen three naturally occurring promoters from genes involved in the yeast’s oxidative stress response: CTT1, CPP1 and TSA1.
+			<br></br>
+			These promoters are structured as follows. CTT1 has a single binding site for a transcription factor known as YAP1 and at least one binding site for the factor MSN2. Meanwhile, the other two promoters have binding sites for Yap1p and for a third transcription factor Skn7p. CCP1 has one binding site for YAP1 and two for Skn7p while TSA1 has two binding sites for Yap1p and three for Skn7p. (He et al. 2005)
+			<br></br></p>
+			Picture??
+			<br></br>
+			<p style="font-size:19px;" class="justify">In our constructs, these promoters are coupled to genes expressing yellow fluorescent protein (YFP). We hope to be able to roughly estimate the microcystin content of the sample from the ﬂuorescent activity of the live yeast cells.
+			<br></br>
+			To study our detection mechanism mathematically, we have created a model for the transcription factors YAP1 and SKN7 and theirs activation in the cells, hoping to 1) validate our model by replicating experimental results for each construct, 2) determine theoretical detection thresholds and measurement accuracy and 3) provide suggestions for optimal promoter design for future iterations of the project.
+			<br></br></p>
 		</div>
 		<br></br>
 
@@ -78,10 +91,26 @@
 		<br></br>
 		
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
-				
+		<h1 id="TWO">Biological background</h1>
+		<br></br>
 		<h3>Regulation of the Transcription Factor YAP1</h3>
 		<br></br>
-		<p style="font-size:19px;" class="justify">YAP1P is upregulated by spatial accumulation into the nucleus. This occurs by inhibiting the transportation of YAP1 to outside the nucleus while still allowing its transportation inside. <br></br>More speciﬁcally, Yap1p contains two kinds of localization signals, a DNA-binding/nuclear localization signal (NLS) sequence in the N-terminus and a nuclear export signal (NES) contained in its C-terminus. Under normal conditions NES activity is higher compared to NLS activity and thus, Yap1p is exported out of the nucleus via the transporter Crm1p which recognizes the NES sequence. Under oxidative stress the NES is covered with the help of the proteins Gpx3p/Orp1p and Ybp1p, which prevents Yap1p from leaving the nucleus, causing the protein to accumulate.<br></br>Orp1p is a protein inside the yeast cell which can recognize intracellular H2O2 and transfer this information to Yap1p. Yap1p forms an intracellular disulifde bond which covers the NES and thus, prevents Yap1p from leaving the nucleus. Thioredoxin (Trx) is responsible for reducing Yap1p and Opr1 (sensor and transcription factor) [2]. Since TRX2 is one of the target genes of Yap1p, Yap1p is autoregulated [2]. Prx enzymes might also play a role in the autoregulation of Yap1p.</p>
+		<p style="font-size:19px;" class="justify">Yap1p is activated by spatial accumulation into the nucleus. The accumulation occurs by inhibition of the export of Yap1p outside the nucleus. (Toledano et al. 2004) More speciﬁcally, Yap1p contains two kinds of localization signals, a DNA-binding/nuclear localization signal (NLS) sequence in the N-terminus, and a nuclear export signal (NES) in its C-terminus. Under normal conditions, NES activity is higher compared to NLS activity and thus, Yap1p is exported out of the nucleus via the transporter Crm1p which recognizes the NES sequence (Yan et al. 1998). Under oxidative stress the NES is covered with the help of the proteins Gpx3p/Orp1p and Ybp1p which prevents Yap1p from leaving the nucleus, causing the protein to accumulate (Veal et al. 2003). Yap1p is transported into the nucleus through the transporter Pse1p which recognizes the NLS sequence (Isoyama et al. 2001). Pse1p is not affected by the oxidative stress (Isoyama et al. 2001). 
+		<br></br>
+		Orp1p is a protein inside the yeast cell which can recognize intracellular H2O2 and transfer this information to Yap1p. Orp1p causes Yap1p to form an intracellular disulfide bond which covers the NES, and thus prevents Yap1p from leaving the nucleus. 
+		<br></br>
+		In literature two mechanisms are suggested for the deactivation of Yap1p-activated OSR genes:
+		<br></br> 1) Thioredoxin (Trx) is responsible for reducing Yap1p and Orp1p (transcription factor and H2O2 sensor) (He et al. 2005). Since Trx2 is one of the target genes of Yap1p, Yap1p is autoregulated (He et al. 2005). Another mechanism of autoregulation occurs through Prx enzymes such as Tsa1 and Tsa2, which reduce the amount of H2O2 inside the cell by oxidising it to water, and thus inhibit the activity of Orp1 which decreases the activation of Yap1p. Prx enzymes are also targets of Yap1p. (Toledano et al. 2004)
+		<br></br>
+		2) Another suggested mechanism of Yap1p regulation is degradation of Yap1p after it has targeted the YRE. The degradation of Yap1p is induced by Not4 and it is tightly linked to the nuclear accumulation and DNA binding of Yap1p. (Gulshan et al. 2012)
+		<br></br></p>
+		<h3>Regulation of transcription factor Skn7p activity</h3>
+		<br></br>
+		<p style="font-size:19px;" class="justify">The activation of transcription factor Skn7p under oxidative stress is not completely clear. Although the complete mechanism is not known, some models have been suggested. It is known that Skn7p is located in the nucleus in both normal and stress conditions and that some unknown kinase plays a role in its activation. (He et al. 2009) In addition, He et al. 2009 concluded that Yap1p affects the activity of Skn7p. According to their model, Skn7p forms a weak interaction with Yap1p, which is then strengthened through phosphorylation by an unknown kinase. The formation of this strong interaction with Yap1p and Skn7p activates the OSR genes.
+		<br></br></p>
+		
+		
+		
 		</div>
 		</br>
 		<div class="sectionjee">
