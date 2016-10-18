@@ -182,7 +182,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-	color: #A5410B;
+	color: #800000;
 }
 
 .shrink{
@@ -229,7 +229,7 @@ ul.botnav li a {
 }
 
 ul.botnav li a:hover {
-	color: #A5410B;
+	color: #800000;
 }
 
 /* CSS Parallax  
@@ -359,7 +359,7 @@ ul.topnav {
 
 
 ul.topnav li a.current {
-	color: #A5410B;
+	color: #800000;
 	
 }
 
@@ -369,7 +369,7 @@ ul.topnav li a img {
 }
 
  ul.botnav li a.active { 
-   color: #A5410B;
+   color: #800000;
  }
 
 .sectionjee {
@@ -498,7 +498,7 @@ progress {
   background-color: transparent;
 
   /* Progress bar value for IE10+ */
-  color: #A5410B;
+  color: #800000;
 }
 
 progress::-webkit-progress-bar {
@@ -506,11 +506,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #A5410B;
+  background-color: #800000;
 }
 
 progress::-moz-progress-bar {
-  background-color: #A5410B;
+  background-color: #800000;
 }
 
 .title {
