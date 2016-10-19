@@ -1,0 +1,189 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aalto-Helsinki</title>
+    
+    <script src="js/jquery-1.6.2.min.js"></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles-index.css" rel="stylesheet">
+    <!--<link href="css/saara.css" rel="stylesheet">
+    <link href="css/jami.css" rel="stylesheet">
+    <link href="css/emilia.css" rel="stylesheet">-->
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body class="teambackground">
+<div style="height:100%">
+    <section class="collabphoto parallax" style="text-align:center">
+    
+        <h2 class="title">InterLab study</h2>
+    </section>
+    </div>
+	
+	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features" style="position: absolute; width:100%; background:white;" >
+			<div class="navbar navbar-fixed-top">
+				<ul class="topnav" style="font-family: robotolight;">
+                <li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
+                <li style="float:right"><a href="community.html"><b>Community</b></a></li>
+                <li style="float:right"><a href="humanpractices.html"><b>Human Practices</b></a></li>
+                <li style="float:right"><a href="people.html"><b>People</b></a></li>
+                <li style="float:right"><a href="model.html"><b>Modelling</b></a></li>
+                <li style="float:right"><a href="lab.html"><b>Laboratory</b></a></li>
+                <li style="float:right"><a  href="description.html"><b>Project</b></a></li>
+                <li style="float:left; font-family: bebas_neuebold;"><b><a href="index.html" style="margin-left: 10px; font-size:22px; position:absolute;">AALTO-HELSINKI 2016</a></b>
+                </ul> 
+			</div>
+    
+    <script> $(window).scroll(function() {
+    if ($(this).scrollTop() > 640){ // Set position from top to add class
+        $('ul').addClass("shrink");
+    } else {
+        $('ul').removeClass("shrink");
+    }
+    });
+    </script>
+    
+    
+        <div class="block-wrapper-inner" style="padding-top: 15px;">
+
+            <div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+				</br>
+				<h3>Background</h3>
+				</br>
+                <p style="font-size:19px" class="justify">In order to compare results of similar experiments from different sources iGEM has proposed Interlab studies. It is a set of experiments that teams can volunteer to do in order to deal with relative results issue. The aim is to improve the tools available to both the iGEM community and the synthetic biology community as a whole.  This year's goal was to let different teams measure fluorescence level of GFP protein.  With minor difficulties we managed to complete the experiments and submit our results.</p>
+				</br></br>
+				<h3>Overview</h3>
+				</br>
+                <p style="font-size:19px" class="justify">Work done in different labs can be hard to compare sometimes due to different measurement techniques or reporting methods. In order to address this issue iGEM has come up with Interlab studies which can be carried out by different teams around the world. Results of these studies are eventually combined to give understanding of relative issues arising during the process. 
+				</p>
+				</br>
+				<p style="font-size:19px" class="justify">One of the big challenges in synthetic biology is that measurements of fluorescence usually cannot be compared because they are reported in different units or because different groups process data in different ways.Often one works around this by doing some sort of "relative expression" comparison; however, being unable to directly compare measurements makes it harder to debug engineered biological constructs, harder to effectively share constructs between labs, and harder even to just interpret your experimental controls.
+				</p>
+				</br>
+				<p style="font-size:19px" class="justify">This year iGEM had two protocols for measuring GFP fluorescence that would result in common, comparable units for teams to test out.
+				</p>
+				<br></br>
+				<h3>Results</h3>
+				</br>
+				<h4>Cell competency test</h4>
+				</br>
+				<p style="font-size:19px" class="justify">Before using our competent cells in our experiment, we had to use the Competent Cell Test Kit<sup><a href="#a">[1]</a></sup> provided by iGEM to test the efficiency of our competent cells. The kit included five vials of purified DNA from BBa_J04450 in plasmid backbone pSB1C3. Each vial contained DNA at a different concentration: 50pg/&#181;l, 20pg/&#181;l, 10pg/&#181;l, 5pg/&#181;l, 0.5pg/&#181;. Transformations had to be performed  with each of these to determine how efficient our competent cells were.</p>
+				</br>
+				<p style="font-size:19px" class="justify">We used TOP10 <i>Escherichia coli</i> competent cells and SOC medium from the Gibson assembly kit that we ordered separately from New England Biolabs. On the first try we got around 10 colonies overall and clearly failed. Then we tried it again with one difference in the procedure - we added plasmids into the cells during the transformation, not the other way around which was written in the iGEM protocol. Unfortunately, it did not work the second time either and we got similar results. Not giving up, we tried it a third time and this time we additionally used pJR18 plasmid for positive control with three concentrations - 500 pg/&#181;l, 50 pg/&#181;l and 5 pg/&#181;l. Also for the antibiotic we used ampicillin instead of chloramphenicol and this time it finally worked. Although after counting the colonies it was revealed that transformation efficiency was quite low - 1.8E7 cfu/&#181;L on average and weighted 1.6E7 cfu/&#181;L it was good enough to proceed with the transformations and start the actual experiments. Our competency results can be found in table 1.</p>
+				</br>
+         
+                <figure style="text-align:center;">
+                    <figcaption style="text-align:left; padding-left: 13%">Table 1. Cell competency test.</figcaption>
+                    <img style="width:75%; height; 75%" src="img/compcell.png">
+                </figure>
+            </br>
+				<h4>Calibration protocols</h4>
+				</br>
+                <figure style="float:right; text-align:center">
+                    <figcaption style="text-align:left; padding-left: 10%">Table 2. OD600 Reference point.</figcaption>
+                    <img style="width:90%; height; 90%" src="img/interlab1.png" >
+                </figure>
+				<p style="font-size:19px" class="justify"><i>1. OD600 Reference point</i></p>
+				</br>
+                
+            
+				<p style="font-size:19px" class="justify">We accidentally put the LUDOX solution into -20 storage room so we had to order a new one. After it arrived we put it into wells with water according to the protocol<sup><a href="#b">[2]</a></sup> and measured it with a plate reader. After entering the numbers gotten from the plate reader into the excel sheet we got the final values - corrected Abs600, reference OD600 and correction factor (table 2).</p>
+				</br>
+                
+				<p style="font-size:19px" class="justify"><i>2. Protocol FITC fluorescence standard curve</i></p>
+				</br>
+				<p style="font-size:19px" class="justify">By following all the advice and procedures mentioned in the Calibration Protocol<sup><a href="#b">[2]</a></sup> we prepared 1xPBS, 2xFITC, incubated 2xFITC and prepared the 1xFITC solutions. Then having the solution, we did the serial dilutions according to the protocol and measured the fluorescence with a plate reader. After entering the numbers into the excel sheet we were able to calculate the standard curve of fluorescence for FITC concentration. Our results can be seen in figure 1.</p>
+				</br>
+				<figure style="text-align:center">
+				<img style="width:70%; height; 70%" src="img/interlab3.png" >
+                    <figcaption style="text-align:center;">Figure 1. FITC fluorecence standard curve.</figcaption>
+                </figure>
+				</br>
+				<h4>Cell measurement protocol</h4>
+				</br>
+				<p style="font-size:19px" class="justify">Finally, after finishing all the calibrations, we did the transformations of five plasmids (three devices, positive and negative control). We succeeded only on our third time. The plasmids we received in the measurement kit<sup><a href="#c">[3]</a></sup> were dried out so we had to resuspend them in 100&#181;Ls of diH2O. Almost everything was done according to the transformation protocol<sup><a href="#d">[4]</a></sup>. Few differences were that after resuspending dried up DNA we were supposed to add 5&#181;L it but we added 10&#181;L. Then for the transformation of device 1 we did the heat shock for 70 seconds instead of 60. Also, we had to keep plates with colonies in the fridge for about three weeks due to some reasons. Therefore, we decided to do the restreaking of all colonies. Later these new colonies were used for cell cultures.</p>
+				</br>
+				<p style="font-size:19px" class="justify">After growing of cell cultures was done we measured their OD600. Later, after diluting the cultures to a target OD600 of 0.02 and completing other necessary procedures we measured the hourly recording. Results can be found in figures 2 and 3.</p>
+				</p>
+				</br>
+				<figure>
+				<img style="width:100%; height; 100%" src="img/inter-1.png" >
+                    <figcaption style="text-align:center;">Figure 2. Absorbance 600 and fluorecence measured with a plate reader.</figcaption>
+                </figure>
+				</br>
+				<figure style="text-align:center">
+				<img style="width:90%; height; 90%" src="img/interlab12.png" >
+                    <figcaption style="text-align:center;">Figure 3. Fluorecence per absorbance 600.</figcaption>
+                </figure>
+				</br>
+				<h3>Protocols and lab book</h3>
+				</br>
+				<p style="font-size:19px" class="justify">Links to protocols:</p></br>
+				<p style="font-size:19px" class="justify"><a id="a" href="http://parts.igem.org/Help:Competent_Cell_Test_Kit">[1] Competent Cell Test Kit </a><br>
+				<a id="b" href="http://2016.igem.org/wiki/images/c/c5/InterLab_iGEM2016_Plate_Reader_Protocol_Updated_July.pdf">[2] Plate Reader Protocol </a><br>
+				<a id="c" href="http://parts.igem.org/Help:InterLab_Measurement_Kit">[3] InterLab Measurement Kit </a><br>
+				<a id="d" href="http://parts.igem.org/Help:Protocols/Transformation">[4] Transformation Protocol</a><br>
+				<p style="font-size:19px" class="justify">Link to our lab book:</p></br>
+				<p style="font-size:19px;" class="justify"><a href="pdf/Entry.pdf" class="index" style="color:#23527c">InterLab study</a></p>
+				</p>
+				</br>
+				
+				
+				<script>
+				$(function() {
+
+				  $("li").removeClass("customTarget");
+				  var myLocation = document.location.hash.replace("#","");
+				  if (myLocation) {
+					document.getElementById(myLocation).className = "customTarget";
+				  }
+
+				  $("a").click(function () {
+					$("li").removeClass("customTarget");
+					var clickedLink = this.href.split("#");
+					if (clickedLink.length > 1) {
+					  document.getElementById(clickedLink[1]).className = "customTarget";
+					}
+				  });
+
+				});
+				</script>
+				
+		</div>
+    </div>
+
+        <script>
+    $(window).scroll(function(){
+        $(".title").css("opacity", 1 - $(window).scrollTop() / 500);
+    });
+    </script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--script src="./Tinyone - HTML_files/jquery.min.js"></script>
+    <script src="./Tinyone - HTML_files/bootstrap.min.js"></script>
+    <script src="./Tinyone - HTML_files/offcanvas.js"></script>
+    <script src="./Tinyone - HTML_files/function.js"></script-->
+  
+
+</body></html>
