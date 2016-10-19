@@ -110,7 +110,10 @@ def replace_property_of_tags_with_function_return_value_in_html(property, tag, f
             tag[property] = return_val
             if (dict):
                 dict[property_value] = return_val
-    return soup.prettify()
+    return soup.prettify(formatter = None)
+    
+def replace_source_tags(html, session, dict = None):
+    return replace_property_of_tags_with_function_return_value_in_html('src', 'source', video_upload, html, session, dict)
 
 def replace_img_tags(html, session, dict = None):
     return replace_property_of_tags_with_function_return_value_in_html('src', 'img', image_upload, html, session, dict)
@@ -120,6 +123,9 @@ def replace_script_tags(html, session, dict = None):
 	
 def replace_link_tags(html, session, dict = None):
     return replace_property_of_tags_with_function_return_value_in_html('href', 'link', css_upload, html, session, dict)
+    
+def replace_a_tags(html, dict = None):
+    return replace_property_of_tags_with_function_return_value_in_html('href', 'a', lambda x: x, html, None, dict)
 
 def get_image_tags(file, session):
     soup = BeautifulSoup(open(file), "html5lib")
@@ -148,27 +154,25 @@ def relative_from_absolute_path(absolutepath):
 def get_filename_from_path(filepath):
     return filepath[filepath.rfind("/")+1:]
     
-def read_font_file(filepath):
+def produce_file(filepath, fileprefix):
     try:
         relativepath = relative_from_absolute_path(filepath)
         filename = get_filename_from_path(filepath)
         filetype = filename[filename.rfind(".")+1:]
-        return {'wpUploadFile': (filename, open(relativepath, "rb"), "application/font-"+filetype)}
+        return {'wpUploadFile': (filename, open(relativepath, "rb"), fileprefix+filetype)}
         #print(image_file)
     except FileNotFoundError:
         print("File " + filepath + " not found.")
         return None
+    
+def read_video_file(filepath):
+    return produce_file(filepath, "video/")
+    
+def read_font_file(filepath):
+    return produce_file(filepath, "application/font-")
 
 def read_image_file(filepath):
-    try:
-        relativepath = relative_from_absolute_path(filepath)
-        filename = get_filename_from_path(filepath)
-        filetype = filename[filename.rfind(".")+1:]
-        return {'wpUploadFile': (filename, open(relativepath, "rb"), "image/"+filetype)}
-        #print(image_file)
-    except FileNotFoundError:
-        print("File " + filepath + " not found.")
-        return None
+    return produce_file(filepath, "image/")
 
 def send_file_to_server( image_file, data, session, url = UPLOAD_URL ):
     try:
@@ -260,12 +264,12 @@ def css_upload(filepath, session):
     file_data = replace_urls_in_css(file_data, session)
     
     return template_upload(filename, file_data, session)+"&action=raw&ctype=text/css"
-	
-def font_upload(file, session):
+
+def file_upload(file, session, file_reader):
     data = get_edit_parameters(UPLOAD_URL, session)
     if (data == None): return 1
     
-    font_file = read_font_file(file)
+    font_file = file_reader(file)
     if (font_file == None): return 2
     
     response = send_file_to_server(font_file, data, session)
@@ -276,23 +280,14 @@ def font_upload(file, session):
     
     return link
     
-def image_upload(file, session):
-    # Get edit id
-    data = get_edit_parameters(UPLOAD_URL, session)
-    if (data == None): return 1
+def video_upload(file, session):
+    return file_upload(file, session, read_video_file)
+
+def font_upload(file, session):
+    return file_upload(file, session, read_font_file)
     
-    # Read file
-    image_file = read_image_file(file)
-    if (image_file == None): return 2
-
-    # Send file to iGEM server
-    response = send_file_to_server(image_file, data, session)
-    if (response == None): return 3
-
-    # Return link to file
-    link = get_link_to_file(response)
-    if (link == None): return 4
-    return link
+def image_upload(file, session):
+    return file_upload(file, session, read_image_file)
 
 def headerfooter():
 #---- read header & footer ---#
@@ -313,6 +308,19 @@ def headerfooter():
 
         file_data = header_data+file_data+footer_data
 
+def footer(html, footer_path):
+    try:
+        footer_data = BeautifulSoup(open(footer_path, encoding = "utf8"), "html5lib")
+    except FileNotFounder:
+        print("Footer not found, not including...")
+        return html
+    
+    soup = BeautifulSoup(html, "html5lib")
+    #new_div = soup.new_tag("div")
+    #new_div.string = footer_data
+    soup.body.append(footer_data)
+    return soup.prettify()
+        
 def send_html_to_server(url, html_data, parameters, session):
     try:
         parameters['wpTextbox1'] = html_data
@@ -325,10 +333,14 @@ def upload(page, file, session, dict = None, headerfooter = False):
     #---- read requested file ----#
     try:
         #file_data = get_image_tags(file, session)
-        file_data = BeautifulSoup(open(file, encoding = "utf8"), "html5lib").prettify()
+        file_data = BeautifulSoup(open(file, encoding = "utf8"), "html5lib").prettify(formatter = None)
+        #file_data = open(file, encoding="utf8").read()
+        file_data = replace_a_tags(file_data, dict)
+        file_data = footer(file_data, "footer.html")
         file_data = replace_img_tags(file_data, session, dict)
         file_data = replace_link_tags(file_data, session, dict)
         file_data = replace_script_tags(file_data, session, dict)
+        file_data = replace_source_tags(file_data, session, dict)
         #soup = BeautifulSoup(open(file), "html5lib")
         #file_data = soup.prettify().encode("utf8")
         #print(file_data)

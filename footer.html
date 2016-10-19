@@ -20,7 +20,7 @@
 	<script>
     // Add titles from page to footer
     var h1s = document.getElementsByTagName("h1");
-    for (var i = 0; i < h1s.length; i++) {
+    for (var i = 1; i < h1s.length; i++) {
         var h1 = h1s[i];
         $( "<li><a href=\"#"+ h1.id +"\">" + h1.textContent + "</a></li>" ).appendTo( ".botnav" );
         console.log(h1);
@@ -31,14 +31,16 @@
     // Smooth scroll on click
     $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1000);
-        return false;
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')) {
+      if (location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 50
+          }, 1000);
+          return false;
+        }
       }
     }
   });
@@ -55,13 +57,17 @@
 	$(window).scroll(function() {
 	for (var i = links.length-1; i >= 0; i--) {
 		
-		if ($(this).scrollTop() > $(h1s[i]).offset().top - 70 && alreadyFound == 0) {
-		console.log('hei');
-        $(links[i]).addClass("active");
-		alreadyFound = 1;
-		} 
+		if ($(this).scrollTop() > $(h1s[i+1]).offset().top - 70) {
+		  if (alreadyFound == 0) {
+            console.log('hei');
+            $(links[i]).addClass("active");
+		    alreadyFound = 1;
+          } else {
+            $(links[i]).removeClass("active");
+          }
+		}
 		else {
-		$(links[i]).removeClass("active");
+		  $(links[i]).removeClass("active");
 		}
 	
 	}

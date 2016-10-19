@@ -132,7 +132,6 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(/Users/Misan/Desktop/iGEM/Wiki/Aalto-Helsinki-2016-Wiki/img/lake2.jpg) no-repeat;
     
 }
 
@@ -147,7 +146,6 @@ video#bgvid {
 }
 
 .handshakephoto {
-	background: url('/2016/img/handshake3.jpg') no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
 	height: 110%;
@@ -215,8 +213,7 @@ ul.botnav {
 
 ul.botnav li {
     text-align: center;
-	
-	
+	margin-bottom: initial;
 }
 
 ul.botnav li a {
@@ -318,13 +315,23 @@ ul.botnav li a:hover {
     display: none;
 }
 
+#top_menu_inside {
+    box-sizing: content-box;
+    line-height: initial;
+}
+
+#top_menu_14 {
+    box-sizing: content-box; /* This gets modified by Bootstrap */
+}
+
 #HQ_page p {
     font-family: inherit;
-	font-size: 19px;
+	font-size: 17px;
 }
 
 #HQ_page h1, h2, h3, h4, h5 {
     font-family: inherit;
+    overflow: inherit;
 }
 
 ul.topnav {
@@ -346,7 +353,6 @@ ul.topnav {
 }
 
 .lakephoto {
-    /*background: url('/2016/img/jarvi.jpg.jpg') no-repeat;*/
     background: url('../img/wiki18.jpg') no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -373,7 +379,6 @@ ul.topnav li a img {
  }
 
 .sectionjee {
-	/*background: url('file:///C:/Users/Saara/Documents/iGEM/Aalto-Helsinki-2016-Wiki/img/trees.png') no-repeat;*/
 	/*background-size: 100%;*/
 	position: relative;
     margin-left: 0;
@@ -525,8 +530,7 @@ progress::-moz-progress-bar {
 
 @font-face {
     font-family: 'robotolight';
-    src: url('roboto-light-webfont.woff2') format('woff2'),
-         url('roboto-light-webfont.woff') format('woff');
+    src: url('roboto-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -551,8 +555,7 @@ ul.topnav li a img {
  }
  @font-face {
     font-family: 'im_fell_french_canon_proIt';
-    src: url('fefcit27c-webfont.woff2') format('woff2'),
-         url('fefcit27c-webfont.woff') format('woff');
+    src: url('fefcit27c-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -560,8 +563,7 @@ ul.topnav li a img {
 
 @font-face {
     font-family: 'robotoregular';
-    src: url('roboto-regular-webfont.woff2') format('woff2'),
-         url('roboto-regular-webfont.woff') format('woff');
+    src: url('roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
