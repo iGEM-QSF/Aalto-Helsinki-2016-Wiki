@@ -49,6 +49,12 @@ class Wrangler(HTMLParser):
 #		tag.extract() # Remove the tag
 #    return "\n".join(template_refs)+soup.prettify().encode("utf8")
 
+def upload_all(session):
+    dict1 = {"description.html": "Description", "lab.html": "Laboratory", "model.html": "Modelling", "people.html": "People", "humanpractices.html": "HP", "community.html": "Community", "achievements.html": "Achievements"}
+    dict2 = {"description.html": "Description", "lab.html": "Laboratory", "model.html": "Modelling", "people.html": "People", "humanpractices.html": "HP", "community.html": "Community", "achievements.html": "Achievements"}
+    for (html, igemPage) in dict1.items():
+        upload(igemPage, html, session, dict2)
+
 def upload_required(session):
     for required_page in REQUIRED_PAGES:
         upload(required_page, required_page.lower()+".html", session)

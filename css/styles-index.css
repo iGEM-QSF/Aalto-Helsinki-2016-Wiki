@@ -206,7 +206,7 @@ ul.botnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-	position: fixed;
+	position: relative;
 	bottom: 0;
     width: 100%;
     font-family: 'robotolight';
@@ -215,6 +215,7 @@ ul.botnav {
 ul.botnav li {
     text-align: center;
 	margin-bottom: initial;
+    display: inline-block;
 }
 
 ul.botnav li a {
