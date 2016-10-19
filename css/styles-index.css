@@ -71,6 +71,7 @@ h1 span {
 .block-wrapper-inner {
 	/*padding-left: 100px;*/
 	padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .block, .lead {
@@ -337,6 +338,8 @@ ul.botnav li a:hover {
 ul.topnav {
     margin-top: 5px;
 }
+
+
 
 /* Emilia css */
 
