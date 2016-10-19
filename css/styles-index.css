@@ -286,6 +286,10 @@ ul.botnav li a:hover {
 	.handshakephoto {
 		background-position: 0% 25%;
 	}
+    
+    .navbar-fixed-bottom {
+        display: none;
+    }
 
 }
 
@@ -340,6 +344,9 @@ ul.topnav {
     margin-top: 5px;
 }
 
+.sectionjee h2 {
+    margin: 0 auto;
+}
 
 
 /* Emilia css */

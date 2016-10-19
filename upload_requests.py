@@ -5,6 +5,7 @@ from urllib import parse            #for urlencode
 import getpass                      #password reading from commandline
 from bs4 import BeautifulSoup                     #for parsing and (re-)generating html5
 import re                           #regex for css parsing
+import time                         # Don't cause too much load to the servers
 #import urllib
 #------ SETTINGS -------#
 LOGIN_URL = "http://igem.org/Login2"
@@ -51,9 +52,10 @@ class Wrangler(HTMLParser):
 
 def upload_all(session):
     dict1 = {"description.html": "Description", "lab.html": "Laboratory", "model.html": "Modelling", "people.html": "People", "humanpractices.html": "HP", "community.html": "Community", "achievements.html": "Achievements"}
-    dict2 = {"description.html": "Description", "lab.html": "Laboratory", "model.html": "Modelling", "people.html": "People", "humanpractices.html": "HP", "community.html": "Community", "achievements.html": "Achievements"}
+    dict2 = dict1.copy()
     for (html, igemPage) in dict1.items():
         upload(igemPage, html, session, dict2)
+        time.sleep(1)
 
 def upload_required(session):
     for required_page in REQUIRED_PAGES:
@@ -361,10 +363,15 @@ def upload(page, file, session, dict = None, headerfooter = False):
     if (data == None): return 2
 
     #------- post new edit -------#
-    if (page == "index"):
-        resp = send_html_to_server(BASE_URL+"&action=submit", file_data, data, session)
-    else:
-        resp = send_html_to_server(BASE_URL+"/"+page+"&action=submit", file_data, data, session)
+    resp = None
+    i = 0
+    while (resp == None && i < 4):
+        if (i > 0) {"Retrying..."}
+        if (page == "index"):
+            resp = send_html_to_server(BASE_URL+"&action=submit", file_data, data, session)
+        else:
+            resp = send_html_to_server(BASE_URL+"/"+page+"&action=submit", file_data, data, session)
+        i++
     if (resp == None): return 3
 
     return 0
