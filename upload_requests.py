@@ -132,8 +132,8 @@ def replace_script_tags(html, session, dict = None):
 def replace_link_tags(html, session, dict = None):
     return replace_property_of_tags_with_function_return_value_in_html('href', 'link', css_upload, html, session, dict)
     
-def replace_a_tags(html, dict = None):
-    return replace_property_of_tags_with_function_return_value_in_html('href', 'a', lambda x: x, html, None, dict)
+def replace_a_tags(html, session, dict = None):
+    return replace_property_of_tags_with_function_return_value_in_html('href', 'a', pdf_upload, html, session, dict)
 
 def get_image_tags(file, session):
     soup = BeautifulSoup(open(file), "html5lib")
@@ -142,13 +142,29 @@ def get_image_tags(file, session):
         link = image_upload(image_path, session)
         tag['src'] = link
     return soup.prettify().encode("utf8")
+    
+def send_get_request(url, session):
+    try:
+        return session.get(url)
+    except:
+        print("Error:", sys.exc_info()[0])
+        return None
 	
 def get_edit_parameters(url, session):
+    i = 0
+    resp = None
+    while (resp = None and i < 4):
+        if (i > 0): 
+            print("Retrying...")
+            time.sleep(1)
+        resp = send_get_request(url, session)
+        i += 1
+    if (resp = None):
+        return None
+    content = resp.text
+    parser = Wrangler()
+    parser.ids = {}
     try:
-        resp = session.get(url)
-        content = resp.text
-        parser = Wrangler()
-        parser.ids = {}
         parser.feed(content)
         return parser.ids
     except:
@@ -172,6 +188,9 @@ def produce_file(filepath, fileprefix):
     except FileNotFoundError:
         print("File " + filepath + " not found.")
         return None
+    
+def read_pdf_file(filepath):
+    return produce_file(filepath, "application/")
     
 def read_video_file(filepath):
     return produce_file(filepath, "video/")
@@ -277,16 +296,22 @@ def file_upload(file, session, file_reader):
     data = get_edit_parameters(UPLOAD_URL, session)
     if (data == None): return 1
     
-    font_file = file_reader(file)
+    generic_file = file_reader(file)
     if (font_file == None): return 2
     
-    response = send_file_to_server(font_file, data, session)
+    response = send_file_to_server(generic_file, data, session)
     if (response == None): return 3
     
     link = get_link_to_file(response)
     if (link == None): return 4
     
     return link
+    
+def pdf_upload(file, session):
+    if (infer_file_type_from_path(file) == "DOCUMENT"):
+        return file_upload(file, session, read_pdf_file)
+    else:
+        return file
     
 def video_upload(file, session):
     return file_upload(file, session, read_video_file)
@@ -343,7 +368,7 @@ def upload(page, file, session, dict = None, headerfooter = False):
         #file_data = get_image_tags(file, session)
         file_data = BeautifulSoup(open(file, encoding = "utf8"), "html5lib").prettify(formatter = None)
         #file_data = open(file, encoding="utf8").read()
-        file_data = replace_a_tags(file_data, dict)
+        file_data = replace_a_tags(file_data, session, dict)
         file_data = footer(file_data, "footer.html")
         file_data = replace_img_tags(file_data, session, dict)
         file_data = replace_link_tags(file_data, session, dict)
@@ -365,13 +390,15 @@ def upload(page, file, session, dict = None, headerfooter = False):
     #------- post new edit -------#
     resp = None
     i = 0
-    while (resp == None && i < 4):
-        if (i > 0) {"Retrying..."}
+    while (resp == None and i < 4):
+        if (i > 0):
+            print("Retrying...")
+            time.sleep(1)
         if (page == "index"):
             resp = send_html_to_server(BASE_URL+"&action=submit", file_data, data, session)
         else:
             resp = send_html_to_server(BASE_URL+"/"+page+"&action=submit", file_data, data, session)
-        i++
+        i += 1
     if (resp == None): return 3
 
     return 0
