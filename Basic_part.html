@@ -1,0 +1,162 @@
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aalto-Helsinki</title>
+	
+	<script src="js/jquery-1.6.2.min.js"></script>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles-index.css" rel="stylesheet">
+ 
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body class="teambackground">
+
+<div style="height:100%">
+	<section class="sciencephoto parallax" style="text-align: center">
+		<h2 class="title">Basic Part</h2>
+	</section>
+	</div>
+	
+	<div class="block-wrapper featured-block parallax__layer parallax__layer--base" id="features" style="position:absolute; width:100%; background:white;">
+		<div class="navbar navbar-fixed-top">
+	
+				<ul class="topnav" style="font-family: robotolight;">
+				<li style="float:right"><a href="achievements.html"><b>Achievements</b></a></li>    
+				<li style="float:right"><a href="community.html"><b>Community</b></a></li>
+				<li style="float:right"><a href="humanpractices.html"><b>Human Practices</b></a></li>
+				<li style="float:right"><a href="people.html"><b>People</b></a></li>
+				<li style="float:right"><a href="model.html"><b>Modelling</b></a></li>
+				<li style="float:right"><a  href="lab.html"><b>Laboratory</b></a></li>
+				<li style="float:right"><a href="description.html"><b>Project</b></a></li>
+				<li style="float:left; font-family: bebas_neuebold;"><b><a href="index.html" style="margin-left: 10px; font-size:22px; position:absolute;">AALTO-HELSINKI 2016</a></b>
+			</ul> 
+		</div>
+    
+    <script> $(window).scroll(function() {
+    if ($(this).scrollTop() > 640){ // Set position from top to add class
+        $('ul').addClass("shrink");
+    } else {
+        $('ul').removeClass("shrink");
+    }
+    });
+    </script>
+	
+	<div class="block-wrapper-inner" style="padding-top: 15px;">
+<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+<br>
+<h2>Introduction</h2>
+<p class="justify" style="font-size:19px">This part can be used to introduce microcystinase (MlrA) from <i>Sphingomonas</i> sp. ACM-3962 to yeast. MlrA is an enzyme that degrades some cyanobacterial toxins, most notably microcystin-LR (MC-LR). To facilitate detection and purification of the enzyme, a 6X Histidine tag is fused on the C-terminus of MlrA, with a short linker in between. The full protein-coding sequence has been codon-optimized for expression in <i>Saccharomyces cerevisiae </i> by GeneArt.</p>
+<br></br>
+             <figure style="text-align: center">
+                    <img style="width:90%; height: 50%;" src="img/basic1.png">
+             </figure>
+             <br></br>
+<h2>Background</h2>
+<p class="justify" style="font-size:19px">Microcystinase, or MlrA, is a member of a set of enzymes that degrade microcystins. These enzymes - MlrA, MlrB, MlrC and MlrD - are found naturally in some gram-negative bacteria, for example <i>Sphingomonas</i> sp. They each have a different function in the overall process of microcystin degradation. MlrA is first in the sequence to act. It hydrolyzes the peptide bond between the Adda and arginine amino acids in microcystin-LR (MC-LR). The breakage of this bond linearizes the toxin (Figure 1). Following this, MlrB (a serine protease) and MlrC (a metalloprotease) are able to further degrade the linearized product into individual amino acids, which are then used in the cell’s metabolism. Therefore, the toxin is likely used as a carbon source. MlrD’s function is not fully understood at this point, but it may have a role in importing the toxins. (Bourne et al., 2001)</p>
+<br></br>
+             <figure style="text-align: center">
+                    <img style="width:90%; height: 40%;" src="img/deg1.png"><figcaption style="text-align: left">Figure 1. Linearization of microcystin-LR occurs when MlrA hydrolyzes the bond between two of the toxin’s amino acids, Adda and arginine. It has been reported that the linearization of MC-LR renders the toxin 160 times less toxic (Bourne et al., 1996).
+					</figcaption>
+             </figure>
+             <br></br>
+<p class="justify" style="font-size:19px">Based on a homologous structure model (Figure 2) obtained from the Phyre2 tool (Kelley et al., 2015), it seems that the enzyme is a transmembrane protein consisting of eight hydrophobic α-helices that form a channel, with the presumed active site (Bourne et al., 2001) residing in the middle. It is worth pointing out, however, that the model does not cover the whole length of the MlrA sequence, as only very few homologs were found for the sequence - the homology model is mostly based on two homologs that didn’t cover the very ends of either terminus. Other than this evidence, there are previous studies pointing to the direction of MlrA being a membrane protein (Pei et al., 2011). However, when the enzyme was heterologously produced in <i> E. coli </i>, it was noticed that it had localised mostly in the soluble fraction of the cytosol, in an active state (Dziga et al., 2012).
+</p>
+<br></br>
+             <figure style="text-align: center">
+                    <img style="width:30%; height: 40%;" src="img/deg2.png"><figcaption style="text-align: left">Figure 2. A homology-based structure model of MlrA made with Phyre2 and visualised with UCSF Chimera. Based on the model, it seems that MlrA has a typical membrane protein structure consisting of set of hydrophobic transmembrane helices.. The presumed active site (Bourne et al., 2001) resides in the middle of a channel formed by the helices.
+					</figcaption>
+             </figure>
+             <br></br>
+<p class="justify" style="font-size:19px">The mechanism of MlrA’s function is not yet fully understood. The homologous structure model gives some suggestions as to how the enzyme might work: it seems that one end of the channel is wider than the other, and that the active site resides in the middle of it. Consequently, if the enzyme is located on the outer membrane of the cells, it might actually be a transporter which the cells use to import the toxin and simultaneously linearize it. 
+</p>
+
+</br>
+<h2>Expression</h2>
+<p class="justify" style="font-size:19px">This part has been used in <i> S. cerevisiae </i> strain SS328-leu. To produce the protein, a 20 mL pre-culture was prepared in SD-leu + 2% glucose and grown overnight at 30 °C. The culture was then diluted into a final volume of 500 mL using SD-leu + 0.5% glucose, to an OD600 value of 0.2. This culture was refreshed in 30 °C for 6 h, and then induced by adding galactose to a final concentration of 2%. Expression was continued overnight, then cells were harvested. Samples from different stages of cell culture and cell lysis were collected for SDS-PAGE and analysis with western blot utlizing anti-His antibodies. The results of this analysis are presented in figure 3. It was observed that after cell lysis, the protein localized mainly in the insoluble fraction.</p>
+
+<br></br>
+             <figure style="text-align: center">
+                    <img style="width:50%; height: 50%;" src="img/13.png"><figcaption style="text-align: left">Figure 3: Western blot of MlrA expression in yeast. S1 - growth medium before lysing cells, CL - cell lysate, S2 - supernatant from cell lysate and P2 - pellet from cell lysate.
+					</figcaption>
+             </figure>
+             <br></br>
+
+<br></br></h2>
+<p class="justify" style="font-size:19px">For determining the location of the protein, yeast cells were lysed and fractions were further processed to obtain information on the different cellular components. All of these fractions were then analyzed by western blotting (Figure 4). MlrA was detected in the fraction comprising inclusion bodies, plasma membrane and cell wall (P2 fraction) as well as fraction containing only cell wall and plasma membrane (P3 fraction), indicating that the protein is localized in the plasma membrane. Unlike previously, no enzyme was detected in the soluble fraction. </p>
+
+<br></br>
+             <figure style="text-align: center">
+                    <img style="width:40%; height: 50%;" src="img/basic2.png"><figcaption style="text-align: left">Figure 4. Localisation assay of MlrA. S1 - growth medium, S2 - supernatant after cell lysis, P2 - pellet after cell lysis, S3 - re-folded proteins, P3 - plasma membrane + cell wall, S4 - soluble protein, P4 - inner membranes.
+					</figcaption>
+             </figure>
+             <br></br>
+
+
+<h2>Activity measurements</h2>
+
+
+<p class="justify" style="font-size:19px">The activity of MlrA was measured by incubating the enzyme in different dilutions with microcystin extract. The final concentration of microcystin-LR was estimated to be 1 μg/L. Samples were taken at different time points and they were analysed with liquid chromatography/mass spectrometry (LC-MS). This gives data of the relative abundance of microcystin-LR in each sample. The results were then plotted against time, together with a negative control which consisted of microcystin extract and cell lysate from <i> S. cerevisiae </i> SS328-leu strain which did not have an MlrA 
+</p>
+</br>
+<p class="justify" style="font-size:19px">The results we acquired from this construct show that the amount of microcystin decreases, which means that the enzyme is active (Figure 5). The results also show that for example the 1:10 dilution degrades the microcystin-LR about ten times faster than the 1:100 dilution.
+</p>
+<br></br>
+             <figure style="text-align: center">
+                    <img style="width:50%; height: 50%;" src="img/basic3.png"><figcaption style="text-align: left">Figure 5. Enzymatic activity of MlrA produced in <i>S. cerevisiae</i> , plotted values are means of three replicates. Results show that the 1:10 dilution has the highest activity whereas 1:1000 has the lowest.
+					</figcaption>
+             </figure>
+             <br></br>
+
+<h2>References</h2>
+
+<p class="justify" style="font-size:19px">Bourne DG, Jones GJ, Blakeley RL, Jones A, Negri AP, Riddles P., 1996. Enzymatic Pathway for the Bacterial Degradation of the Cyanobacterial Cyclic Peptide Toxin Microcystin LR. Appl. Environ. Microbiol. 62(11), pp. 4086-4094.</p>
+
+<p class="justify" style="font-size:19px">Bourne DG, Riddles P, Jones GJ, Smith W, Blakely RL., 2001. Characterisation of a gene cluster involved in bacterial degradation of the cyanobacterial toxin microcystin LR. Environ Toxicol. 16(6), pp. 523-34.</p>
+
+<p class="justify" style="font-size:19px">Dziga D, Wladyka B, Zielińska G, Meriluoto J, Wasylewski M., 2012. Heterologous expression and characterisation of microcystinase. Toxicon, 59(5), pp. 578-586.</p>
+
+<p class="justify" style="font-size:19px">Kelley LA, Mezulis S, Yates CM, Wass MN, Sternberg MJE., 2015. The Phyre2 web portal for protein modeling, prediction and analysis. Nature Protocols 10, pp. 845–858.</p>
+
+<p class="justify" style="font-size:19px">Pei J, Mitchell DA, Dixon JE, Grishin NV., 2011. Expansion of type II CAAX proteases reveals evolutionary origin of g-secretase subunit APH-1. J. Mol. Biol. 410:18–26.</p>
+
+
+    </div>
+</div>
+
+    	<script>
+	$(window).scroll(function(){
+		$(".title").css("opacity", 1 - $(window).scrollTop() / 500);
+	});
+	</script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--script src="./Tinyone - HTML_files/jquery.min.js"></script>
+    <script src="./Tinyone - HTML_files/bootstrap.min.js"></script>
+    <script src="./Tinyone - HTML_files/offcanvas.js"></script>
+    <script src="./Tinyone - HTML_files/function.js"></script-->
+  
+
+</body></html>
