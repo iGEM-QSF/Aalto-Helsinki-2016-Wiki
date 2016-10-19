@@ -108,9 +108,12 @@
 		<br></br>
 		<p style="font-size:19px;" class="justify">The activation of transcription factor Skn7p under oxidative stress is not completely clear. Although the complete mechanism is not known, some models have been suggested. It is known that Skn7p is located in the nucleus in both normal and stress conditions and that some unknown kinase plays a role in its activation. (He et al. 2009) In addition, He et al. 2009 concluded that Yap1p affects the activity of Skn7p. According to their model, Skn7p forms a weak interaction with Yap1p, which is then strengthened through phosphorylation by an unknown kinase. The formation of this strong interaction with Yap1p and Skn7p activates the OSR genes.
 		<br></br></p>
-		
-		
-		
+		<h3>Regulation of transcription factor Msn2/4p</h3>
+		<br></br>
+		<p style="font-size:19px;" class="justify">Msn2/4p are transcription factors that regulate genes involved in various kinds of stress, including stress related to nutrition, heat, osmotic and acid equilibrium as well as oxidative stress. Activation of Msn2/4p occurs with a mechanism similar to Yap1p. In normal conditions Msn2/4p is located in the cytoplasm. In response to stress Msn2/4p accumulates into the nucleus. This nuclear localization is coordinated by PKA (protein kinase A) (Luschak 2010).
+		<br></br>
+		PKAs are kinase enzymes that are activated by cAMP and regulated by hormones such as glucagon and epinephrine. PKA phosphorylates Ser260 of Msn2, which under normal conditions prevents the localization of Msn2/4p into the nucleus (Luschak 2010). Under oxidative stress Msn2 is relocalized inside the nucleus by a signal which is transmitted by Trx1p and Trx2p (Boisnard et al. 2009). The exact mechanism of signal transmission is unknown, but it is not affected by PKA or cAMP (Boisnard et al. 2009). It has also been speculated that an unknown phosphatase dephosphorylates the Msn2/4p before it can enter into the nucleus (Boisnard et al 2009). When the cell starts to adapt to stress Msn2p quickly leaves the nucleus through the transporter Msn5p (Luschak 2010).
+		<br></br></p>
 		</div>
 		</br>
 		<div class="sectionjee">
@@ -118,51 +121,183 @@
 		</div>
 	</br>
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
-		<h1 id="TWO">Models of our Detection Mechanism</h1>
+		<h1 id="THREE">Models of our Detection Mechanism</h1>
 		<br></br>
-		<p style="font-size:19px;" class="justify">Our detection Mechanism consists of using transcription factors which are regulated during the oxidative stress response in order to express a Yellow Fluorescent Protein (YFP), the activity of which can be measured with a fluorometer.</p>
+		<p style="font-size:19px;" class="justify">Our detection mechanism is based on the use of  promoters of genes that are regulated during oxidative stress response in order to express a Yellow Fluorescent Protein (YFP). The fluorescence intensity of the YFP can be measured with a fluorometer. With the aim of understanding this phenomenon better, we have created simplified molecular and mathematical models of the mechanisms involved. Specifically, we are modelling the interactions involved in the regulation of the activity of the transcription factors Yap1p/Skn7p and Msn2/4p.
 		<br></br>
 		<h3>Simpliﬁed Molecular Model</h3>
-	</br>
-		<h4>Reactions for the molecular model of YAP1P regulation</h4>
+		</br>
+		<p style="font-size:19px;" class="justify">Since the activation of Yap1p and Skn7p is highly correlated, we have created a molecular model including both transcription factors. The molecular model of the activation of Yap1p and Skn7p is presented in the figure1. 
+		</p><br></br>
+		PICTURE
+		<br></br>
+		<p style="font-size:19px;" class="justify">In addition to Yap1p/Skn7p, we modelled the activation of two other transcription factors involved in OSR, namely Msn2p and Msn4p, which are usually collated in the literature to Msn2/4p. The molecular model we created is presented in the figure 2.	
+		</p><br></br>
+		PICTURE
+		<br></br>
+		<p style="font-size:19px;" class="justify">We decided to simplify the mechanism which we presented above in order to be able to measure the YFP production potential of each of the promoters we are using.     
+         </p><br></br>
+		<h4>Simplified YAP1P/SKN7 regulation mechanism</h4>
+		</br>
+		<p style="font-size:19px;" class="justify">Notation - we will denote our variables as follows:</p></br>
+		<ul style="font-size:19px;" class="justify">
+			<li>Transcription factor YAP1P in its reduced form and contained in the nucleus is denoted by NR</li> </br>                                   
+			<li>Transcription factor YAP1P in its reduced form and contained in the cytoplasm is denoted by CR.</li> </br>
+			<li>Transcription factor YAP1P in its oxidized form and contained in the nucleus is denoted by NO.       </li></br>                                               
+			<li>Transcription factor YAP1P in its oxidized form and contained in the cytoplasm is denoted by CO.        </li> </br>
+			<li>The oxidative species Gpx3 is denoted by GPX3.    </li> </br>
+			<li>The transporter Pse1p is denoted by PSE1P.</li> </br>
+			<li>The transporter Crm1 is denoted by CRM1.        </li> </br>
+			<li>The Trx sensor is denoted by TRX.        </li> </br>
+			<li>The transcription factor Skn7 is denoted by Skn7.</li>  </br>       
+			<li>The weak bond between the oxidized nucleic Yap1p and the nucleic Skn7 is denoted by w(Yap1p:Skn7).</li>  </br>   
+			<li>The strong bond between the oxidized nucleic Yap1p and the nucleic Skn7 is denoted by s(Yap1p:Skn7).</li> </br>
+			<li>The kinase responsible for stabilizing the Yap1p : Skn7 bond is denoted by kinase.</li> </br>
+			<li>The degradation element NOT4 which is responsible for yap1p degradation in the nucleus is denoted by NOT4.</li>  </br>   
+			<li>The active Yap1p marked for degradation in the nucleus via the NOT4 element is denoted by S(YAP1P:SKN7):NOT4.</li> </br>
+			<li>The complex of Yap1p and Skn7p that is bound to the promoter is denoted by protein_builder.</li> </br>
+			<li>The total amount of YFP is denoted by protein.</li></ul>
+		<br></br>
+		<h4>Conservation Laws</h4>
+		</br>
+		<p style="font-size:19px;" class="justify">We will define four conservation laws in the presence of oxidative stress which we will use throughout our model; these conservation laws help simplify our equations and model.
+		</br></p>
+		<ul style="font-size:19px;" class="justify">
+		<li>C1: The quantity of Yap1p transcription factor is constant. CO + NO + CR + NR = constant.</li></br>
+		<li>C2: The quantity of transcription factors binding sites is constant (as is the number of constructs).</li>  </br>  
+		<li>C3: The quantity of nucleic Skn7 transcription factor is constant.  </li>  </br>
+		<li>C4: The quantity of NOT4 element is constant inside the nucleus.</li></br>
+		</ul>
+		<br></br>
+		<h4>Reactions for the Yap1p/Skn7 Molecular Model</h4>
 		</br>
 		<p style="font-size:19px;" class="justify">For the binding of molecules we will use the symbol ”:”. 
 			<ul style="list-style-type:upper-roman; font-size:19px;">
-			<li>CR : T1 ⇒ NR. This reaction represents the transport of the Transcription Factor YAP1P from the cytoplasm into the nucleus. We chose to represent the same transcription factor as two diﬀerent species N-YAP1P and C-YAP1P depending whether it is located in the nucleus or the cytoplasm since they exhibit diﬀerent behaviour with respect to our detection mechanism. We are primarily interested in the YAP1P located in the nucleus since protein transcription of YFP occurs in the nucleus (?).</li>
-			</br>
-			<li>NR : T2 ⇒ CR. As a regulatory mechanism for the YAP1P in the nucleus, the transporter (Crm1) exports the transcription factor outside of the nucleus. </li>
-			</br>
-			<li>CO : T1 ⇒ NO. The YAP1P transcription factor can freely move from the cytoplasm into the nucleus through Pse1p transporter. This phase is not inhibited by oxidative stress.</li>
-			</br>
-			<li>CR : GPX3 ⇒ CO. The YAP1P transcription factor binds to the protein GPX3 after it senses a bigger ROS quantity and gets oxidized.</li>
-			</br>
-			<li>CO ⇒ CR. This reaction represents the transcription factor getting reduced back once the ROS quantity decreases with the help of TRX.</li>
+			 <li>(Reaction 1) CR : PSE1P ⇒ NR. This reaction represents the transport of the transcription factor YAP1P from the cytoplasm into the nucleus with the help of the transporter Pse1p. We will use the expression pse1p_reduced to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 2) NR : CRM1 ⇒ CR. As a regulatory mechanism for the YAP1P in the nucleus, the transporter (Crm1) exports the transcription factor outside of the nucleus. The reaction rate of this reaction will be denoted by Crm1.</li></br>
+			 <li>(Reaction 3) CO : PSE1P ⇒ NO. The YAP1P transcription factor can freely move from the cytoplasm into the nucleus through Pse1p transporter. This phase is not inhibited by oxidative stress. We will use pse1p_oxidised to denote the reaction rate of this reaction.</li></br>
+			 <li>(Reaction 4) CR : GPX3 ⇒ CO. The YAP1P transcription factor binds to the protein GPX3 after it senses a bigger ROS quantity and gets oxidised. We will use Gpx3 to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 5) CO ⇒ CR. This reaction represents the transcription factor getting reduced back once the ROS quantity decreases with the help of TRX. We will use Trx_cytoplasm to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 6) NO ⇒ NR. This reaction is equivalent to the one above, but it occurs in the nucleus, where the oxidised YAP1P gets reduced with the help of TRX. We will use Trx_nucleus to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 7) NO + SKN7 ⇒ (NO:SKN7)w. This reaction depicts the weak binding of the nucleic oxidised Yap1p to the nucleic Skn7 transcription factor. We will use k1 to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 8) (NO:SKN7)w + kinase ⇒ (NO:SKN7)s. This reaction represents the strong bond between the nucleic oxidised Yap1p and the nucleic Skn7 transcription factors after the kinase binds to the weak bond. We will use kinase+ to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 9) S(NO:SKN7) + Construct ⇒ protein_builder . This is the binding reaction of the yap1p:skn7 complex to the binding site of the gene denoted by Construct. We will use Construct_binding to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 10) protein builder ⇒ S(NO:SKN7):NOT4 + Construct. This is representing the binding of the NOT4 species to the YAP1P/SKN7 complex which causes its separation from the gene. We will use Not4+ to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 11) CR ⇒ . This reaction represents the degradation of the YAP1P contained in the cytoplasm. We will use cr_deg+ to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 12) ⇒ CR. This reaction represents the production of YAP1P in the cytoplasm. We will use cr_prod to denote the rate of this reaction.</li></br>
+			 <li>(Reaction 13) ⇒ protein. This reaction represents the production of yellow fluorescent protein from the YAP1P/SKN7 complex bind to the promoter of the gene. The rate at which YFP is produced will be denoted by protein+.</li></br>
+			 <li>(Reaction 14) S(NO:SKN7):NOT4 ⇒ SKN7. This reaction represents the degradation of the oxidised YAP1P by the ubiquitin left by the NOT4. We will denote the rate of this reaction by ubiquitinb+.</li></br>
+			 <li>(Reaction 15) YFP ⇒. This reaction represents the natural degradation of YFP. We will denote the rate of this reaction by YFP_deg.
 			</ul>
 			</p>
 			<br></br>
-		<h3>Mathematical Model</h3>
-		</br>
-		<h4>Diﬀerential Equations of the Mathematical Model</h4>
-		</br>
-			<p style="font-size:19px;" class="justify">In order to model our detection mechanism as accurately as possible, we tried describing the rates of change of the different substrates which we described above. </p>
-				<p style="font-size:19px;" class="justify">
+		<h4>Reactions for the Msn2/4p molecular model</h4>
+		</br> 
 			<ul style="list-style-type:upper-roman; font-size:19px;">
-			<li>D1: d(CR) dt = +k5[NR]−k4[CR] + k2[CO]−k1[CR] </li>
-			</br>
-			<li>D2: d(CO) dt = +k1[CR]−k2[CO]−k3[CO] </li>
-			</br>
-			<li>D3: d(NO) dt = +k3[CO]−k6[NO] </li>
-			</br>
-			<li>D4: d(NR) dt = +k6[NO] + k4[CR]−k5[NR] </li>
-
+			<li>(Reaction 1) C-Msn2/4p ⇒. This reaction represents the natural degradation of Msn2/4p.
+			</li></br>
+			<li>(Reaction 2) ⇒  C-Msn2/4p. This reaction represents the production of Msn2/4p in the cytoplasm.
+			</li></br>
+			<li>(Reaction 3) C-Msn2/4p ⇒  N-Msn2/4p. This reaction represents the transportation of dephosphorylated Msn2/4p into the nucleus.
+			</li></br>
+			<li>(Reaction 4) C-Msn2/4p : PKA ⇒ C-Msn2/4p_phos. This reaction represents the dephosphorylation of Msn2/4p by PKA.
+			</li></br>
+			<li>(Reaction 5) C-Msn2/4p_phos : phosphatase ⇒ C-Msn2/4p. This reaction represents the phosphorylation of Msn2/4p by a phosphatase.
+			</li></br>
+			<li>(Reaction 6) C-Msn2/4p_phos ⇒ N-Msn2/4p_phos. This reaction represents the transportation of Msn2/4p into the nucleus, inhibited by PKA/cAMP.
+			</li></br>
+			<li>(Reaction 7) N-Msn2/4p_phos ⇒ C-Msn2/4p_phos. This reaction represents the transportation of Msn2/4p into the nucleus, aided by Msn5p.
+			</li></br>
+			<li>(Reaction 8) N-Msn2/4p_phos + Promoter ⇒ protein_builder. This reaction represents the binding of the nucleic phosphorylated Msn2/4p to the promoter.
+			</li></br>
+			<li>(Reaction 9) protein_builder ⇒ Promoter. This reaction represents the natural degradation of Msn2/4p after it has served its purpose.
 			</ul>
-			</p>
-
-			<p style="font-size:19px;" class="justify">
-			Since one of our assumptions is that the inﬂow and outﬂow of yap1p transcription factors in reduced form is found on a steady−state, our rate constants k4 and k5 have the same magnitude, simplifying our equations.</p>
-					
-					</div>	
+		
+		
+		<h2>Mathematical Model</h2>
+		</br>
+		<h4>Differential Equations of the Associated Mathematical Model of Yap1p:Skn7 Model</h4>
+		</br>
+			<p style="font-size:19px;" class="justify">In figure 3, we show the differential equations associated to the molecular model obtained above. These correspond to the main species of interest in our model and were used for running our numerical simulations.	
+			</p><br></br>
+			Picture 3!!!
+			<br></br>
+			<h4>Numerical simulations</h4>
+			</br>
+			<p style="font-size:19px;" class="justify">We used the software COPASI to run time course simulations of the simplified molecular model presented above as a mass-action model. We decided to make use of a mass-action model since we are given more freedom of choosing our variables and the interactions between them.
+			<br></br>
+			We used the Gpx3 protein quantity as an indicator of oxidative stress based on the previously investigated literature. We decided to use a linear relation of time and Gpx3, by assuming that toxin sensing by Gpx3 increases linearly over time during stress.
+			<br></br>
+			In figure 4, we show a plot of the quantity of oxidised Yap1p:Skn7 complex in the nucleus after a kinase has stabilized the bond. We can observe how its quantity increases until it reaches its peak and then decreases until stabilising again. This phenomenon was observed at wide numeric ranges in the Skn7 concentration and YAP1P localisation rate in the nucleus when in stress. 
+			</p><br></br>
+			Picture 4!!!
+			<br></br>	
+			<p style="font-size:19px;" class="justify">We also observed that the quantity of the Not4 element directly determines the time point at which the quantity of the strongly bound complex S(NO:SKN7) stabilizes, as well as the total quantity of the complex after stabilization. This was observed at a range of estimated values for Not4 ubiquitin marking and degradation rate. These results accord with the literature (Gulshan et al. 2012), which models Yap1p as being marked for degradation by Not4 after the S(NO:SKN7) complex has decoupled from the promoter.
+			<br></br>
+			In order to quantify the potential production of Yellow Fluorescent Protein through the activation of YAP1P and SKN7 complexes, we consider a simplified model of our promoters in which these transcription factor complexes bind to the promoters at a linear rate. We assume that the activation of the promoter is directly dependent on the quantity of transcription factor complexes binding to it. This assumption is motivated in (Paper of the fractions). 
+			<br></br>
+			We modelled our active gene using a time course model directly dependent on the quantity of the S(NO:SKN7) complex. We plotted this active gene concentration with respect to time during stress, as shown below. We note that the maximum quantity of active genes is determined by the minimum of Skn7p and promoter quantity in the cell. As one can observe in the figure 5, the quantity of active genes increases and stabilises at a nearly logarithmic rate, which depends on the promoter binding and kinase phosphorylation rates. 
+			</p><br></br>
+			Picture 5!!!
+			<br></br>
+			<p style="font-size:19px;" class="justify">We note that the above plot is a reference for the overall behaviour of these parameters and does not provide any specific rate or numerical value for gene activation, which must be deduced experimentally. This simulation was run in a range of values of Skn7 nucleic quantity, active site binding probability (rate), total plasmid quantity and degradation rate of YAP1P by NOT4 element in the nucleus.
+			<br></br>
+			It is in our interest to determine the relation between the S(NO:SKN7) complex of Yap1p and Skn7 (in a strong bond) and the quantity of active genes present in the nucleus. Understanding this relation could shed some light into the degradation mechanisms of YAP1P during oxidative stress and the role of the kinase responsible for phosphorylating Skn7(??). We observe that as the rate of kinase activity lowers, the quantity of active gene approaches a smooth logarithmic curve, suggesting a slower construct saturation and hence a faster linear stabilization of total protein being produced. At higher kinase activity rates, our active gene quantity experiences a faster initial slope and subsequent immediate decrease, followed by an increase and stabilization, as shown in the figure 6 below.
+			</p><br></br>
+			Picture 6!!!
+			<br></br>
+			<p style="font-size:19px;" class="justify">This suggests a behaviour similar to the S(NO:SKN7) complex, where the role of the kinase is directly responsible for its quantity. We observe an increase in immediate gene activation in the form of S(NO:SKN7) complex together with a decrease on W(NO:SKN7) complex due to a high kinase activity. This explains the momentaneous decrease in S(NO:SKN7) complex as the NOT4 starts degradation and single oxidised Yap1p transcription factor in the nucleus concentration decreases relatively. This also suggests a fast activity and gene activation due to YAP1P transcription factor, followed by a more stable action during the course of stress.
+			<br></br>
+			Since we are interested in the overall Yellow Fluorescent Protein production in the nucleus, we plotted the total protein produced as a function of time during stress that is presented in the figure 7.
+			</p><br></br>
+			Picture 7!!!
+			<br></br>
+			<p style="font-size:19px;" class="justify">In accordance to the previous plots, we observe a stabilised linear production of protein after the quantity of active constructs has reached its maximum. Before this threshold has been reached, we can observe a nearly exponential increase in protein production at the beginning of stress response. This behaviour was observed at both high and low kinase activity rates.
+			<br></br>
+			As mentioned above, these results also couple with previous literature that classifies the YAP1P and SKN7P transcription factors as fast or immediate response elements in the oxidative stress response (paper), having their highest activity during the beginning of the OSR rather than activating long-term repair mechanisms.			
+			</p><br></br>
+			<h4>Not4 activity and Yap1p regulation</h4>
+			</br>
+			<p style="font-size:19px;" class="justify">We compared the active gene quantity as a function of the Not4 degradation activity of Yap1p while in complex form bind to the promoter part of the gene. We observed that as the Not4 activity increases, the active gene constructs quantity stabilize at different smaller values but preserves an overall same structure curve which resembles that of the  S(NO:SKN7) complex; consequently, we observe a lower initial slope in the protein production, which also stabilizes at a later period in time.
+			<br></br>
+			When the Not4 activity is low, we observe a behaviour of the active gene quantity which resembles a smooth logarithmic curve, and in which the quantity of protein produced reaches stability at a sooner period in time with an overall steeper slope.
+			<br></br>
+			These results give support to the mechanism suggested at (papers Antti) where YAP1P degradation occurs due to NOT4 activity inside the nucleus.
+			<br></br>
+			From these plots and results we can make several observations:
+			<br></br></p>
+			<ul style="font-size:19px;" class="justify">
+			<li>The overall behaviour of the active gene quantity is dependent on the transcription factor complex quantity and the total plasmids and binding sites contained in each cell, in particular on the minimum of these quantities. 
+			</li></br>
+			<li>Once the active gene quantity reaches its threshold, protein production is maintained constant and increases at a linear function which is directly related to gene transcription rates in the cell.
+			</li></br>
+			<li>Yap1p and Skn7 seem to play a crucial role at the immediate response of the cell against oxidative stress.
+			</li></br>
+			<li>Not4 plays an important role in the long term stabilization of oxidised Yap1p in the nucleus and the overall long term stress response from the cell.
+			</li></br>
+			<li>Different quantities from Not4 degradation rate to kinase binding rate affect the overall protein production rate both at short and long term response.
+			</li></br>
+			<li>Next we would (1) fit the parameters to experimental data using COPASI’s parameter estimation function, (2) perform numerical simulations with MSN2/4p and (3) take the promoter structure into account in a more detailed way, possibly providing design suggestions.
+			</li></br></ul>
+			<h4>Discussion and future work</h4>
+			</br>
+			<p style="font-size:19px;" class="justify">From the above simulation results we can make several observations. The quantity of active genes depends on the quantity of the S(NO:SKN7) complex as well as the total number of promoter binding sites contained in each cell, in particular the minimum. Once the quantity of active genes reaches its maximum, protein production occurs at a constant rate and the amount of YFP increases linearly.
+			<br></br>
+			Our model confirms that Yap1p and Skn7p seem to play a crucial role in the immediate response of the cell against oxidative stress. In addition, Not4 plays an important role in the long-term stabilization of the quantity of oxidised Yap1p in the nucleus and therefore also in the cell’s long-term response to oxidative stress. Altering the Not4 degradation rate and the kinase binding rate has large effects on the overall protein production rate. The simulations run in this model, support the Yap1p degradation mechanism based on Not4 activity suggested in the literature.
+			<br></br>
+			The above presented model and simulations form a basis to a better understanding of the stress response mechanism in the cell via the Gpx3 increase and gene activation through transcription factors Yap1p and Skn7.
+			<br></br>
+			In order to have a more accurate model of the response against oxidative stress in the cell and the fluorescence production we need to include the transcription MSN2/4p in our numerical simulations and then to fit our parameters to experimental FACS data using COPASI’s parameter estimation function. This would enable us to make more accurate numerical predictions of the behaviour of the detection mechanism under various conditions. We could then model the promoter structure in a more detailed way and use simulation results to guide the design of optimal promoters for our detection mechanism.
+			<br></br></p>
+			</div>	
 				</br>
+			<div class="sectionjee">
+				<h2 style="float:left; margin-left:100px; padding-top: 5px; font-family: im_fell_french_canon_proIt; font-size: 40px;">&ldquo;<i style="font-family: robotolight; font-size: 19px;">Cyanobacteria range in size from 0.5 to 60 micrometers in diameter which represents one of the largest prokaryotic organism.</i>&rdquo;</h2><br></br>
+			</div>
+	</br>
+		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
+		<h2>References</h2>
+		<br></br>
 	
 	
 	
