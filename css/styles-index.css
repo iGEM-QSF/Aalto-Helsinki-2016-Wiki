@@ -345,7 +345,10 @@ ul.topnav {
 }
 
 .sectionjee h2 {
-    margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
 }
 
 
@@ -402,7 +405,6 @@ ul.topnav li a img {
 	font-size: 20px;
 	text-align: center;
 	color: white;
-	padding-top: 23px;
 	-webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.24);
 	-moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.24);
 	box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.24);
