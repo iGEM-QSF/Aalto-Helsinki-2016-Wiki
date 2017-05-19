@@ -256,6 +256,27 @@ ul.botnav li a:hover {
 	transform: translateZ(-1px) scale(2);
 }*/
 
+#my-video {
+    position: absolute;
+    z-index: -1; 
+    width: 100%; 
+    height: 150%; 
+    transform: translate3d(0px, -250px, 0px);
+}
+
+/* Large resolution style */
+
+@media screen and (min-width: 1600px) {
+	#my-video {
+    position: absolute;
+    z-index: -1; 
+    width: 100%; 
+    height: 150%; 
+    transform: translate3d(0px, -330px, 0px);
+}
+
+}
+
 
 /* Mobile style */
 

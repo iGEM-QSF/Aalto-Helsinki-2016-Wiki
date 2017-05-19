@@ -18,7 +18,7 @@ FILE_BASE_URL = IGEM_BASE+"/File:T--"+TEAM_NAME+"--"
 TEMPLATE_BASE_URL = IGEM_BASE+"/wiki/index.php?title=Template:"+TEAM_NAME+"--"
 UPLOAD_URL = IGEM_BASE+"/Special:Upload"
 AUTO_PAGES = ["index","Business","Research","Team","Journal","Modeling","Cooperation","Outreach"]
-REQUIRED_PAGES = ["Attributions", "Collaborations", "Description", "Proof", "Demonstrate", "Software"]
+REQUIRED_PAGES = ["Attributions", "Collaborations", "Proof", "Demonstrate", "Software"]
 
 #-----------------------#
 
@@ -51,8 +51,8 @@ class Wrangler(HTMLParser):
 #    return "\n".join(template_refs)+soup.prettify().encode("utf8")
 
 def upload_all(session):
-    dict1 = {"description.html": "Description", "lab.html": "Laboratory", "model.html": "Modelling", "people.html": "People", "humanpractices.html": "HP", "community.html": "Community", "achievements.html": "Achievements"}
-    dict2 = dict1.copy()
+    dict1 = {"description.html": "Description", "lab.html": "Laboratory", "model.html": "Modelling", "people.html": "People", "humanpractices.html": "HP", "community.html": "Community", "achievements.html": "Achievements", "index.html": "index"}
+    dict2 = { k: BASE_URL+v for k,v in dict1.items()}
     for (html, igemPage) in dict1.items():
         upload(igemPage, html, session, dict2)
         time.sleep(1)
@@ -153,13 +153,13 @@ def send_get_request(url, session):
 def get_edit_parameters(url, session):
     i = 0
     resp = None
-    while (resp = None and i < 4):
+    while (resp == None and i < 4):
         if (i > 0): 
             print("Retrying...")
             time.sleep(1)
         resp = send_get_request(url, session)
         i += 1
-    if (resp = None):
+    if (resp == None):
         return None
     content = resp.text
     parser = Wrangler()
@@ -297,7 +297,7 @@ def file_upload(file, session, file_reader):
     if (data == None): return 1
     
     generic_file = file_reader(file)
-    if (font_file == None): return 2
+    if (generic_file == None): return 2
     
     response = send_file_to_server(generic_file, data, session)
     if (response == None): return 3
